@@ -1,0 +1,249 @@
+uses gw.api.database.Query
+uses gw.api.database.Relop
+uses gw.api.email.Email
+
+var em = Email
+
+substring(clm.Documents.first().Name.lastIndexOf("."))  --->
+The lastIndexOf() returns the index of the last occurrence of a substring in a string, or -1 if the string does not contain the substring. 
+It searches for the substring backward from the end of the string or from the fromIndex if this argument is available.
+
+
+var clm = Query.make(Claim).compare("ClaimNumber",Relop.Equals,"LAMA105F3A ").select().AtMostOneRow
+
+var ext = clm.Document[].first().Name.substring(clm.Document[].Name.lastIndexOf(".")
+
+print(ext)
+print(clm.Documents.Count)
+
+
+try{
+gw.transaction.Transaction.runWithNewBundle(/ext -> {
+clm = bundle.add(clm)
+clm.Document ),anne layton)
+
+}
+}
+
+
+uses gw.api.database.Query
+uses gw.api.database.Relop
+
+var clm = Query.make(Claim).compare("ClaimNumber",Relop.Equals,"LAMA105F3A").select().AtMostOneRow
+
+
+
+print(clm.Documents.Count)
+clm.Documents.each(\elt -> {
+ print(elt.Name)
+})
+
+
+uses gw.api.database.Query
+uses gw.api.database.Relop
+
+var clm = Query.make(Claim).compare("ClaimNumber",Relop.Equals,"LAMA105F3A").select().AtMostOneRow
+
+
+var ext = clm.Documents.firstWhere(\elt -> elt.Name == "PIP Exhaust $2K.pdf")
+
+var ext1 = clm.Documents.firstWhere(\elt ->
+elt.Name =="$8k Exhaust No MP.pdf") , in db mimetype is pdf.
+print(ext.MimeType)
+print(ext1.MimeType)   ---> Result =application/pdf ,  null 
+
+
+uses gw.api.database.Query
+uses gw.api.database.Relop
+
+
+var clm = Query.make(Claim).compare("ClaimNumber",Relop.Equals,"LAMA105F3A ").select().AtMostOneRow
+
+
+var ext = clm.Documents.firstWhere(\elt -> elt.Name == "$8k Exhaust No MP")
+
+print(clm.Documents.firstWhere(\elt -> elt.Name == "$8k Exhaust No MP").Name)
+
+print("-------------")
+
+var extt =clm.Documents.firstWhere(\elt -> elt.Name == "$8k Exhaust No MP").Name.substring(clm.Documents.first().Name.containsIgnoreCase(""))
+
+print("start")
+print(extt)
+
+print(ext.MimeType)
+print(clm.Documents.Count)
+
+
+
+
+
+
+
+[Test1.html, TestNoExt.html, testMW.html, TestAnnie_23032022021555908.txt,
+ Test35_22032022101410714.txt, TESTEmail.html, Email Sends Without Attachment_19032022045330954.html, 
+ Exten and without Extension.html, multiple attachment one with extension and other without extenstion.html, 
+ TestAnnie.txt, Test23_23032022014157852.txt, Test37_21032022073521574.txt, Email Sends Without Attachment.html,
+ attached document without exten.html, TestAftFi.html, DocumentUploadTest1.txt, Test36_21032022071715343.txt, Test.html,
+ Test35_22032022101632771.txt, Testing Mail.html, Claim Confirmation Letter - Insured.pdf, 
+ Multiple attachments without extension and one extension.html, EMailTest.html, Test23.txt, 
+ 2 attachments - one having extn one not having any extn.html, TestAnnie_23032022034647366.txt,
+ DocumentUploadTest1_21032022072248493.txt, TestAnnie_23032022021626428.txt, No Doc.html, No Ext.html,
+ WithExt.html, Email with attachement having extension.html, TestAnnie_23032022021230711.txt, Test11th.html,
+ Test23_23032022121148501.txt, DocumentUploadTest1_21032022072443760.txt, Test23_23032022015425383.txt, 
+ Test35_22032022105352587.txt, With Doc.html, test excel.xlsx, MailTestNoExt.html,
+ 
+ 
+ 
+ $8k Exhaust No MP, 
+ 
+ 
+ PIP Exhaust $2K.pdf,
+
+print substring() ,,,returning 
+ 
+
+
+
+uses gw.api.database.Query
+uses gw.api.database.Relop
+
+var clm = Query.make(Claim).compare("ClaimNumber",Relop.Equals,"LAMA105F3A").select().AtMostOneRow
+
+
+var ext = clm.Documents.firstWhere(\elt -> elt.Name == "PIP Exhaust $2K.pdf")
+
+var ext2 = clm.Documents.firstWhere(\elt -> elt.Name == "$8k Exhaust No MP")
+
+var ext1 = clm.Documents.firstWhere(\elt ->
+elt.MimeType==ext2.MimeType)
+
+
+print("PIP :  " +ext.MimeType)
+
+print("ext2  $8:  " +ext2.MimeType)
+
+
+uses gw.api.database.Query
+uses gw.api.email.Email
+uses gw.api.database.Relop
+uses gw.plugin.email.HtmlEmail
+uses gw.api.system.database.SequenceUtil
+
+
+
+
+function addDocuments(out : HtmlEmail, email : Email, message : Message) {
+  var ee = email.Documents.firstWhere(\elt -> elt.Name == "$8k Exhaust No MP").Name
+
+print("Mail Document "+ee)
+
+print("end")}
+
+var clm = Query.make(Claim).compare("ClaimNumber",Relop.Equals,"LAMA105F3A").select().AtMostOneRow
+
+print(clm.Documents.Count)
+
+var ext = clm.Documents.firstWhere(\elt -> elt.Name == "$8k Exhaust No MP").Name
+
+var ext1 = clm.Documents.firstWhere(\elt -> elt.Name == "$8k Exhaust No MP").MimeType
+
+
+print("Document Name : "+ext)
+print("Document MimeType  : "+ext1)
+
+var extt  =clm.Documents.firstWhere(\elt -> elt.Name == "$8k Exhaust No MP").Name.lastIndexOf(".")
+
+
+print("Document Extension Index is      "  + extt)
+
+
+
+
+
+
+
+
+
+ Attachment without extension.html, TestAnnie_23032022021239650.txt,
+ 1for ext and 1for witout ext.html, Test35.txt, Test37.txt, AftrDeploy.html, Test36.txt]
+
+
+uses gw.api.database.Query
+uses gw.api.database.Relop
+
+var clm = Query.make(Claim).compare("ClaimNumber",Relop.Equals,"LAMA105F3A").select().AtMostOneRow
+
+
+var ext = clm.Documents.firstWhere(\elt -> elt.Name == "$8k Exhaust No MP")
+print(ext.MimeType)
+
+print(clm.Documents.Count)
+clm.Documents.each(\elt -> {
+ print(elt.MimeType)
+})
+
+
+
+var ext = clm.Documents.firstWhere(\elt -> elt.Name == "$8k Exhaust No MP")
+print(ext.MimeType)
+
+Regarding Prod 136 - EMail attachment issue
+we can not modify/rename document name from UI.
+can we get example cliam in sit for this(where document has without extension).
+
+
+...change document name from .pdf to without extension.
+uses gw.api.database.Query
+uses gw.api.database.Relop
+var clm = Query.make(Claim).compare("ClaimNumber",Relop.Equals,"LANH000004").select().AtMostOneRow
+print(clm.Documents.Count)
+
+for(doc in clm.Documents){
+if(doc.Name.equalsIgnoreCase("")){
+gw.transaction.Transaction.runWithNewBundle(\elt -> {
+doc.Name =""
+print("Document Name updated")
+},"su")
+}
+}
+
+
+uses gw.api.database.Query
+uses gw.api.database.Relop
+
+var clm = Query.make(Claim).compare("ClaimNumber",Relop.Equals,"LAMA105F3A").select().AtMostOneRow
+
+
+var ext = clm.Documents.firstWhere(\elt -> elt.Name == "PIP Exhaust $2K.pdf")
+
+var ext2 = clm.Documents.firstWhere(\elt -> elt.Name == "$8k Exhaust No MP")
+
+var ext1 = clm.Documents.firstWhere(\elt ->
+elt.MimeType==ext2.MimeType)
+
+
+print("PIP :  " +ext.MimeType)
+print("ext1 :" +ext1)
+print("ext2  $8:  " +ext2.MimeType)
+
+
+
+
+uses gw.api.database.Query
+uses gw.api.database.Relop
+
+var clm = Query.make(Claim).compare("ClaimNumber",Relop.Equals,"LAMA105F3A").select().AtMostOneRow
+
+
+var ext = clm.Documents.firstWhere(\elt -> elt.Name == "PIP Exhaust $2K.pdf")
+
+var ext2 = clm.Documents.firstWhere(\elt -> elt.Name == "$8k Exhaust No MP")
+
+var ext1 = clm.Documents.firstWhere(\elt ->
+elt.MimeType==ext2.MimeType)
+
+
+print("PIP :  " +ext.MimeType)
+print("ext1 :" +ext1)
+print("ext2  $8:  " +ext2.MimeType)
