@@ -1,0 +1,21 @@
+uses gw.api.database.Relop
+    gw.transaction.Transaction.runWithNewBundle(\bundle -> {
+      var p = new Producer(Currency.TC_USD)
+      p.PublicID = "systemTables:2"
+      p.Name = "Default Organization"
+      p.HoldStatement = false
+      p.InitialRecurDate = new Date()
+      p.RecurDayOfMonth = 1
+      p.Tier = ProducerTier.TC_BRONZE
+      p.RecurPeriodicity = Periodicity.TC_MONTHLY
+
+
+      bundle.add(p)
+      var producerCode = new ProducerCode(bundle, Currency.TC_USD)
+      producerCode.Code = "Electric Insurance"
+      producerCode.Active = true
+      producerCode.PublicID = "pcpc:1"
+      producerCode.CommissionPlan = gw.api.database.Query.make(Plan).compare(Plan#PublicID, Relop.Equals, "eicbc:9").select().AtMostOneRow as CommissionPlan
+      p.addToProducerCodes(producerCode)
+
+    },"su")

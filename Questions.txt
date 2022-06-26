@@ -1,0 +1,87 @@
+
+              capgimini  --- 30mins on 15th march 2021
+enity types
+models ....Mode
+validation
+Validationexpression
+data model one to one 
+batch custom
+bundle 
+committed
+query and sql === how performance will work over gosu or sql   
+query .copare
+sinleton ... how to create it 
+agile 
+svn 
+edgeForeignKey
+versionable 
+----------------------------------------------------------------------------------------------------------
+How to get policy no. in cc? - providng policyExpiration date and LOB then we are fetching policy to process claim.
+claim difference b/w 8/9/10?
+subrogation,adjuster,exposure,reserve,incident?
+how to create a claim in cc? full process? intake process 
+how to configure contact manager in claim center?and how its integrate?
+in which LOB, u worked?
+complete procee of FNOl 
+Financial transaction check flow, authority limit ...
+
+if work in document then how u ll integrate or configure it..we have used openText, how you consume and produce web service?
+flow document --> document create in cc --> reflect in ECM(OT) side(middleware team manage/maintain cc and ECM in sync)--->ccm->kofax
+
+messaging how do you configure transport plugins,reply plugins....
+how do you create custom batch.
+how do you deal with autoExposure on incident,we dont have oprion for manually...generally we use presetup ruleset for trigger this.
+
+rating?
+GIT,Azure/azure dev ops  related quection they ll ask?
+how do you testing ot autherization in web service? either in postman/soapUI?Junit
+xsd related question, how do u txn  thru code?how ll generate xsd?
+life cycle of check ?
+reserve,payment, transation?
+
+Morals
+
+Not every effort is successful but behind every success there is an effort. (हर कोशिश कामयाब नहीं होती पर हर कामयाबी के पीछे कोशिश जरुर होती है )
+You only fail when you stop trying.
+A winner is just a loser who tried one more time.
+You have to keep patience and hope in tough time , keep giving your best always.
+Whatever meant for you will come to you on time , so keep grinding and you will shine one day.
+Trust the process , todays struggles are preparing you for tomorrows glory.
+Thanks for reading.
+
+Please upvote to encourage. 😊
+
+If you wish to connect
+
+Instagram - Login • Instagram (Login • Instagram)
+
+
+delegate service ? invoice amount 
+
+see these two integration end to end---> Vizion & Audatex
+
+ 
+
+If need be, we can have a meeting scheduled to discuss on the open issues.
+
+
+
+Utility Class , Helper Class, 
+
+Utility class - utility class is one has no state(fields) of its own, so all the methods can be class methods(static) rather then
+                 object methods(requirring an intitiation o an object), and provides methods for multiple class(shared codde).
+               this is a class that contains nothing but static methods and the constructor is a private.this class connot be instantiated,i.e new class().
+               all methods must be called via myclass.method().
+              it is an utility, because help you to achive your goal and can be reused across your program.
+            : common methods used to across the application.e.g-DateUtil,DataType,Dataconversion
+ 
+Helper Class - methods specific to a layer(service,DTO), mapping request to DTO,mapping response to DTO etc 
+              can be instantiate and do some business work,Class helping another class or a module
+
+Utility class contains only static methods so no need to create object where helper class contains both static and non static methods so it restrict to create object.
+
+note - I would like to suggest you that you should use utility classes only because it is easy to use and good practice.
+
+
+
+ 

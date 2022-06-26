@@ -1,0 +1,58 @@
+
+all the topics u can manage 
+example...modes..popups...web services..batchjobs..
+1. How to create batch jobs ..process of creating batch job
+2. How do you create a web service in guidewire
+3. How do u consume web service in guidewire
+4. What are steps involved in messaging framework
+5. Which plugin is used for sending message
+6. How to create a custom plugin
+7. What are different batch jobs available
+8. Validation levels in guidewire
+
+9. How to reject a claim to reach validation level ability to pay
+10. How to check if claim or exposure is at validation level ability to pay
+
+11. What are subtypes
+12. Different data fields in data model
+13. Difference between eti etx and eix extension
+14. DEVCM in guidewire
+15. Advanced of gosu over guidewire
+16. Query to find all companies records from table
+17. What is bundle
+18. What are types of bundles
+
+19. Query to change status of claim to closed via bundle
+20. Difference between  AtMostOneRow and first result
+21. How to implement POP ups
+22. Location grouops in guidewire
+23. Validation expression in guidewire
+24. Post on change in guidewire
+25. Tpecodes and typelist in guidewire
+
+26. LoB
+27. Exposure/ reserves/ reserve lines
+28 check life cycle
+29. FNOL Flow
+
+30. Delegates
+31.Late binding
+32. Different ways to create payload in guidewire
+33.message and message history table
+How to create custom event in guidewire()
+Edge foreign key
+
+How to check of a field got changed
+Steps to create query
+Data model level validation
+Rules sets in order
+How to create activity by code
+How to do assgment of claim via code
+From this only all questions
+But most important are like pop up/ modes / entity/ subtype/ post on change/ rules set/ messaging / batch job / bundles
+Some other questions to ask is like related to sprint
+how u start work..sprint planning
+Rest will be project
+Required variable vs local variable
+Before the interview study billing center thoroughly
+
