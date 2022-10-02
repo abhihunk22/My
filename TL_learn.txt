@@ -1,0 +1,149 @@
+Process to become TD : Basic --> Strategy --> Mindset  --> Risk Management
+
+
+Introduction - done 
+Beginner's Journey - done 
+Technical vs fundamentals - - done  (24th Sept)
+    A) Filled and unfilled orders  - 
+			           follow the footprint strategy will allow us to judge that where the unfilled orders are.we ll always try to judge that unfilled orders.
+			           7 steps judgments tht we can buy/sell from this zone or not
+				       same day ke zone se hi bahut impactful hai , intraday mein kuch setup they ll provide . jo same day kelevel se hi trade kerna hoga.
+					   same day level means , suppose jo aaj zone bna,10mins chart , suppose drop base really bna , yeh se price upper jaa sakta hai per yeh perfact zone nai hai.
+	B) Volume - volume indicatore, indicate that ek candle/timeFrame pe kitna volume trade hua hai buy/sell ka.			   
+    C) SMA - Simple Moving Average- candle ka closing price,like 200sma,50sma(it will take 200 timeframe ka data leker simple moving avg. ka calculation provide karega),
+	         moving avg y? (average move hota hai evrery next candle pe and old wale candle ll be removed, formed line of sma), exponential moving avg we always use, not SMA
+    D) EMA 	- Exponential Moving Avg., most powerful indicators in trading , we always follow this EMA.daily time frame per ye always give btr result and spport also.we always use          
+	          daily and weekly time frame for this in entire trading carrier. very strong support for EMA 20, use this.sidewise market mein yeh support nai leta hai.
+			  koi bhi Ema indicators kam nai kerta hai sidewise mein .Generally ppl take trade like this, jab 50ema red wala line crossed 100ema blue line
+			  (generally lower ema crossed higher ema from down to up then buy it) then its buy oppurtunity,
+			  side wise market mein,but we r not use this concept. 			  we can see in chart.
+			 ema crossed strategy in side way market, ll loss only.price action se identify market will be one sided or sideways
+			 ema 20 use only...finally we use only EMA n Volume . ema only see in daily time frame
+			 nifty/bnknifty -- kal nifty upper open hota hai aaj ke closing se,ya close upper deta hai , 
+			 aaj ka jo bhi closing hai iske upper kal nifty close deta hai means  ema20 per support le reha hai
+			 
+			 banknifty - nifty ager aaj ke closing ke niche close hota hai and monday ko kal ke closing ke related mein upper close hota hai,
+			 its means EMA20 per support le reha hai	
+    E) RSI1_17Mins - Relative Strength Index(Over Bought and Over Sold{30 - 70},Momentum,Divergence), RSI indicator works only for sidewase market(Profit) not for trending market and 
+	                 trending market mein kafi losses dega.RSI se momentum pta chalta hai only. SW hai ya trending yeh price action se pta chalta hai. 
+	                 
+    F) RSI2_9.37-  RSI Divergence ,,,, price go up but RSI  momentum showing down called Divergence.	
+			
+Price Action -A)Price Movement- N no. of trns happing in the form of buy and selling in evry neno seconds. 
+              B)Price Action - done 
+			  C)Retracement  - it means correction/retracement..price thory up jaa rahi then down , Pattern -done 
+			  D)Dow's Theory_41mins - dow brought concept , to identify/judge where is trend is on either up side/down side/sw side.
+			                   ager price HH(Higher High)HL(Higher Low) Series bnati hai toh it can uptrend. 
+							   
+							   Recent high is the higher of previous high called HH. recent low is the higher of the previous low called HL. ---> Up Trend(Stock/index)
+					Swing's Condtion   		                 Movement 
+					 Higher Highs & Higher Lows               UP 
+					 Lower Highs & Lower Lows                 Down 
+					 Neither HH HL Nor LH LL                 Sidwways 
+					 
+					 kabhi bhi stocks up se down direct nai jata hai,usko sideways jana hi hoga then trends moce either up/down.
+					 idealy up/down trend identify hojata hai,confusion nai hoga ..always 4 pivots/swing(turnig points like new trend or reverse) chahiye identify kerne ke loye
+					 always consider latest 4points 
+					 HH LL --> SW , LH LL -->DW, LH LL ---> DW, 
+					 LH HL --> SW, 
+					 HH HL ---> UP(we use always, ager last pivot high hai aur current trend upper nikalta hai last high ka aur pivot abhi nai form hua hai then 
+					               definatly hiherHigh banega , hum log ko yehaan imagine kerna hoga , q ki abhi yeh pivot nai form  hua hai toh yeh trend upward hai)
+					 On Candle --> hum log ko wicks ko consider karenge  higher high or lower low identify kerne ke liye.
+					 
+					 koi bhi stock or index mein trend diffenernt ho sakte hai different time frame per. 
+					 Like ek stock,15mins ke time frame mein upword,1day ke TF mein sideways or 1hour ke TF mein downword ho sakta hai.
+                     later we ll discuss about trend on diffrnt TF.					 
+					 Equal lows and LH --->  SW, 15mins and 1 hour is SW trend , daily is DW,wekly is SW ON AsianPaints..   
+					 
+					 Posibilities anything --> UP-SW-UP 
+					                           DOWN -SW-Down       
+                                               UP SW Down
+                                               DOWN SW UP   --> its depends also on which time frame we are seen.hum log ko focus kerna hai ki 
+											      kuon sa time frame per kuon sa trade condition dekhna hai, aur jo latest trade condition kiya hai
+												  latest kuon se TF mein kiya trade condition kiya hai, 
+												  tht is wt we have to check thruout the follow the footprint startegy.
+												       
+					 198481 			  
+			  E)Fibonacci Retracement_21.05Mins  --->  fibonachiiii....23.6%,38.2%,50% and 61.8% , there are major formulas that are getting used in fibonacci retracement.
+			                                           38.2% - pepole are agressive but not tht much in buying even not wait for 50%,fir yehi se up trend continue.
+													   50% -> 50% retracement is the best considering always, hum log price action mein used karenge.yeh 50% kerta hai 
+                                                                toh yeh up trend ker sakta hai idealy.													   
+														61.8% --> golden ratio is 61.8%,this is human psychology ratio,jab bhi yeh 61.8% aayega then very strong chance to 
+														its go up trend as per human psychology.its very attractive price to buy as per human psychology.
+							how its get calculated --> done all ....2nd divideby 3rd , 2nd divide by 4th,2nd divide by 5th...like that we r calculating this percantage.							
+			  F)Support & Resistance - Theory_37.08 --> what all can act like support n Resisitance ?
+			                                            Straight Line 
+														Round Numbers
+														Moving Averages (EMA)
+														Trend Lines 
+												More Testing of a level will make the level weaker.
+												Reversal in roles 
+												-  Resisitance after breaking becomes support and Support after breaking  becomes Resisitance
+												-  Price Halts Near Support & Resisitance gives powerful movement. ..these all are cover in chart reading 		
+			  G)Support & Resistance - Practical_24.47Mins ---. 
+			  
+
+Advanced Price Action - 
+             A)All About Tradeline - done 
+			 B)Triangle Pattern - Theory - Done 
+			 C)Trendline & Trianlge Pattern - Practical -Done 
+			 D)Channel Pattern - done 
+			 E)Rectangle Formation - done
+			 F)Double Top & Double Bottom - this is the strategy to catch this top (pro gap strategy). only institution hi bna sakte hai yeh,aur koi nai.......... (2reverse/swing either on top or bottom but with same line/levels only), 
+			                                Double Top & Double Bottom trend reversal pattern hai ideally .done
+			 G)Triple Top & Triple Bottom - equal bottom lines hai toh its better to enter into trade.done 
+			 H)Head & Shoulder - most affecting, most of trapping due to tht..basically continuos of reverse , inverse head & shoulder....opp of Head & Shoulder
+			 I)Flag & Pole Pattern - pole and flag pattern,done  
+			 J) All Chart Patterns - Practical - done 
+Super Advanced Price Action - 
+            A)Filled & Unfilled Orders - Done 
+			B)Price Movements
+			C)Supply & Demand Zone Concept 
+			D)Novice Trader's Mistakes
+			E)Demand & Supply Zone Formation & Trade Action
+			F)Base Candles
+			G)Leg Candles
+			H)Supply & Demand Zone - Location & Action
+			I)Advantages of Using Supply & Demand Zone
+			J)How to Plot a Zone
+			K)Three Components of a Zone
+			L)Invisible Candles
+			M)Invisible Candle Practical
+			N)Terminology
+			O)Steps to Identify Demand Zone & Trade of Demand Zone
+			P)Proximal & Distal Lines - Demand Zone
+			Q)Steps to Identify Supply Zone, Proximal & Distal Lines of Supply Zone
+			R)Demand & Supply Zone - Drawing Practical
+			S)Difference Between Support - Resistance & Demand - Supply
+			T)General Queries
+		
+			
+Mindset(RM,MM,ER,RR) - 
+           A)Market Players
+		   B)Difference Between Novice & Professional Trader
+           C)5 Outputs of Every Trade
+           D)Institution's Report
+           E)Risk Management & Money Management
+           F)Success & Reward Ratio
+           G)Combination of RM,MM & RR
+           H)How to Control Emotions
+           I)5 Step Process Before Taking any Trade
+
+
+		   
+BreakoutStrategy
+Follow the Footprints Strategy
+2 Bonus strategies 
+Advance Follow the Footprints 
+Stock Selection(Top Down Approach)
+FnO(Future n Options)
+Begin your Journey Practically 
+Live Market - Chart reading session recording
+Offline Market -Chart reading session recording
+7 Steps to build your trading skills 
+QnA Sessions
+Bonus 
+Book Suggestions 
+Testimonials
+15 Days Live Trading Recordings 
+ 
