@@ -1,0 +1,15 @@
+
+CC_ Learn
+
+
+
+entity="Transaction" (Transaction (either reserve, payment, recovery, or recovery reserve) for a particular claim or exposure.")
+                     Transactions relating to this claim.  For rules, it is much better to use one of the getXXXIterator() methods and for the UI it is much better to use one of the getXXXQuery() methods to retrieve all transactions or a specific subtype of Transactions for the claim."
+   
+arrayentity - exposure (The exposures related to this claim. Note: if triggersValidation is false, exposure metrics will not be run automatically.")
+arrayentity -Incident" (Descriptions of incidents related to this claim. Note: In Gosu, it's preferred to use Claim.VehicleIncidentsOnly and similar properties for each Incident subtype. See the Application Guide.")
+arrayentity - Matter   The legal matters related to this claim."
+arrayentity -ReserveLine "ReserveLines relating to this claim."
+arrayentity -ServiceRequest  Service requests associated with this claim. Note: if triggersValidation is false, service request metrics will not be run automatically."
+arrayentity -
+arrayentity -
