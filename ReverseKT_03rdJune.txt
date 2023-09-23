@@ -1,0 +1,155 @@
+Reverse KT - Transactions & CIF Batches
+
+Writeoff - actions-->Transaction --> Writeoffs ...Amount goes from unappliedFund to WrittenOff  -- UI Done 
+WriteoffReversal --> amount from writeoof to back unappliedFund  -- UI done 
+Negative write-offs
+Disbursement 
+Transfer
+Charge Reversal 
+Negative write-off reversal
+Recapture
+Credit
+Credit Reversal
+
+
+Life Cycle of Disbursement --> 
+The complete disbursement life cycle = An account disbursement always has one of these statuses:
+
+Awaiting Approval - The disbursement requires approval and is awaiting approval.
+Approved -          The disbursement is approved. (Disbursements that require no approval are automatically set to this status.)
+Rejected -          The disbursement is rejected. No further action is taken on the disbursement.
+Sent -              An outgoing payment has been created for the disbursement and sent. Unless there is an attempt to void the payment, no further action is taken on the disbursement.
+Reapplied -         On the disbursement's due date, there was no money in the appropriate unapplied fund. No outgoing payment was created. No further action is taken on the disbursement.
+Voided -            An attempt was made to void the disbursement's outgoing payment after it was created. No further action is taken on the disbursement.
+
+The life cycle of a disbursement is depicted in the following diagram. After the diagram, there is a numbered list of descriptions with details on how each transition occurs.
+
+
+
+
+
+                         Negative write-offs(Indicates that money held by the insurer is no longer expected to be applied or refunded)
+
+A charge write-off is a type of transaction used in BillingCenter to indicate that there is money due to the insurer, 
+but the insurer no longer expects to receive it. The most common use of charge write-offs is for situations where a policy has become delinquent 
+and the insurer believes they will be unable to collect money for coverage that has already been provided. For bookkeeping purposes, 
+the insurer executes a charge write-off to indicate some amount of money due is not going to be received.
+
+
+A negative write-off is a type of transaction used in BillingCenter to indicate that there is money received by the insurer, 
+but the insurer no longer expects to apply this to an outstanding charge or to disburse it to the payer. 
+Charge write-offs and negative write-offs can be thought of as opposite transaction types. 
+The first is for money due to the insurer that will not be received. The second is for money held by the insurers that will not be applied.
+
+The most common usage of negative write-offs is for credit amounts that are so small that the cost to refund the money is greater than the money itself. 
+For example, after a policy has been fully paid, the policyowner may request a change in coverage. This change results in a $0.02 credit. 
+Because the policy is fully paid, the insurer has no future invoices from which $0.02 could be deducted. 
+The cost of returning the money to the policyowner is greater than $0.02. 
+For bookkeeping purposes, the insurer executes a negative write-off to indicate some amount of money held is not going to be applied or refunded.
+
+
+
+
+
+                                  Negative write-off reversal - Undoes a previously executed negative write-off.
+For example, this could occur when an insurer does a negative write-off for a held amount and then, 
+at a later date, an additional charge is received which the held amount could be credited to.
+
+
+                              Negative write-offs and unapplied funds
+A negative charge write-off is always associated with an unapplied fund. To create a negative charge write-off, the unapplied fund must have a positive amount.
+
+
+
+                                                 Recapture 
+It is possible for the money in an unapplied fund to become negative. 
+For example, this can occur if the money from a payment is applied to a set of invoice items, 
+and then later the payment is reversed. When any future payment is received, the payment's positive amount will offset the unapplied fund's negative amount.
+
+
+
+
+CheckProcessBatch - 
+we have process plugin where batch has configured
+Check Processing Batch – its daily batch which runs at 11am. 
+CheckInboundBatchProcess - class is responsible to checkProcessing.
+
+
+It has a field location where the place will be file read.
+Feed file will contains check which got cleared this is i/p for the batch file
+It will read the file from this location. Its look each lines of the file and it will change the outgoingDisPmnt entity. With the reference number which having in the file and try to get that the record
+Once I get that record I am checking whether its not null status is issued .
+If it is issued  
+Then m checnging that status to cleared . that particular check got cleared. If I am not able to find any check related to that I ll add that record to error record .
+This is how  will update check status using this batch.
+It’s does check from  issued to cleared status
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+422,
+
+Defect 6292......PDDailyActivityFileHelper.gs
+
+    detailsDTO.PAYROLL_CALENDAR = detailValue.PAYROLL_CALENDAR
+    detailsDTO.TAKE_AMOUNT_IN_NEXT_DEDUCTION = detailValue.TAKE_AMOUNT_IN_NEXT_DEDUCTION as String
+    PD_DAILY_ACTIVITY_LOGGER.info(" detailsDTO : " + detailsDTO)
+    return detailsDTO
+  }
+
+
+
+ var payTrnx = grpByTrnxCode.get(PAY)
+          if (payTrnx.Count > 0) {
+            if (payTrnx*.AMOUNT.sum() < endRenPayAmount) {
+              var payAmount = payTrnx*.AMOUNT.sum()
+              endRenPayAmount = endRenPayAmount.add(payAmount)
+              var renDetailsDTO = populateDetailsDTO(renTrnx, inputDate, isCallFromUI)
+              renDetailsDTO.AMOUNT = endRenPayAmount as String
+              PD_DAILY_ACTIVITY_LOGGER.info(" renDetailsDTO.AMOUNT: " + renDetailsDTO.AMOUNT)
+              populateNegativeIndicator(renDetailsDTO, endRenPayAmount)
+              filteredList.add(renDetailsDTO)
+              grpByTrnxCode.remove(PAY)
+            } else {
+              var payAmount = payTrnx*.AMOUNT.sum()
+              endRenPayAmount = payAmount.add(endRenPayAmount)
+              var payDetailsDTO = populateDetailsDTO(payTrnx, inputDate, isCallFromUI)
+              payDetailsDTO.AMOUNT = endRenPayAmount as String
+              PD_DAILY_ACTIVITY_LOGGER.info(" payDetailsDTO.AMOUNT " + payDetailsDTO.AMOUNT)
+              populateNegativeIndicator(payDetailsDTO, endRenPayAmount)
+              filteredList.add(payDetailsDTO)
+              grpByTrnxCode.remove(REN)
+            }
+          } else {
+            var renDetailsDTO = populateDetailsDTO(renTrnx, inputDate, isCallFromUI)
+            renDetailsDTO.AMOUNT = endRenPayAmount as String
+            PD_DAILY_ACTIVITY_LOGGER.info(" renDetailsDTO.AMOUNT: " + renDetailsDTO.AMOUNT)
+            populateNegativeIndicator(renDetailsDTO, endRenPayAmount)
+            filteredList.add(renDetailsDTO)
+          }
+        }
+
+
+
+
+
+
+
+
