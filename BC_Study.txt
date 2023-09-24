@@ -1,0 +1,24 @@
+
+BC Study 
+
+Transaction
+
+rescind --> BillingCenter tells the policy system to rescind the cancellation, which means to cancel the cancellation process as if it had not happened
+            To handle rescinding the policy in the external system, your plugin must implement the rescindCancellation method
+			takes the same arguments as the requestCancellation method. 
+                             Policy period entity (a PolicyPeriod)
+                             Delinquency reason (a DelinquencyReason typecode)
+                             Transaction ID (a String)
+							 
+                    Admin Plans :
+Billing Plans 
+Agency Bill Plans
+AcivityPatterns 
+ChargePatterns
+CommissionPlan
+DelinquencyPlan
+PaymentAllocationPlan
+PaymentPlans
+ReturnPremiumPlans
+
+							 
