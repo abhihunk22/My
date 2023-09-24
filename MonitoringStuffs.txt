@@ -1,0 +1,997 @@
+3,4 - satish
+10,11 - abhi, 17,18 - srivalli ,  24,25 - sushmitha , 31,1 - satish 
+7,8 jan- abhi 
+
+Daily Status - December 2022
+https://eyus.sharepoint.com/:x:/r/sites/EIC-Migration/_layouts/15/Doc.aspx?sourcedoc=%7B4C790717-636E-4F81-946E-338E8235B478%7D&file=MS_Team_Daily_Task_Tracker%20Dec%202022.xlsx&action=default&mobileredirect=true
+
+Enhancement /Defect status update
+https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsites.ey.com%2F%3Ax%3A%2Fr%2Fsites%2FEIC-CREnhancements%2FShared%2520Documents%2FGeneral%2FEIC%2520Enhancements%2520Calendar%2520Year%25202022%2FEY%2520Enhancement%2520Bundle%2520Status.xlsx%3Fd%3Dwf43fea5ea69e4475ac0e959eeaaf4264%26csf%3D1%26web%3D1%26e%3D6hhy3O&data=05%7C01%7CAbhimanyu.Kumar3%40gds.ey.com%7C2ae79228220b4768d51e08dad0dfa631%7C5b973f9977df4bebb27daa0c70b8482c%7C0%7C0%7C638051956237439558%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=4ebQhm3osIethO0703uVAPOKrd2lKkVuIjge1iHP%2FJk%3D&reserved=0
+
+Daily Status - Nov 2022
+https://eyus.sharepoint.com/:x:/r/sites/EIC-Migration/_layouts/15/Doc.aspx?sourcedoc=%7BC69300A5-EABC-46AC-BD21-8CF12B71F2BA%7D&file=MS_Team_Daily_Task_Tracker%20Nov%202022.xlsx&action=default&mobileredirect=true
+
+Daily Tracker 2023 - 
+https://eur01.safelinks.protection.outlook.com/ap/x-59584e83/?url=https%3A%2F%2Feyus.sharepoint.com%2F%3Ax%3A%2Fr%2Fsites%2FEIC-Migration%2FShared%2520Documents%2FGeneral%2FDaily%2520work%2520tracker%2FMS_Team_Daily_Task_Tracker%2520Jan%25202023.xlsx%3Fd%3Dwc51c1d51063644d39865e246244addaa%26csf%3D1%26web%3D1%26e%3DtzFlXD&data=05%7C01%7CAbhimanyu.Kumar3%40gds.ey.com%7C9941f7208a33468b2da608daed42c194%7C5b973f9977df4bebb27daa0c70b8482c%7C0%7C0%7C638083168228865386%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=xMLDkbuhT404fS6XtOWCh9gkDUyxZD4CPFl%2FSIzB%2Fe8%3D&reserved=0
+
+Feb 2023 - 
+https://eur01.safelinks.protection.outlook.com/ap/x-59584e83/?url=https%3A%2F%2Feyus.sharepoint.com%2F%3Ax%3A%2Fr%2Fsites%2FEIC-Migration%2FShared%2520Documents%2FGeneral%2FDaily%2520work%2520tracker%2FMS_Team_Daily_Task_Tracker%2520Feb%25202023%2520.xlsx%3Fd%3Dwd78040eb22dc406aa08a05786072b933%26csf%3D1%26web%3D1%26e%3Dp8PbzD&data=05%7C01%7CAbhimanyu.Kumar3%40gds.ey.com%7Ce8f01e8fa7534db2cf4c08db060af705%7C5b973f9977df4bebb27daa0c70b8482c%7C0%7C0%7C638110416449761351%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=ZaAbsNNtLban1BKWa9TWI2GLGMdDHFancigIkhl9lfI%3D&reserved=0
+
+Daily Task tracker for all months 
+https://eyus.sharepoint.com/sites/EIC-Migration/Shared%20Documents/Forms/AllItems.aspx?RootFolder=%2Fsites%2FEIC%2DMigration%2FShared%20Documents%2FGeneral%2FDaily%20work%20tracker
+
+
+
+Daily QA2 --> BC --> Project start_stop_applications_R2QA --> BC stop and then Start ....only BC 
+
+
+LMs --> Leave --> Leave application status  --> 
+Weekend Monitoring -- 4th & 5th June, 
+                      9th,10th,30th,31st July , ---> applied 9 hours in lms (Apply compensatory off eligibility) 
+					  
+					  17th & 18th Sept.  applied in GT&E (Total 3+6+3 hours = 12hours)
+					  2nd oct & 8th Oct & 9th Oct -        (11th oct to 24th oct on leave)
+					  6th Nov  ------------------> upto here applied on 22nd Nov 2022, in LMS for comp off 9hours ...
+
+					                             Comp off on Weekend Monitoring
+			           3rd dec - 1.5 hours Weekend Monitoring
+                      10th , 11th dec 	- 3 hours Weekend Monitoring				  
+					  31st dec - 1.5 hours Weekend Monitoring
+					  7th, 8th Jan  - 3 hours Weekend Monitoring   -------------> 9hrs
+					  
+					  28th, 29th Jan - 3 hours Weekend Monitoring
+					  11th, 12th feb - 3 hours Weekend Monitoring --------------> 6hrs, updated in time sheet till 12th feb...only comp off needs to apply in LMS
+					  
+					  
+					  
+	pending from here --> 12th & 13th Nov --- PROD URL is not Accessible, so we have provided only CIF count to the CIF group...No Mail...total - 14 days...21 hours
+					  
+				  
+4th June - 1.5 hours 5th June - 1.5 hours 9th July - 1.5 hours 10th July - 1.5 hours 30th July - 1.5 hours 31st July - 1.5 hours Weekend Monitoring
+
+
+first "Lenderdock Corrections" and then  "Lenderdock corrections work queue" 
+		
+		
+	4084950161
+	16215 Rhyolite Cir
+Reno, NV 89521-9639
+07/26/1955
+N3741234
+California
+1C4NJRCB4CD530344
+3TMCZ5AN0NM507866
+
+
+WESGDSIndiaHelpdesk@gds.ey.com
+
+
+https://people.ey.com/personal/abhimanyu_kumar3_gds_ey_com/Documents/Desktop
+					  
+					  
+					-------------------------------------->>>>>Project start_stop_applications_R2QA ---> Build with parameters --->  BC Stop and then Start
+
+----------------------------------------------Lower_Envs_Deployements_Schedule---------------------------------------------------------------------------------------------------
+1. SIT2 ---> Monday & Thursday (Before 10am, start 9.45am) ---------- (SIT_Pipeline_Deployment)->Set Upgrade flag are needed for SIT2
+
+2. eic_production_support_ab/bc/cc/pc build  --> automatic trigger at 11.56pm EST/10.26am IST on every tuesday and thursday
+
+
+3.                               (Automated deployment for x-centers and portals)....Set Upgrade flag are needed for DTE and DTE2
+REN,DEV,QA,DTE,DTE2 ---> Tuesday,Friday,,,REN will auto trigger at 23.56pm EST/10.26am IST
+(REN_Build_Deploy_Pipeline_1 --> DEV_Deploy_Pipeline_IS --> QA_Deploy_Pipeline_IS_Portals --> DTE_Deploy_Pipeline_IS_Portals --> DTE2_Deploy_Pipeline_IS_Portals    =  Tuesday and Friday)
+
+
+4.REN ---> Wednesday (Automated deployment for x-centers and portals)...Set upgrade flag is not needed 
+
+
+Note : whenever build will going to trigger by automatic or manually, we need to set upgrade flag always of perticular xcentres. 
+        Expect for SIT2 build its automated everyday
+
+8
+
+user - su2
+pass - QAs_gw1223
+
+On 6thFeb ---> PC build and deployment once SIT pipeline completed.
+ 
+kaal sharp shanti  ---- 17th and 18th .....ajay dixit 2100.......
+-----------------------------------SIT2 Deployement_Every_Wednesday----Steps----------------------------------------------------------------------
+build for SIT2 --> Project eic_production_support_ab_build,bc,pc,cc 
+SIT2 deployment steps:
+1. Set upgrade flag for all x- centers from UI and suspend the queues and batches
+2. Disable replication for pc, ab, cc, bc, integ alone
+3. Do deployment of xcenter in AB, BC, PC, CC in-sequence....bc build - 20,ab-14,cc-17,pc-28
+      ->  am, gpa, qp   - not required (13th april)
+   verify the build numbers.
+4.Resume batches and MQ's
+5. Enable replication for pc, ab, cc, bc, integ alone
+
+ Enable the SIT Pipeline - US46898 ....12.30 ......
+
+
+
+[Wednesday 09:39] Sushmitha Ravichandran
+SIT2 deployment steps:
+Set upgrade flag for all x- centers from UI and suspend the queues and batches   -> Done
+2. Disable replication for pc, ab, cc, bc, integ alone -> only pc done ,,, waiting for their reply (today ab was not build successfully, so leave it AB) - completed 
+3. Do deployment of xcenter in AB, BC, PC, CC in-sequence. bc,pc done now cc  done 
+then portal build and deploy = portal AMbuild, PE,QB THEN DPLOY AM,PE,QB  after build click on build no. and click on keep this build forever 
+                              AM deploy with build70,  PE     build 64,  QB DPLY WITH BUILD 
+      ->  am, gpa, qp   - not required (13th april)
+   verify the build numbers.
+4.Resume batches and MQ's
+5. Enable replication for pc, ab, cc, bc, integ alone
+
+Deploy with build no.--> bc(7),CC(8),PC(10)
+-------------------------------------------dec 1st 2022
+SIT2 deployment 
+AB - DONE 
+BC - DONE 
+PC- unstable (extension.properties increased 372 from 371)...now pc build trigger from production support and click on keep this build forever then trigger pc deploy for SIT2--now done 
+CC - done
+
+PORTAL AM BUILD - failed (Project eic_sit_portal_am_build_v11)...Agein trigger , progress now at 14.14pm--complted 
+PORTAL PE BUILD - failed ..progress..completed  
+PORTAL QB BUILD - progress 
+
+PORTAL AM DEPLOY - 79 DONE 
+PORTAL PE DEPLOY - 75
+PORTAL QB DEPLOY - 71
+
+
+dec 01 Release notes  from svn
+Pc ,ab,cc,bc - done from svn 
+am,pe,qb - done 
+
+
+pc,bc - unstable ..pc strated again 
+ab,cc,integ- done 
+
+--------------------------------------------------------------------------
+
+
+GEINC12193578-------billingsystem 
+999878966
+12/20/2022 7:04:47 AM EST
+0
+1
+0
+0
+Policy period with Public ID pc:996486 already exists
+	
+E10137899
+12/20/2022 7:04:45 AM EST
+0
+1
+0
+0
+java.lang.NullPointerException
+
+
+
+-----------------------------------------------------------------------------------CIF batch and CIF work queue -------> 
+Hi Team, What is the status of CIF work queue ?
+       1. Queue is still running
+       2. CIF workqueue got completed (if ran within the 11.45am IST)
+else 
+	   
+1. CIFWorkQueue is still running , 
+2. Please delete the generated file and let me know once the file is deleted.  
+3. aftr they can confirm the if can ran the batch and ping them 5 no. line 
+4. Run this query --> 
+  use electric_prod_bc; select count(*) from bcx_cifrecorddata_ext with (nolock)
+                       select * from bc_processhistory with (nolock) where ProcessType in(10007) order by CreationDate desc 
+					   
+5. CIF Work-queue got completed, Re-Ran the CIF file batch manually and it completed successfully.
+   Count  - 188969  ..count matched confirmed 
+
+
+EYMS3 (@Pass345) Sushmitha Ravichandran   
+
+Hi Marley OpenCase NotFound: Unable to find carrier provided information on phone number +18002272757
+GEINC12071099
+
+
+count CIF file 
+run this query-----/?>
+use electric_prod_bc; select count(*) from bcx_cifrecorddata_ext with (nolock)
+select * from bc_processhistory with (nolock) where ProcessType in(10007) order by CreationDate desc
+
+
+they will ask --> Hi Team, What is the status of CIF work queue ?
+       1. Queue is still running
+       2. CIF workqueue got completed (if ran within the 11.45am IST)
+else 
+	   
+1. CIFWorkQueue is still running , 
+2. Please delete the generated file and let me know once the file is deleted. 
+3. aftr they can confirm the if can ran the batch and ping them 5 no. line 
+4. Run this query -->  use electric_prod_bc; select count(*) from bcx_cifrecorddata_ext with (nolock)
+                       select * from bc_processhistory with (nolock) where ProcessType in(10007) order by CreationDate desc 
+					   
+5. CIF Work-queue got completed, Re-Ran the CIF file batch manually and it completed successfully.
+   Count  - 188969  ..count matched confirmed 
+
+
+day life saving  ---- so now 
+data remover - 12.30(11.00am IST) 
+cif work queue -- 1.30AM(12.00pm IST to 12.45pm)....
+cif batch  - 2.15am(12.45pm)
+
+
+ 5pm mail - Daily Batch Monitoring Checklist for 06/04/2022 (CIF all batches are uptodated with times)...no need to check once ,,,send directly after 5pm.
+ 
+ 20220909A34.20221115A86 20221130A66
+ 
+ 	
+E10057391
+ Please use 'eic.integration.salesforce.webservice.salesforce.salesforceservices_svc2.GWApiGwHandlerRequest'.parse( java.io.File ) to parse a file
+
+------------------------------------------------------------------------------InsurPay---------------------------------------------------------
+Hi InfraTeam, Could you please execute the query mentioned in the ticket. DevOps Ticket - USER STORY 46561 
+
+Hi InfraTeam, Could you please execute the query mentioned in the ticket. DevOps Ticket - USER STORY 46564 -- ISO
+
+
+
+Please execute below query to set the Failed messages to retryable errors for InsurPay MQ in PROD CC.
+
+use electric_prod_cc
+update cc_message set Status=4 where Status=3 and DestinationID=50        4=retrayble ,3=failed,1=pending 
+
+Service Now Ticket no. GEINC11509908
+
+
+Please execute below query to set the retryable messages to  pending message for InsurPay MQ in PROD CC.
+
+use electric_prod_c,
+update cc_message set status=1 where Status=4 and DestinationID = 50 and publicid in('ccProd:3386307', 'ccProd:3386308')
+
+https://eur01.safelinks.protection.outlook.com/ap/x-59584e83/?url=https%3A%2F%2Feyus.sharepoint.com%2F%3Ax%3A%2Fr%2Fsites%2FEIC-Migration%2FShared%2520Documents%2FGeneral%2FDaily%2520work%2520tracker%2FMS_Team_Daily_Task_Tracker%2520Nov%25202022.xlsx%3Fd%3Dwc69300a5eabc46acbd218cf12b71f2ba%26csf%3D1%26web%3D1%26e%3DsS0ckR&data=05%7C01%7CAbhimanyu.Kumar3%40gds.ey.com%7Cb48bc3bff4544f63a69a08dac88d4ed4%7C5b973f9977df4bebb27daa0c70b8482c%7C0%7C0%7C638042806471012493%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=Htp%2FCXSvpYCO6ag%2BV%2FgXUrQfL6QwW4JH7rk7ptyRXe0%3D&reserved=0
+
+https://eur01.safelinks.protection.outlook.com/ap/x-59584e83/?url=https%3A%2F%2Feyus.sharepoint.com%2F%3Ax%3A%2Fr%2Fsites%2FEIC-Migration%2FShared%2520Documents%2FGeneral%2FDaily%2520work%2520tracker%2FMS_Team_Daily_Task_Tracker%2520Nov%25202022.xlsx%3Fd%3Dwc69300a5eabc46acbd218cf12b71f2ba%26csf%3D1%26web%3D1%26e%3DsS0ckR&data=05%7C01%7CAbhimanyu.Kumar3%40gds.ey.com%7C8570f347a6554cd1a6ef08dac6827f93%7C5b973f9977df4bebb27daa0c70b8482c%7C0%7C0%7C638040561047724395%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=4OeDL35X1AD9jv2miotdsgNozFinFj%2B2%2Fkncf97lgEA%3D&reserved=0
+
+  MS_Team_Daily_Task_Tracker Nov 2022.xlsx
+  
+  Invalid submission. Incident already exists.
+
+
+--------------------------------------------------------------------------------------PAS_MQ_Query--------GEINC9390508--------------------------
+use electric_prod_bc
+
+select pp.PolicyNumber, m.beforeSendlocktime,m.ErrorDescription,m.EventName ,SendOrder from bc_message m
+
+join bc_Policyperiod pp on m.EventRootKey ='PolicyPeriod:'+Cast(pp.id as varchar)
+
+where destinationiD=100 and status=4  order by  pp.Policynumber
+
+	
+ Vehicle Identification Number is required
+
+Leankit - GEINC9390508
+     
+	
+07/09/2022 3:59:02 AM EDT
+PAS_Rescind PAS  8149  Retryable Error    3   Expected to find one policy transaction but found 0
+ mESAAGE pAYLOAD - --> BC:1657352048603-341350
+ 
+PolicyNumber	beforeSendlocktime	ErrorDescription	EventName	SendOrder
+A100005654	2022-07-09 03:59:01.4340000	Expected to find one policy transaction but found 0	PAS_Rescind	8149
+ 
+ https://electricinsurance.leankit.com/board/1566619583  --> leankit (Pune@2018p)
+ 
+1 msg got stuck in PAS in BC .. if we try many try to retry an then not went off then we can create the ticket in leankit and skip the msg.
+
+Could you please create the ticket for this, then i can skip the msg ?
+
+
+PolicyNumber	beforeSendlocktime	ErrorDescription	EventName	SendOrder
+A6340236A2	2022-07-19 04:19:43.8650000	Expected to find one policy transaction but found 0	PAS_Rescind	5556
+------------------------------------------------------------------------------------------------------------------------------------------------
+Ranjan 
+17600...100 ,,,115/130/145...sl-80......all target achived
+39300 ---130, 160/190/210.....sl-100 ... all target achived 
+
+---------------------------------------------Quest Inbound Bulk Invoice Batch Failed in CC---------GEINC11747406------------------------------------------
+SFTP Non-PROD - Host: 172.22.0.10
+
+User: eic_svc_npeysftp@INEIC.net
+
+Pass: 6ab0estlfriz9&&oqIgu
+
+
+SFTP PROD - Host: 172.22.0.131
+
+User: eic_svc_npeysftp@INEIC.net
+
+Pass: 6ab0estlfriz9&&oqIgu
+
+Share/gwlogs/hotfix/pc
+
+Vehicle Identification Number is required
+
+BCLoggerCategory.APPLICATION.info()
+
+ccProd:3333089
+
+Batch Failed with the reason --> 2022-07-29 02:31:11,567 ERROR Exception thrown by batch process: QuestBulkInvoiceInbound
+                                 Jul 29 02:31:16 USEP0003AP001 prodapp01-cclog_cc gw.api.util.DisplayableException: 
+								 Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure.
+								 
+		Leankit Ticket No. - GEINC11747406(Quest Inbound Bulk Invoice Failed on 07/06)	
+		https://ElectricInsurance.leankit.com/card/1820668442 
+		
+1.Get/download excel file(Quest_Glass_220728_091941.xml) from this location "/share/eicprod/Quest/Inbound/Feed" from Winscp.
+2. copy of all claim Numbers from the excel file. 
+3. Run below query with all claim nubers . to get open and closed claims....and take closed claims only here.
+       use electric_prod_cc
+           select pol.Verified,cs.Name,c.ClaimNumber,c.UpdateTime,pol.Policynumber,c.* from cc_claim c
+           join cc_policy pol on pol.ID = c.policyID
+           join cctl_claimstate cs on cs.ID = c.State
+		   where c.claimNumber in ()   // here we can give all claim numbers to get closed claim
+
+Hi @Jennifer_Keyes - Quest Inbound Bulk Invoice Batch Failed on 10/28.
+
+Error Logs - Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure.
+
+File Name - Quest_Glass_221027_085739.xml
+
+Path - /share/eicprod/Quest/Inbound/Feed
+
+From the above Feed location, we could see that the claim (20210802A30,20220519A32,20220909A08,20220914A46) is in closed status. Please reopen the claim and take necessary actions.
+
+
+------> 
+20220208A26,20220503A89,20220506A44,20220510A32,20220523A83,20220629A07,20221027A15,20221101A57
+
+
+@Jennifer_Keyes - Quest Inbound Bulk Invoice Batch Failed on 08/26, below is the feed location
+
+Location: /share/eicprod/Quest/Inbound/Feed
+
+File names: Quest_Glass_220825_085709   ......Quest_Glass_220825_085709
+
+Error from Logs: Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure.
+
+In Quest_Glass_220825_085709 file, claims(20220128A31,20211004A05)is in closed status and in this scenario when batch is trying to create a exposure on the closed claim it was throwing the exception
+"Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure."
+
+Please check the same and take necessary actions.
+
+Make self depended instead of independent on others for trading or profits. 
+Mentor has Confidence to build trade professionals in market and increased employment rate in India. We are a part of Trade Legend family who helps people to get freedom from financial.
+
+
+
+4. closed claims mention in leankit ticket. and post it to like below msg with new file entry and closed claims
+
+Abhimanyu Kumar 1:28 PM
+@Jennifer_Keyes - Quest Inbound Bulk Invoice Batch Failed on 07/29, below is the feed location
+                  Location: /share/eicprod/Quest/Inbound/Feed
+                  File names: Quest_Glass_220728_091941
+                  Error from Logs: Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure.
+                  In Quest_Glass_220728_091941 file, claims(20220419A41,20220420A22,20220718A38)is in closed status and in this scenario
+				  when batch is trying to create a exposure on the closed claim it was throwing the exception
+                  "Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure."
+
+                 Please check the same and take necessary actions.
+5. That's it . now onwards they will do this task from their end.
+
+Quest_Glass_221027_085739.xml
+
+
+
+@Jennifer_Keyes - Quest Inbound Bulk Invoice Batch Failed on 09/02, below is the feed location
+
+Location: /share/eicprod/Quest/Inbound/Feed
+
+File names: Quest_Glass_220901_090755
+
+Error from Logs: Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure.
+
+In Quest_Glass_220901_090755  file, claim(20220729A47) is in closed status and in this scenario when batch is trying to create a exposure on the closed claim it was throwing the exception
+"Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure."
+
+Please check the same and take necessary actions
+
+20211210A23,
+
+
+
+Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure.
+gw.api.util.DisplayableException: Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure.
+at ey.saas.common.utils.ExceptionHandler.handleException(ExceptionHandler.gs:26)
+at eic.integration.quest.bulkinvoice.batch.QuestBulkInvoiceInboundBatchProcess.doWork(QuestBulkInvoiceInboundBatchProcess.gs:141)
+at com.guidewire.pl.system.batchprocessing.SinglePhaseBatchProcess$1.act(SinglePhaseBatchProcess.java:21)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.actOnCurrentPhase(MultiPhaseBatchProcess.java:106)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.runPhases(MultiPhaseBatchProcess.java:93)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.run(MultiPhaseBatchProcess.java:71)
+at com.guidewire.pl.system.batchprocessing.BatchProcessStartupHelper$1$1.run(BatchProcessStartupHelper.java:262)
+at gw.api.profiler.Profiler.maybeProfileBlock(Profiler.java:103)
+at com.guidewire.pl.system.batchprocessing.BatchProcessProfiler.maybeProfileBlock(BatchProcessProfiler.java:45)
+at com.guidewire.pl.system.batchprocessing.BatchProcessStartupHelper$1.run(BatchProcessStartupHelper.java:254)
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------Purge workflow batch failed in PC-----Run on 1st and 10th of the month------------------------------------------------
+Error - Error deleting workflows older than 60 days
+gw.api.util.DisplayableException: Error deleting workflows older than 60 days
+at gw.api.admin.WorkflowUtil.deleteOldWorkflowsFromDatabase(WorkflowUtil.java:155)
+at gw.api.admin.WorkflowUtil.deleteOldWorkflowsFromDatabase(WorkflowUtil.java:147)
+at gw.processes.PurgeWorkflows.doWork(PurgeWorkflows.gs:38)
+at com.guidewire.pl.system.batchprocessing.SinglePhaseBatchProcess$1.act(SinglePhaseBatchProcess.java:21)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.actOnCurrentPhase(MultiPhaseBatchProcess.java:106)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.runPhases(MultiPhaseBatchProcess.java:93)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.run(MultiPhaseBatchProcess.java:71)
+at com.guidewire.pl.system.batchprocessing.BatchProcessStartupHelper$1$1.run(BatchProcessStartupHelper.java:262)
+at gw.api.profiler.Profiler.maybeProfileBlock(Profiler.java:103)
+at com.guidewire.pl.system.batchprocessing.BatchProcessProfiler.maybeProfileBlock(BatchProcessProfiler.java:45)
+at com.guidewire.pl.system.batchprocessing.BatchProcessStartupHelper$1.run(BatchProcessStartupHelper.java:254)
+Caused by: com.guidewire.pl.system.exception.TransactionException: Transaction aborted by exception:Nested: EXECUTED SQL [
+SQLException.ge  
+
+To InfraTeam in TeamChat window...
+Hi InfraTeam, Could you please execute the query mentioned in the ticket. DevOps Ticket - USER STORY 40906
+Hi InfraTeam, Could you please execute the query mentioned in the ticket. DevOps Ticket - USER STORY 42021
+Hi InfraTeam, Could you please execute the query mentioned in the ticket. DevOps Ticket - USER STORY 42577(10th Aug) 
+
+
+Hi InfraTeam, Could you please execute the query mentioned in the ticket. DevOps Ticket - USER STORY 46510(1st nov )
+Hi InfraTeam, Could you please execute the query mentioned in the ticket. DevOps Ticket - USER STORY 46974(10th nov ) 
+Hi InfraTeam, Could you please execute the query mentioned in the ticket. DevOps Ticket - USER STORY 46974(10th Dec) 
+-------------------select Query-----10th Dec 2022-------------------------->
+use electric_prod_pc
+Select *  FROM pc_PRActiveWorkflow
+WHERE pc_PRActiveWorkflow.ForeignEntityID in (SELECT ID FROM pc_workflow WHERE State = 2
+AND DATEDIFF(d, UpdateTime, '2022-12-10 00:01:00.000000') >60 )
+
+
+
+Please execute the below mentioned query in Prod PC DB as Purge workflow batch failed in Prod
+
+Query - 
+DELETE FROM pc_PRActiveWorkflow
+WHERE pc_PRActiveWorkflow.ForeignEntityID in (SELECT ID FROM pc_workflow WHERE State = 2
+AND DATEDIFF(d, UpdateTime, '2022-06-01 00:01:00.000000') >60 )
+
+Service Now Ticket no.  GEINC11546319
+
+B4 deleting 
+use electric_prod_pc;
+Select *  FROM pc_PRActiveWorkflow
+WHERE pc_PRActiveWorkflow.ForeignEntityID in (SELECT ID FROM pc_workflow WHERE State = 2
+AND DATEDIFF(d, UpdateTime, '2022-07-10 00:01:00.000000') >60 )
+
+Result --> 
+ForeignEntityID	PublicID	ArchivePartition	BeanVersion	ID	OwnerID
+8062245	pc:1899582	NULL	0	1899582	1260210
+7967343	pc:1892889	NULL	0	1892889	1260650
+8062235	pc:1899581	NULL	0	1899581	1260219
+7967344	pc:1892886	NULL	0	1892886	1260635
+
+
+
+use electric_prod_pc;
+Select *  FROM pc_PRActiveWorkflow
+WHERE pc_PRActiveWorkflow.ForeignEntityID in (SELECT ID FROM pc_workflow WHERE State = 2
+AND DATEDIFF(d, UpdateTime, '2022-10-10 00:01:00.000000') >60 )
+
+ForeignEntityID	    PublicID	ArchivePartition	BeanVersion	ID	OwnerID
+8907331	pc:2162675	NULL	      0	                     2162675	1423583
+8862708	pc:2133653	NULL	       0	                 2133653	1421109
+8906908	pc:2152423	NULL	        0	                 2152423	1429062
+
+                 ---------10th Feb---------------
+use electric_prod_pc
+Select *  FROM pc_PRActiveWorkflow
+WHERE pc_PRActiveWorkflow.ForeignEntityID in (SELECT ID FROM pc_workflow WHERE State = 2
+AND DATEDIFF(d, UpdateTime, '2023-10-02 00:01:00.000000') >60 )
+
+Hi InfraTeam, Could you please execute the query mentioned in the ticket. DevOps Ticket - USER STORY 51019    
+After Ran the query by infraTeam then we need to run the batch manually .....like the date - 01Aug,10thJuly,01st July
+
+-----------------------------------------------------------------------
+
+After Ran the query by infraTeam then we need to run the batch manually .....like the date - 10Aug,01Aug,10thJuly,01st July,sept1st,10th oct(45448) 
+'---------------------------------------------------------------------------------------------------
+  On 10th Aug 
+ForeignEntityID	PublicID	ArchivePartition	BeanVersion	ID	OwnerID
+8433186	pc:2000303	NULL	0	2000303	1337548
+8264296	pc:2000333	NULL	0	2000333	1349349
+
+Error deleting workflows older than 60 days
+gw.api.util.DisplayableException: Error deleting workflows older than 60 days
+at gw.api.admin.WorkflowUtil.deleteOldWorkflowsFromDatabase(WorkflowUtil.java:155)
+at gw.api.admin.WorkflowUtil.deleteOldWorkflowsFromDatabase(WorkflowUtil.java:147)
+at gw.processes.PurgeWorkflows.doWork(PurgeWorkflows.gs:38)
+at com.guidewire.pl.system.batchprocessing.SinglePhaseBatchProcess$1.act(SinglePhaseBatchProcess.java:21)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.actOnCurrentPhase(MultiPhaseBatchProcess.java:106)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.runPhases(MultiPhaseBatchProcess.java:93)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.run(MultiPhaseBatchProcess.java:71)
+at com.guidewire.pl.system.batchprocessing.BatchProcessStartupHelper$1$1.run(BatchProcessStartupHelper.java:262)
+at gw.api.profiler.Profiler.maybeProfileBlock(Profiler.java:103)
+at com.guidewire.pl.system.batchprocessing.BatchProcessProfiler.maybeProfileBlock(BatchProcessProfiler.java:45)
+at com.guidewire.pl.system.batchprocessing.BatchProcessStartupHelper$1.run(BatchProcessStartupHelper.java:254)
+Caused by: com.guidewire.pl.system.exception.TransactionException: Transaction aborted by exception:Nested: EXECUTED SQL [
+SQLException.ge
+
+------------------------------------------------------------BillingCashFile  failed in BC--------------------------------------------------------
+BillingCashFile 
+[19:59] Chava, Kasi (Electric Insurance, Consultant) - 12th Aug
+
+Ensure the Operations team has FTP’ed the cash file to GW (Note: I cannot view the cash file feed folder in PROD, but if you can, 
+                                                           please verify the cash file is there – Operations can verify if necessary).
+Run the Billing Cash File batch.
+Run the New Payments batch after the Billing Cash File batch has completed.
+Run any necessary queries to provide the impacted delinquencies, cancels, etc. to Kim and the Billing Team.
+Communicate the completion and query results to Kim and the Billing team.
+Work with Kim to remedy any issues to customers who were impacted.
+
+----------------------------------------------
+
+we need to send the Rescind event from BC to PC
+-------------------------------------ISO-failed to retry----CIF BAtch Process Rerun and run query------------------------
+As part of GEINC11509908 - Could you please execute the query mentioned in the ticket.
+DevOps Ticket - USER STORY 39667
+
+Hi InfraTeam, Could you please execute the query mentioned in the ticket. DevOps Ticket - USER STORY 41963      ... 41058
+
+41963
+42363
+i InfraTeam, Could you please execute the query mentioned in the ticket. DevOps Ticket - USER STORY 41791
+
+Please execute below query to set the Failed messages to retryable errors for ISO MQ in PROD CC.
+
+use electric_prod_cc
+update cc_message set Status=4 where Status=3 and DestinationID=66
+Service Now Ticket no. GEINC11509908 
+
+Hi Infra team, As part of GEINC11585429, please run the query mentioned in the ticketUSER STORY 39084
+20220616A53
+
+Hi InfraTeam, Could you please execute the query mentioned in the ticket. DevOps Ticket - USER STORY 45005
+
+
+E20220922JK01 - ISO Claim 
+
+------------------------------------InsurPay Error messages process-------GEINC12248846-------------------------------------------
+Please execute below query to set the Failed messages to retryable errors for InsurPay MQ in PROD CC.
+
+use electric_prod_cc
+update cc_message set Status=4 where Status=3 and DestinationID=50
+
+Service Now Ticket no. GEINC11509908 
+
+Hi InfraTeam, Could you please execute the query mentioned in the ticket. DevOps Ticket - USER STORY 45311
+
+
+InsurPay Error messages process
+
+Please execute below query to set the Failed messages to retryable errors for InsurPay MQ in PROD CC.
+
+use electric_prod_cc
+update cc_message set Status=4 where Status=3 and DestinationID=50
+
+Service Now Ticket no. GEINC11509908 
+
+
+
+
+gw.xml.XmlSortException: Unable to process children of element 'Claim'. Expected one of '{ClaimantLastName}'
+Caused by: gw.xml.XmlSortException: Match error
+
+
+Hi InfraTeam, Could you please execute the query mentioned in the ticket. DevOps Ticket - USER STORY 46648
+
+InsurPay Error messages process
+
+Please execute below query to set the Failed messages to retryable errors for InsurPay MQ in PROD CC.
+
+use electric_prod_cc
+update cc_message set Status=4 where Status=3 and DestinationID=50
+
+Service Now Ticket no. GEINC11509908 
+-----------------------------------------------Retired Policy Graph Disconnector_CC-------------------------------------------------------------
+batch = RetiredPolicyGraphDisconnector.gs,  
+
+
+Attempt to use retired bean T1677504353097
+com.guidewire.pl.system.exception.RetiredBeanException: Attempt to use retired bean T1677504353097
+at com.guidewire.cc.domain.claim.impl.AbstractClaimPermissionHandler.checkClaimPermission(AbstractClaimPermissionHandler.java:32)
+at com.guidewire.cc.domain.claim.impl.ClaimStatePermissionHandler.hasPermission(ClaimStatePermissionHandler.java:50)
+at com.guidewire.pl.system.security.PermissionKey.hasPermission(PermissionKey.java:67)
+at com.guidewire.pl.domain.community.impl.UserImpl.assertPermission(UserImpl.java:201)
+at entity.User$_Internal.assertPermission(User.java:1536)
+at com.guidewire.pl.system.security.PermCheck.setAndCheckEdit(PermCheck.java:65)
+at com.guidewire.pl.system.entity.proxy.BeanProxy.setFieldValue(BeanProxy.java:867)
+at com.guidewire.pl.system.entity.proxy.BeanProxy.setFieldValue(BeanProxy.java:859)
+at com.guidewire.pl.system.entity.proxy.BeanProxy.setFieldValue(BeanProxy.java:853)
+at com.guidewire.pl.persistence.code.BeanMethodsBase.setFieldValue(BeanMethodsBase.java:153)
+at com.guidewire.pl.persistence.code.BeanInternalBase.setFieldValue(BeanInternalBase.java:29)
+at entity.VehicleIncident.setVehicle(VehicleIncident.java:1760)
+at gw.policy.RetiredPolicyGraphDisconnectorBase$block_4_.invoke(RetiredPolicyGraphDisconnectorBase.gs:166)
+at gw.
+
+Please execute below query to set the Failed messages to retryable errors for ISO MQ in PROD CC.
+
+use electric_prod_cc
+update cc_message set Status=4 where DestinationID= 66 and publicid = 'ccProd:4239986'
+
+Service Now Ticket no. GEINC11509908 
+
+
+-----------------------------------------------OneIncTransport-------------in BC--------------------------------------------------
+
+An error was returned when updating profile in One Inc. Disbursement 1000047188, Status: Error, Error code: 3, Error message PCON_MobilePhone Incorrect
+
+An error was returned when updating profile in One Inc. Disbursement 1000047961, Status: Error, Error code: 7, Error message No Update
+log --> account = 999872776
+Mar  9 12:32:23 USEP0003AP002 prodapp02-OneIncLogger_bc usep0003ap002.ineic.net IntegrationAdmin 4767fda8-c21e-4abb-b79b-30e904c22303 2023-03-09 12:32:19,147 DEBUG OneIncLogger 
+ [rules.EventMessage.EventFired_dir.OneIncPaymentSystem_dir.UpdateProfile][doAction] In UpdateProfile event fired rule for contact LAWRENCE RILEY. Found 1 outgoing 
+ One Inc payments requiring contact update
+Mar  9 12:35:24 USEP0003AP002 prodapp02-OneIncLogger_bc usep0003ap002.ineic.net 212812894 d3f85888-66c7-40c3-84dd-234dfa94b788 2023-03-09 12:35:21,666 DEBUG OneIncLogger 
+ [acc.oneinc.integration.OneIncDisbursementClient][resendEmailsDisbursement] OneInc Request: rest_data={"session":"8idjjd9onuqkb1n8vfb9cl9nq1",
+ "str_json":"{\"PM_PaymentID\":\"1000047961\",\"PM_CarrierId\":\"11b6f8a2-90e1-e272-bdc0-50f183ef6100\"}"}&method=ResendEmails&input_type=JSON&response_type=JSON
+
+
+
+
+
+error:entity.ReserveSet/You cannot complete this financial transaction because the policy is unverified. Refresh the policy to verify the policy.;warning:entity.ReserveSet/There is no coverage. Please verify before creating reserve.;warning:entity.ReserveSet/There is no coverage. Please verify before creating reserve.
+at ey.saas.common.utils.ExceptionHandler.handleException(ExceptionHandler.gs:26)
+at eic.integration.quest.bulkinvoice.batch.QuestBulkInvoiceInboundBatchProcess.doWork(QuestBulkInvoiceInboundBatchProcess.gs:141)
+
+
+moon malik hai, kark ......11% increase hogaye hai ....7 ke bar sab change hogaye hain....
+thur, sat 0% , weak hogaye hai, 
+kerk in sat mein aagaye hai......
+
+------------------------------------------DB Refresh in HF------------------------------------------------------
+HF DB restore for PC and BC and AB till 23rd Feb  - USER STORY 51729
+
+----------------------------------PurgeWorkflow batch failed in Prod PC---------------------------------------------------------------------------
+1. Raise a devops ticket from azure like (Hi InfraTeam, Could you please execute the query mentioned in the ticket. DevOps Ticket - USER STORY 40397( GEINC11719004))
+   Failure Reason -= Error deleting workflows older than 60 days,gw.api.util.DisplayableException: Error deleting workflows older than 60 days,gw.api.util.DisplayableException: Error deleting workflows older than 60 days
+         at gw.api.admin.WorkflowUtil.deleteOldWorkflowsFromDatabase(WorkflowUtil.java:155)   Error deleting workflows older than 60 days
+
+2. fetch data 
+     use electric_prod_pc 
+        select * from  pc_PRActiveWorkflow where 
+        pc_PRActiveWorkflow.ForeignEntityID in (SELECT ID FROM pc_workflow WHERE State = 2
+        AND DATEDIFF(d, UpdateTime, '2022-07-01 00:01:00.000000') >60 )
+
+DELETE FROM pc_PRActiveWorkflow
+WHERE pc_PRActiveWorkflow.ForeignEntityID in (SELECT ID FROM pc_workflow WHERE State = 2
+AND DATEDIFF(d, UpdateTime, '2022-07-01 00:01:00.000000') >60 )
+
+
+EYMS3 (@Pass345) Sushmitha Ravichandran
+-----------------------------------------------BillingCenter OneIncTransport in BC--------------------------------------------
+AccountNumber - E10192008
+
+SIT2 Release Notes 03-02-2023
+https://ge.box.com/s/7qk1ih4tbldbbmo4uiyg03tgiw3bmnzx
+
+
+
+FROM LOG ------->  
+Mar  5 07:50:16 USEP0003AP003 prodapp03-OneIncLogger_bc usep0003ap003.ineic.net sys 9d881813-29b5-4d77-80b5-01acabfc9d16 2023-03-05 07:50:10,981 DEBUG OneIncLogger  [acc.oneinc.integration.OneIncDisbursementClient][contactDisbursementUpdateProfile] Calling UpdateProfile in One Inc for outgoing payment with public ID bc:72384 on disbursement 1000047188
+Mar  5 07:50:16 USEP0003AP003 prodapp03-OneIncLogger_bc usep0003ap003.ineic.net sys 9d881813-29b5-4d77-80b5-01acabfc9d16 2023-03-05 07:50:12,165 DEBUG OneIncLogger  [acc.oneinc.integration.OneIncDisbursementClient][updateOneIncProfile] OneInc Request: rest_data={"session":"kt3urmks0kj0gmv2vf7ls609e7",
+"str_json":"{\"PM_PaymentID\":\"1000047188\",\"PCON_ContactId\":\"bc:126658\",\"PCON_MobilePhone\":\"\",\"PCON_EmailAddress\":\"adventurefam@sbcglobal.net\",\"PM_CarrierId\":
+\"11b6f8a2-90e1-e272-bdc0-50f183ef6100\"}"}&method=UpdateProfile&input_type=JSON&response_type=JSON
+Mar  5 07:50:16 USEP0003AP003 prodapp03-OneIncLogger_bc usep0003ap003.ineic.net sys 9d881813-29b5-4d77-80b5-01acabfc9d16 2023-03-05 07:50:13,617 DEBUG OneIncLogger
+  [acc.oneinc.integration.OneIncDisbursementClient][updateOneIncProfile] OneInc Response: {"Status":"Error","Error Code":3,"Error Message":"PCON_MobilePhone Incorrect"}
+Mar  5 07:50:16 USEP0003AP003 prodapp03-OneIncLogger_bc usep0003ap003.ineic.net sys 9d881813-29b5-4d77-80b5-01acabfc9d16 2023-03-05 07:50:13,618 ERROR OneIncLogger 
+ [acc.oneinc.integration.plugin.OneIncTransport][send] One Inc message request with public ID bc:12778064 failed. Message will not be retried. Update Profile - John Brunner - bc:126658
+Mar  5 07:50:16 USEP0003AP003 prodapp03-OneIncLogger_bc John Brunner
+Mar  5 07:50:16 USEP0003AP003 prodapp03-OneIncLogger_bc Error: acc.oneinc.integration.exception.OneIncPaymentException: An error was returned when updating profile in One Inc. 
+                                                             Disbursement 1000047188, Status: Error, Error code: 3, Error message PCON_MobilePhone Incorrect
+Mar  5 07:50:16 USEP0003AP003 prodapp03-OneIncLogger_bc 	at acc.oneinc.integration.OneIncDisbursementClient.updateOneIncProfile(OneIncDisbursementClient.gs:373)
+Mar  5 07:50:16 USEP0003AP003 prodapp03-OneIncLogger_bc 	at acc.oneinc.integration.OneIncDisbursementClient.contactDisbursementUpdateProfile(OneIncDisbursementClient.gs:322)
+Mar  5 07:50:16 USEP0003AP003 prodapp03-OneIncLogger_bc 	at acc.oneinc.integration.plugin.OneIncTransport.send(OneIncTransport.gs:40)
+Mar  5 07:50:16 USEP0003AP003 prodapp03-OneIncLogger_bc 	at jdk.internal.reflect.GeneratedMethodAccessor152.invoke(Unknown Source)
+Mar  5 07:50:16 USEP0003AP003 prodapp03-OneIncLogger_bc 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Mar  5 07:50:16 USEP0003AP003 prodapp03-OneIncLogger_bc 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+Mar  5 07:50:16 USEP0003AP003 prodapp03-OneIncLogger_bc 	at com.guidewire.pl.system.integration.plugins.GosuPluginProxy.invoke(GosuPluginProxy.java:66)
+Mar  5 07:50:16 USEP0003AP003 prodapp03-OneIncLogger_bc 	at com.sun.proxy.$Proxy102.send(Unknown Source)
+Mar  5 07:50:16 USEP0003AP003 prodapp03-OneIncLogger_bc 	at jdk.internal.reflect.GeneratedMethodAccessor152.invoke(Unknown Source)
+Mar  5 07:50:16 USEP0003AP003 prodapp03-OneIncLogger_bc 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Mar  5 07:50:16 USEP0003AP003 prodapp03-OneIncLogger_bc 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+Mar  5 07:50:16 USEP0003AP003 prodapp03-OneIncLogger_bc 	at com.guidewire.pl.system.integration.plugins.PluginInvocationHandler.invoke(PluginInvocationHandler.java:48)
+Mar  5 07:50:16 USEP0003AP003 prodapp03-OneIncLogger_bc 	at com.sun.proxy.$Proxy102.send(Unknown Source)
+-----------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------PolicyCenter Contact BroadCast in AB--------------------------------------------
+If any message is stuck with following Error in Contact Menager: 
+java.lang.IllegalStateException: Cannot update the contact: ab:313 unless AutoSync is Allowed.
+
+1. Check whether AutoSync value in PC is NULL or Not using the below query.
+            select autosync,* from pc_contact where AddressBookUID in ('ab:406')
+			
+2. Create Azure ticket and ask infra team to run update query: Hi InfraTeam, Could you please execute the query mentioned in the ticket. 
+                                                               DevOps Ticket - USER STORY 42195(Sample Ticket Number - GEINC10348887). 
+
+       Execute a below SQL query in PC by giving the ID in where condition:
+
+            use electric_prod_pc;
+            update pc_contact set AutoSync=1 where autosync is null and AddressBookUID in ('ab:406')
+ 
+ 
+3. Create a Service Now ticket and once the query is executed, retry the message. 
+
+Ref : Hi InfraTeam, Could you please execute the query mentioned in the ticket. DevOps Ticket - USER STORY 52132 (04 March 2023) 
+
+-------------------------------------------------------PolicyCenter Contact BroadCast in AB_ID-70-----------------------------------------------
+pol - A6567675A1, a/c - 999169964 - 
+MENTIONED TWICE AS PRIMARY ADDRESS ...we have find a/c no.  by using name only in pc and cc.
+
+RITESH BHAMBHANI 
+java.lang.IllegalStateException: \ a : entity.Address -> a.AddressBookUID does not define a unique value across all elements of this Collection :
+ Element 5255 Blue Mountain Ln, Cumming, GA 30040 and element 5255 Blue Mountain Ln, Cumming, GA 30040 both h
+
+GEINC12071099 - Errored Guidewire Message Queue Payloads in AB - "PolicyCenter Contact Broadcast"   
+
+
+-> 03rd NOV 2022
+A/C - 999887556	
+AMANDA MORENO  - java.lang.IllegalStateException: \ a : entity.Address -> a.AddressBookUID does not define a unique value across all elements of this Collection : 
+Element 2606 Shady Acres, Houston, TX 77008 and element 2606 Shady Acres, Houston, TX 77008 both have the va
+
+
+Hi @Tom_Flynn - A message got stuck in the "PolicyCenter Contact Broadcast" message queue in Contact Manager for Contact "AMANDA MORENO".
+
+On further analysis, we could see that the contact "AMANDA MORENO" is having 2 primary address from PC for account number - 999887556. 
+Please find the attached screen-print for the same. Could you please correct this from PC so that we will retry the message from contact Manager.
+
+GEINC12071099 - updated in LN card.
+
+
+
+
+Please execute below query to set the stuck message to failed  for InsurPay MQ in PROD CC.
+
+use electric_prod_ab
+update ab_message set status=3 where DestinationID = 72 and publicid IN (ab:2666637,ab:2666639,ab:2666641,ab:2666716,ab:2666718,ab:2666720,ab:2666722,ab:2666724,ab:2666726)
+Service Now Ticket no. GEINC11509908 
+
+
+Invalid submission. Incident already exists.
+
+
+------------------------------------------------BillingCenterContactBroadCast in PROD AB---72--status is retrying-------unsend to faile then failed to retrable.--------------------------
+issue : one Message have an issue but we dont know the root couse. due to this all mesaage got stuck and message is not flowing. messages are getting increased in queue.
+        so we ask to infra team to run update query for issue msged(ab:2584454)below 1 query. query will update the status to failed of stuck message(ab:2584454).
+        initially after ran the update query , so tht query was blocked prod ab db.Generally it was a SELECT query which blocked in AB DB. now infra team kill the query and
+		we raise the ticket for this if they require or else with ticket then can be process. after kill the query we need to wait tht messge are flolg or not . if not 
+		flowing then w eneed to run again update query(1).and check msg are changed the status or not and msg are flowing or not. if this is also not work then 
+        finally we need to "Restart Messaging Engine" and thn let them(msg) to flow . if any msg in failed then run the update below query(2) to change the status
+		failed to retrable . then retry the msg . completed. 		
+
+		
+43065 - Needs to run update Query for Prod AB ,,,,3 = failed , 4 - retrayble,1 - pending/stuck
+
+1. Please execute below update query to set the status to failed for stuck message in PROD AB.
+           update ab_message set status=3 where DestinationID = 72 and publicid = 'ab:2584454'
+
+update ab_message set status=3 where DestinationID = 70 and publicid = 'ab:2606779'
+
+update pc_message set status=3 where DestinationID = 67 and publicid = 'pc:10595969'
+
+update ab_message set status=3 where DestinationID = 72 and publicid = 'ab:2674635'
+
+
+cibil - roi 9.75
+
+S68400909
+
+2. Please execute below query to set the Failed messages to retryable errors for BillingCenterContactBroadCast in PROD AB.
+    update ab_message set status=4 where DestinationID = 72 and status=3. 
+
+ update ab_message set status=4 where DestinationID = 70 and status=3. 
+
+
+
+Hi InfraTeam, Could you please execute the query mentioned in the ticket. DevOps Ticket - USER STORY 47136 --- 14th Nov 2022.
+  update ab_message set status=3 where DestinationID = 72 and publicid = 'ABCompany:2387'
+
+Hi InfraTeam, Could you please execute the query mentioned in the ticket. DevOps Ticket - USER STORY 47728 ---> 28nov 
+
+------------------------------------------------------MASRMVReporting message queue is going to suspended state in Production.--------------------------------------------------------------------------------
+
+Desc : MASRMVReporting message queue is going to suspended state in Production. please run the below query in prod CC DB to allow MASRMVReporting queue to resume.
+
+Create azure ticket and ask infra team to run this update query.(42179)
+Query : --> update cc_message set status=3 where DestinationID = 62 and status = 1			
+
+Could you please execute the mentioned query in the USER STORY 42179. - To infra team  
+------------------------------------------------------------------------------------------------------------------------------------------
+                Contact Manager ..status is retrying 
+ use electric_prod_ab
+
+select * from ab_message m where destinationiD=72  --and status=4  order by  pp.Policynumber
+
+
+
+
+use electric_prod_bc; select count(*) from bcx_cifrecorddata_ext with (nolock)
+                   select * from bc_processhistory with (nolock) where ProcessType in(10007) order by CreationDate desc
+
+--  use electric_prod_bc
+--select pp.PolicyNumber, m.beforeSendlocktime,m.ErrorDescription,m.EventName ,SendOrder from bc_message m
+--join bc_Policyperiod pp on m.EventRootKey ='PolicyPeriod:'+Cast(pp.id as varchar)
+--where destinationiD=100 and status=4  order by  pp.Policynumber
+
+-----------------------------------------------Document Generation--in BC -------------------------------------------------------------------------
+Guidewire Message Queue Payloads in BC - "Document Generation"
+
+Message got stuck due to --->  
+Account Number : 999861317 , event name - LEXMARK_INV_DUNNINGLETTER1
+Message Exceeded Retries
+gw.api.util.DisplayableException: java.lang.NullPointerException
+at com.guidewire.pl.system.typelist.TypeCodeAliasMap.buildKey(TypeCodeAliasMap.java:124)
+at com.guidewire.pl.system.typelist.TypeCodeAliasMap.getAliasesByInternal
+Insured
+
+old card manali has created and executed on 16th May  --> GEINC11456742
+created Leankit - GEINC12010302 
+
+After address has been updated then retry the msg. it should be flow successfully.else we need to write the script or debug it.
+
+
+------------integ prod db 
+use electric_prod_integ;
+select * from PD_DAILY_ACTIVITY where account_number = '999161873';
+---select TOP 5* from RENEWAL_QLIKVIEW where POLICY_number = 'H6518800H1';
+select * from PD_QLIKVIEW where account_number = '999161873';
+
+-------------------------------Release Document preparation---for DTE2 Environment-----------------------------------
+0. send mail after complted deployment for all DTE,DTE2,DEV2......check mail on 30th sept which i have send it.every friday i need to do.
+1. Download the lates document from Box  --->   https://app.box.com/folder/156949965005
+2. go to jenkins --> Click "Rel2DataTest" tab --> eic-datetest2-ab-deploy,eic-datetest2-bc-deploy,eic-datetest2-cc-deploy,eic-datetest2-pc-deploy and click on individual then click on 
+                                                  today build hyper date link from left side(like,Sep 30, 2022 3:11 AM) ---> click on details hyper --> it will show the changes --> 
+												  match those changes to SVN (V1012--> branches->modules -->right click and click on show logs)
+												  ---> copy the all changes into Release notes document , xcetres wise (ab,bc,cc,pc)
+3. similer we can do for portal also ---> AM,PE & QB  from SVN ---> digital 
+4. after complete the document then upload this document into Box or take sm1 help to upload it.
+												                                                   
+--------------------------------------------------ContactMessageTransport 67 in PC---queue is suspended aftr many try for resume it-----------------------------------
+1. check which mes is responsible for suspended 
+            use electric_prod_pc 
+                   select * from pc_message  where DestinationID = 67
+2. column BeforeSendTime ...appear like "2022-10-02 06:29:41.5930000" then this msg is responsible to stuck or suspend MQ 
+
+3. create azure ticket to run update query from pending/stuck message to failed  -->  "update pc_message set status=3 where DestinationID = 67 and publicid = 'pc:10874670'" 
+           ref Azure Ticket no. 45145
+		   
+4. after ran the query by infra team then msg will appear in UI as failed with count .		   
+5. From UI, wait for all msg are flown then skip failed mses. thats it. 
+
+
+107887 sept21(15261 ded)-->  92626 
+118160 oct21(19117) --> 99043
+124043  -> 100167
+
+dwaipayanghosh@hsbc.co.in ......033-
+
+
+
+
+update cc_message set status=3 where DestinationID = 50 and publicid = 'ccProd:3158002'
+ Please execute below query to set the stuck message to failed  for InsurPay MQ in PROD CC.
+
+use electric_prod_cc
+update cc_message set status=3 where DestinationID = 50 and publicid = 'ccProd:3158002'
+
+Service Now Ticket no. GEINC11509908   
+
+
+InsurPay	GEINC12248846	CC	Started	1	0	0	N	Analysis updated in the Leankit card.  
+
+
+
+-------------------------------------------------------SFDCObjectCreation_30-PC-------------------------------------------------------------------------------
+a/c - 999848818 ,PolicyPeriodChanged -A100018924, 09/05/2022, 09/05/2023, null 
+
+------------------------------------------------------Data Migration in PC----------------------------------------------------------------
+
+Data Migration - Failed on 5th Nov, At 3AM and once every hour between 6AM to 10AM 
+
+Batch process 'DataMigration_Ext' is already running
+com.guidewire.pl.system.exception.AlreadyRunningException: Batch process 'DataMigration_Ext' is already running
+at com.guidewire.pl.system.batchprocessing.BatchProcessManagerImpl.createLease(BatchProcessManagerImpl.java:384)
+at com.guidewire.pl.system.batchprocessing.BatchProcessManagerImpl.createBatchProcessStartRequest(BatchProcessManagerImpl.java:347)
+at com.guidewire.pl.system.batchprocessing.BatchProcessManagerImpl.startScheduledBatchProcess(BatchProcessManagerImpl.java:325)
+at com.guidewire.pl.system.scheduler.DistributedScheduler.startBatchProcess(DistributedScheduler.java:730)
+at com.guidewire.pl.system.scheduler.DistributedScheduler.checkSchedule(DistributedScheduler.java:606)
+at com.guidewire.pl.system.scheduler.DistributedScheduler$DistributedSchedulerService.run(DistributedScheduler.java:834)
+at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+
+java.io.FileNotFoundException: /datadrive/apps/softwares/jdk-11.0.16/jre/lib/security/cacerts (No such file or directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at j
+
+
+
+
+Build Manually 
+Dev2 --> ab,bc,pc,cc 
+         AM,PE,QB, (Build AB,BC,PC,CC---Deploy AB,BC,PC,CC) THEN Portal (Build- AM,PE,QB.......... Deploy - AM,PE,QB )
+		 
+Automatically Deployement
+DEV2 --> DEV-->DTE2--->QA-->DTE  
+
+if we do manually 
+first  build then deploy 
+
+
+
+Now Deployement  
+SIT ---> AB,BC,PC,cc   --> COMPLTED ,THEN PORTAL (Am done, PE done, QB done .........AM deploy done 69 ,PE done 63 ,QB done with build 64)
+
+and DEV2 --> AB,BC,cc,pc--> COMPLETED ,THEN PORTAL (Dev2 AM BUILD,PE BUILD AND QB BUILD................Dev2 AM DEPLOY 207,PE DEPLOY 160 AND QB DEPLOY 190)  
+
+
+QA2 ---> Stop then start BC (Project start_stop_applications_R2QA), daily 
+
+
+
+QAs_gw1223 --- su2
+SIT2 deployment steps:
+1. send mail
+2. Set upgrade flag for all x- centers from UI and suspend the queues and batches
+2. Disable replication for pc, ab, cc, bc, integ alone  --->  Project Replication_Disable_SIT
+3. Do deployment of xcenter in AB, BC, PC, CC in-sequence. or trigger SIT Pipeline
+      ->  am, gpa, qp   - not required (13th april)
+   verify the build numbers.
+4.Resume batches and MQ's
+5. Enable replication for pc, ab, cc, bc., integ alone
+
+https://mercury-pe1.ey.net/nwbc/ZEP3_FIN_TM_ENTRY_DYNPRO_MSTR/?sap-nwbc-node=root&sap-theme=ZCORBU&sap-client=200&sap-language=EN
+
+
+
+Failed  20220302A08,20220405A40,20220414A22,20220418A30,20220616B09,20220618A05,20220620A38,20220804A02,20220810A17,20220812A48,20221004A04,20221003A68,20221013A59
+,20221019A44,20221025A65,20221027A33,20221123A10,20221123A59,20221130A30
+
+Status in field ACORD/SignonRs/Status/StatusCd was incorrect: code = 310 (should be 0) description = Authentication Failure
+
+--------------------------------------------------REN pipeline 1--------------------------------
+
+The below deployment will trigger for REN pipeline 1
+
+REN_Build_Deploy_Pipeline_1 --> DEV_Deploy_Pipeline_IS --> QA_Deploy_Pipeline_IS_Portals --> DTE_Deploy_Pipeline_IS_Portals --> DTE2_Deploy_Pipeline_IS_Portals	
+   (Completed)                 (Completed)(AB,BC,PC,CC)                (Completed)                         In Progress                              TBR            
+
+1. Dev Deploy PC Unstable - completed 
+	 
+EYP@sswd1128 - EYMS2 and EYMS3 users for HF environment.
+
+ REN_Build_Deploy_Pipeline_1,DEV_Deploy_Pipeline_IS,QA_Deploy_Pipeline_IS_Portals ---> Completed 
+ DTE_Deploy_Pipeline_IS_Portals   ---> In progress
+ DTE2_Deploy_Pipeline_IS_Portals	--> will RUN after DTE Completion 
+ 
+ 
+ QuestInbound Bulk Invoice - failed 
+ 
+ partnergw.com 
+ 
+ 
+ E20246139-->
+ 
+ 
+ E20248705 --> QA .....umbrella policy 
+ 
+ 
+ 031-638182-872 - 226226.70 
+ 
+ 400910618010 - hsbc account , EMI - 13253
+ ifsc code - hsbc0400002, MG road mumbai ... 
+ neft 
+ 

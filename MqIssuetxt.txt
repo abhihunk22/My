@@ -1,0 +1,189 @@
+
+
+Hi @Tom_Flynn
+
+A message was  stuck in the Document generation queue because the Primary Insured address on Policy Period Contact was coming as null 
+
+Following the data related to which the message got stuck in Queue  :
+
+Policy Number = H6082416H1  Account Number = 999861317 
+ 
+ANN VITALE contact address is null in PC due to this BC has one stuck message in document generation. Attached the screenshot for the same.
+
+To make them flow , address needs to be updated for 999861317(Account) for contact ANN VITALE in PC so that contact will be flown to CM and BC. 
+Please make these changes in HF and if the results are fine then same changes can be made in prod.
+
+Once the address is updated for the above contact, we will retry document generation queue. 
+
+
+
+
+17760 ke upper gya , closed hua then upper pura ready to go
+
+6854 - bc defect
+
+
+
+PolicyNumber	beforeSendlocktime	ErrorDescription	EventName
+A100007750	2022-08-30 01:39:06.7050000	Expected to find one policy transaction but found 2	PAS_Rescind
+A100008881	2022-08-30 01:39:07.7290000	Expected to find one policy transaction but found 2	PAS_Rescind
+A100010301	2022-08-30 01:39:05.2070000	Expected to find one policy transaction but found 0	PAS_Rescind
+A6122383A1
+
+A100007750
+Canceling -0433292839 , Quoted - 0051916817
+
+A100008881
+Canceling -0001150007 , Quoted - 0048035854
+
+A6122383A1
+Canceling -0771269376 , Quoted - 0060074109
+
+
+Hi @Evan_Paradis - Please find the below cancellation transactions which needs to be withdrawn via script in PC.
+
+A100008881 - 0001150007 (Cancelling), 0048035854(Quoted)
+
+Please find the attached Gosu Script (GEINC9390508_WithdrawScript_08_30.gsp) for the above mentioned transactions and execute it on Prod PC.
+
+This script can be executed at any time, once this script is executed @Tom_Flynn / @Kevin_Mathews will verify the results
+
+--------------------------------------------------------------------------------------------------------------------
+
+15th nov  - 70 txns
+H6557267H1 = active BC, two cancel transactions pending in PC, please close with script --> 0106369159 (Cancelling), 0102774670(Draft)
+A100012924 = active BC, two cancel transactions pending in PC, please close with script--> 0104657081 (Cancelling), 0101091366(Draft)
+A5A25120A1 = active BC, two cancel transactions pending in PC, please close with script--> 0105237218 (Cancelling), 0114109856(Draft)
+H100011074 = active BC, three cancel transactions pending in PC,please close with script--> 0104812809(Cancelling),0101470096(Draft),0156266800(Quoted)
+H5045035H1 = active BC, two cancel transactions pending in PC, please close with script--> 0117267328(Cancelling), 0101381127(Draft)
+H6558208H1 = active BC, two cancel transactions pending in PC, please close with script--0105386740(Cancelling), 0114365007(Draft)
+A100000100 = active in BC, multiple cancel transaction in PC, please close with script--> 0277092197(Draft), 0270821550(Draft),0296221390(Draft)
+A100010555 = active in BC, multiple cancel transaction in PC, please close with script-->  0297401155(Cancelling), 0284276275(Draft),0265164182(Draft)
+A100011245 = active in BC, multiple cancel transaction in PC, please close with script--> 0118702107(Cancelling), 0102943970(Draft)
+A5A07230A1 = active in BC, multiple cancel transaction in PC, please close with script--> 0106509826(Cancelling), 0115843268(Draft)
+A5C04911A3 = active in BC, multiple cancel transaction in PC, please close with script--> 0282271195(Cancelling), 0282483432(Draft), 0264165045(Draft)
+A6002420A2 = active in BC, multiple cancel transaction in PC, please close with script-->  0294938818(Cancelling), 0276708343(Draft), 0268342458(Draft),0275906391(Draft)
+A6079485A2 = active in BC, multiple cancel transaction in PC, please close with script--> 0281929705(Cancelling), 0268251668(Draft), 0276635415(Draft),0263488240(Draft)
+A6162692A1 = active in BC, multiple cancel transaction in PC, please close with script--> 0289563940(Cancelling), 0272102449(Draft), 0277765709(Draft)
+A6412105A1 = active in BC, multiple cancel transaction in PC, please close with script--> 0295676327(Cancelling), 0282680882(Draft), 0276699661(Draft)
+A6503955A1 = active in BC, multiple cancel transaction in PC, please close with script--> 0284419978(Cancelling), 0271620387(Draft), 0277520775(Draft)
+A6552978A1 = active in BC, multiple cancel transaction in PC, please close with script--> 0106117949(Cancelling), 0102604095(Draft)
+A6553742A1 = active in BC, multiple cancel transaction in PC, please close with script--> 0117184823(Cancelling), 0101292923(Draft)
+H100000195 = active in BC, multiple cancel transaction in PC, please close with script--> 0296195872(Cancelling), 0264795201(Draft), 0270614415(Draft)
+H100005566 = active in BC, multiple cancel transaction in PC, please close with script--> 0297852076(Cancelling), 0265364450(Draft), 0272079152(Draft)
+H6277744H1 = active in BC, multiple cancel transaction in PC, please close with script--> 0105511101(Cancelling), 0102059969(Draft)
+H6303322H1 = active in BC, multiple cancel transaction in PC, please close with script--> 0293473300(Cancelling), 0267453653(Draft), 0274801646(Draft),0269511169(Draft),0274228124(Draft)
+H6546262H1 = active in BC, multiple cancel transaction in PC, please close with script--> 0118807782(Cancelling), 0103075767(Draft)
+P100000023 = active in BC, multiple cancel transaction in PC, please close with script--> 0283454034(Cancelling), 0276965800(Draft),0283149823(Draft)
+P9C65041P1 = active in BC, multiple cancel transaction in PC, please close with script--> 0280316742(Cancelling), 0279496689(Draft), 0274960927(Draft),0269688604(Draft),0274518917(Draft)
+
+16th Nov - 31 Txns
+H100012055 = active in BC, multiple cancel transaction in PC, please close with script- 0284280393(Cancelling), 0277433942(Draft),0284137675(Draft) ...no need to give now,withdrwan already 
+H100019393 = active in BC, multiple cancel transaction in PC, please close with script -  0288616904(Cancelling),0262312645(Draft),0278762781(Draft),0280952211(Draft),0267262183(Draft) ...all wrong entry was
+A100006114 = active in BC, multiple cancel transaction in PC, please close with script -  0106218147(Cancelling), 0115448683(Draft)
+
+A100008867 = active in BC, multiple cancel transaction in PC, please close with script -  0282405273(Cancelling), 0282405273(Draft),0270185643(Draft) ----> wrong here
+                                                                                          0282405273(Cancelling), 0264299048(Draft),0270185643(Draft)
+
+A100012007 = active in BC, multiple cancel transaction in PC, please close with script -  0281447633(Cancelling), 0287420288(Draft),0269901431(Draft),0263135885(Draft)
+A6014902A1 = active in BC, multiple cancel transaction in PC, please close with script -  0293879793(Cancelling), 0286540330(Draft),0267602520(Draft),0281416511(Draft),0275203370(Draft)
+
+A6443242A1 = active in BC, multiple cancel transaction in PC, please close with script -  0267051502(Draft), 0274351049(Draft),0274351049(Draft),0278265984(Draft),0272846090(Draft)----wrong
+                                                                                         0267051502(Draft), 0274351049(Draft),0280639284(Draft),0278265984(Draft),0272846090(Draft)  
+
+A6497205A1 = active in BC, multiple cancel transaction in PC, please close with script -  0285891819(Cancelling),0276309354(Draft),0290654624(Draft),0268893987(Draft)
+H100019129 = active in BC, multiple cancel transaction in PC, please close with script -  0106729919(Cancelling), 0116038480(Draft)
+
+ 
+17th Nov - 21 txns
+A100009714 = active in BC, multiple cancel transaction in PC, please close with script (2 transactions) - 0105057326(Cancelling), 0113984927(Draft)
+A100014845 = active in BC, multiple cancel transaction in PC, please close with script (3 transactions) - 0282564750(Cancelling), 0282588127(Draft),0264359159(Draft)
+A100015629 = active in BC, multiple cancel transaction in PC, please close with script (3 transactions) - 0296699799(Cancelling), 0277171039(Draft),0283556956(Draft)
+A4A04934A1 = active in BC, multiple cancel transaction in PC, please close with script (4 transactions) - 0285281324(Cancelling), 0263560689(Draft),0277126636(Draft),0268490388(Draft)
+H100010780 = active in BC, multiple cancel transaction in PC, please close with script (2 transactions) - 0117430125(Cancelling), 0101681622(Draft)
+H6422304H1 = active in BC, multiple cancel transaction in PC, please close with script (4 transactions) - 0285175320(Cancelling),0280398897(Draft),0276005877(Draft),0289679525(Draft)
+P9C00603P2 = active in BC, multiple cancel transaction in PC, please close with script (3 transactions) - 0283327200(Cancelling), 0270534173(Draft),0276877252(Draft)
+
+
+18th Nov - 30 txns
+H100019327 = active in BC, multiple cancel transaction in PC, please close with script (4 transactions) - 0285939917(Cancelling),0276402503(Draft),0290968863(Draft),0268917830(Draft)
+H6498299H1 = active in BC, multiple cancel transaction in PC, please close with script (3 transactions) - 0297964273(Cancelling),0284549880(Draft),0277959968(Draft)
+A100011255 = active in BC, multiple cancel transaction in PC, please close with script (2 transactions) - 0118904773(Cancelling),0115976846(Draft)
+A6032863A1 = active in BC, multiple cancel transaction in PC, please close with script (5 transactions) - 0293973703(Cancelling),0262824516(Cancelling),0269827761(Draft),0267772377(Draft)
+A6416429A1 = active in BC, multiple cancel transaction in PC, please close with script (5 transactions) - 0294394357(Cancelling),0275739885(Draft),0267928530(Draft),0282096373(Draft),0275938274(Draft)
+A6474493A1 = active in BC, multiple cancel transaction in PC, please close with script (3 transactions) - 0283021021(Cancelling),0264565034(Draft),0270348484(Draft)
+H100019186 = active in BC, multiple cancel transaction in PC, please close with script (2 transactions) - 0104796745(Cancelling),0113662304(Draft)
+H6474509H1 = active in BC, multiple cancel transaction in PC, please close with script (3 transactions) - 0289475257(Cancelling),0282900186(Draft),0276766435(Draft)
+P9C38640P1 = active in BC, multiple cancel transaction in PC, please close with script (3 transactions) - 0283122884(Cancelling),0270487954(Draft),0264698967(Draft)
+
+
+
+
+GEINC9390508
+Srivalli Vaddi
+11:51 AM
+Hi @Evan_Paradis - Please find the below cancellation transactions which needs to be withdrawn via script in PC. 
+
+H6535893H1 - 0213794605(Canceling), 0111315276(Quoted)
+
+Please find the attached Gosu Script (GEINC9390508_WithdrawScript_09_27.gsp) for the above mentioned transactions and execute it on Prod PC.
+
+This script can be executed at any time, once this script is executed @Tom_Flynn / @Kevin_Mathews will verify the results
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+11/13/2022  4.45am 
+
+null
+java.lang.NullPointerException
+at gw.surepath.cc.configuration.timeline.creation.TimelineUtil.registerCallback(TimelineUtil.gs:250)
+at rules.Preupdate.PolicyPreupdate_dir.PPU10000ClaimTimelineUpdate.doAction(PPU10000ClaimTimelineUpdate.gr:15)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at gw.rules.RuleSetBase.executeAction(RuleSetBase.gs:105)
+at gw.rules.RuleSetBase.executeRules(RuleSetBase.gs:144)
+at gw.rules.RuleSetBase._invoke(RuleSetBase.gs:61)
+at gw.rules.RuleSetBase._invoke(RuleSetBase.gs:44)
+at jdk.internal.reflect.GeneratedMethodAccessor176.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at gw.internal.gosu.runtime.GosuRuntimeMethods.invokeMethod(GosuRuntimeMethods.java:238)
+at rules.Preupdate.PolicyPreupdate.invoke(PolicyPreupdate.grs:11)
+at jdk.internal.reflect.GeneratedMethodAccessor931.invoke(Unknown Source)
+at java.base/jdk.internal
+
+
+
+
+
+
+H100019393 = active in BC, multiple cancel transaction in PC, please close with script -  0288616904(Cancelling),0262312645(Draft),0278762781(Draft),0280952211(Draft),0267262183(Draft) ...all wrong entry was
+A100006114 = active in BC, multiple cancel transaction in PC, please close with script -  0106218147(Cancelling), 0115448683(Draft)
+
+A100008867 = active in BC, multiple cancel transaction in PC, please close with script -  0282405273(Cancelling), 0282405273(Draft),0270185643(Draft) ----> wrong here
+                                                                                          0282405273(Cancelling), 0264299048(Draft),0270185643(Draft)
+
+A100012007 = active in BC, multiple cancel transaction in PC, please close with script -  0281447633(Cancelling), 0287420288(Draft),0269901431(Draft),0263135885(Draft)
+A6014902A1 = active in BC, multiple cancel transaction in PC, please close with script -  0293879793(Cancelling), 0286540330(Draft),0267602520(Draft),0281416511(Draft),0275203370(Draft)
+
+A6443242A1 = active in BC, multiple cancel transaction in PC, please close with script -  0267051502(Draft), 0274351049(Draft),0274351049(Draft),0278265984(Draft),0272846090(Draft)----wrong
+                                                                                         0267051502(Draft), 0274351049(Draft),0280639284(Draft),0278265984(Draft),0272846090(Draft)  
+
+A6497205A1 = active in BC, multiple cancel transaction in PC, please close with script -  0285891819(Cancelling),0276309354(Draft),0290654624(Draft),0268893987(Draft)
+H100019129 = active in BC, multiple cancel transaction in PC, please close with script -  0106729919(Cancelling), 0116038480(Draft)
+
+
+
+
+

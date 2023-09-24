@@ -1,0 +1,1166 @@
+
+ALM ---> Your user name is: AKumar , Your temporary password is: QC@22ext 
+
+Sign in [Jenkins] - Jenkins  --> http://172.22.0.11:8080/login?from=%2F
+Abhimanyu.Kumar
+mdW8L$q5&o
+
+
+https://app.box.com/login?redirect_url=https%3A%2F%2Fapp.box.com%2Fs%2Fh6m0u3hgcb6ffh6vdii50hbcx4ouokr3  
+user - sushmitha.ravichandran@gds.ey.com
+Pass - Giriharan@19     ---> BOX 
+
+05121984 = 30 = 3
+11101982 = 23 = 5/1
+
+env sit2,hf,dte2 (pc,bc,cc , not ab for dte2)---> set upgrade flag
+prod app,prod activity, --- process suspend batches n queues 
+
+051284638182,     031-638182 006  , HSBC0700004
+
+QA2 - BC restart --->  mon , wed and fri 
+
+---------------------card details for payment ------------------------------------> 
+Please find the test card details
+
+CC/DB
+MasterCard: 5454 5454 5454 5454
+Visa: 4444 4444 4444 4448
+Exp Dt: Any
+CVV: Any
+Name: Any
+
+CC Only
+AMEX: 343434343434343
+Discover: 6500 0000 0000 0002
+Exp Dt: Any
+CVV: Any
+Name: Any
+
+ACH: Routing#: 311093120 Account#: 506273234
+----------------------------------------------------------------------------------
+Portal URL's  -    AM, QB, PE
+
+Condo Owner - HO6 
+RENTER - HO4
+
+nrnagappan - 
+
+62946,Harrisburg, IL --> landlordhouse_ext
+
+
+user - su2
+pass - EIC@3456
+
+QnB – V10:
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=62946&lobCode=Homeowners&policyType=renter 
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=65101&lobCode=Homeowners&policyType=homeowners
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=62946&lobCode=Homeowners&policyType=landlordcondo_ext
+
+QnB – V5:
+https://gwqa2.electricinsurance.com/quote-portal/html/#/eicquoteentry?zip=62946&lobCode=Homeowners&policyType=renter
+
+
+QnB – V10:
+https://gwdev2.electricinsurance.com/quote-and-buy - Apart from Home LOB
+
+
+
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=85086&lobCode=Homeowners&policyType=condounitowner
+
+Home Owners:
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=65101&lobCode=Homeowners&policyType=homeowners  - ho3 
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=62946&lobCode=Homeowners&policyType=landlordhouse_ext 
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=62946&lobCode=Homeowners&policyType=condounitowner
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=62946&lobCode=Homeowners&policyType=landlordcondo_ext
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=62946&lobCode=Homeowners&policyType=renter
+
+QnB – V5: 
+	
+https://gwqa2.electricinsurance.com/quote-portal/html/#/zipCode - Apart from Home LOB
+
+Home Owners:
+https://gwqa2.electricinsurance.com/quote-portal/html/#/eicquoteentry?zip=62946&lobCode=Homeowners&policyType=renter
+https://gwqa2.electricinsurance.com/quote-portal/html/#/eicquoteentry?zip=62946&lobCode=Homeowners&policyType=homeowners
+https://gwqa2.electricinsurance.com/quote-portal/html/#/eicquoteentry?zip=37013&lobCode=Homeowners&policyType=condounitowner
+https://gwqa2.electricinsurance.com/quote-portal/html/#/eicquoteentry?zip=62946&lobCode=Homeowners&policyType=landlordcondo_ext
+https://gwqa2.electricinsurance.com/quote-portal/html/#/eicquoteentry?zip=62946&lobCode=Homeowners&policyType=landlordhouse_ext
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=65101&lobCode=Homeowners&policyType=homeowners  - ho3 ...06103
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=62946&lobCode=Homeowners&policyType=landlordhouse_ext 
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=62946&lobCode=Homeowners&policyType=condounitowner
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=62946&lobCode=Homeowners&policyType=landlordcondo_ext - done with ...sit2..62946
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=62946&lobCode=Homeowners&policyType=renter
+
+-------------------------------------6637----------------------------------------------------------------------
+1.	LobCode=Homeowners & Policy Type = landlord condo  --- done 
+2.	LobCode=Homeowners & PolicyType=homeowners  ---- done 
+3.	lobCode=Homeowners&policyType=landlordhouse_ext ---- PROGRESS
+4.	lobCode=Homeowners&policyType=condounitowner
+5.	lobCode=Homeowners&policyType=renter
+
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=60426&lobCode=Homeowners&policyType=landlordhouse_ext 
+
+2213	2.02005E+14	MICHAEL	S	SKYZLXN		666505077	05-01-1959		177	E 153RD ST		HARVEY	IL	'604263250'	177	E 153RD ST		HARVEY	IL	'60426'			
+								2.02005E+14	H	BANK OF AKRON		27-06-2020	U		0		
+								0	O										
+								
+
+
+
+
+
+
+
+
+
+https://gwsit2.electricinsurance.com/quote-and-buy/?zip=06103&lobCode=Homeowners&policyType = homeowners  
+https://gwqa2.electricinsurance.com/quote-portal/html/#/eicquoteentry?zip=06103&lobCode=Homeowners&policyType=homeowners = homeowners 
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=06103&lobCode=Homeowners&policyType=landlordhouse_ext   = landlordhouse_ext 
+
+
+https://gwqa2.electricinsurance.com/quote-portal/html/#/eicquoteentry?zip=60426&lobCode=Homeowners&policyType=landlordhouse_ext
+
+2554	2.02005E+14	PATRICIA	A	KKXYJEE		666684490	15-11-1968		944	X 749YR ST		HARVEY	IL	'60426'	944	X 749YR ST		HARVEY	IL	'60426'	
+										2.02005E+14	H			11-02-2019	U		1252		
+	
+									1252	C	
+
+valid data for V5 onle -- Virginia(VA)									
+185	92325	BRININGER		CLARK		666117525	01-01-1946	M	T67359201	16457	CANYON DR		ABINGDON	VA	
+'24211'	BRININGER	CLARK	666117525	01-01-1946	M	T67359201	16457	CANYON DR		ABINGDON	VA	
+'242117425'	1FABP29U4GG204264	FORD TAURUS	1986	2.00809E+17	23-02-2020	23-02-2020		779				
+											779	C														
+
+									
+
+Arkansas 	Abhimanyu
+
+California 	Abhimanyu - done , issue with v5 --------------------
+
+DC  	Abhimanyu - data issue -------------------
+
+Maine     V11 – Ran into error moving from Vehicle to Quote Screen 
+
+Maryland   - Custom Price differs between v5 and v11 
+
+Massachusetts  -  V11 – Unable to move to Quote Screen 
+
+Virginia -  No inconsistencies found -->V11 , Please contact us error screen when trying to move from Vehicle  to Quote Screen 
+            v5 quote but in v11 having issue with unable to quote "Please contact us at Sales@ElectricInsurance.com or at 800.373.5793 "----------------
+			
+
+Rhode Island   Coverages shown in Quote Screen differ
+V5 – Unable to re-quote successfully error screen when trying to proceed from Policy Info screen 
+V11 – Quote price is missing. Please contact us error screen when trying to move from Quote to Policy Info 
+
+
+https://gwsit2.electricinsurance.com/quote-portal/html/#/eicquoteentry?zip=62946&lobCode=Homeowners&policyType=landlordcondo_ext
+	https://gwqa2.electricinsurance.com/quote-portal/html/#/eicquoteentry?zip=62946&lobCode=Homeowners&policyType=landlordcondo_ext
+
+https://gwsit2.electricinsurance.com/quote-and-buy/ --> V11 ,
+https://gwqa2.electricinsurance.com/quote-portal/html/#/zipCode ---> V5
+
+
+6843 - Condo Quote page Option for monthly breakdown - done (quote is not in V5)
+
+6849 - Description of Issue: Condo - Quote Page - Coverage Package Should be at the top of the screen
+       Expected Result: Coverage package should be displayed at the top of the screen - Done same as 6843 screenshots - done 
+
+6637 - Description of Issue: Quote page on homeowners form (HO2, HO3, HO5, HO8) Help text is missing from V11. All help text should be in V11 that is in V5. 
+       Expected Result: See help icons (?) with help text when you hover over it.
+
+5XYKUDA21DG367493....
+
+dev2 - mon , wed - 24th Aug Automatic deployement.. 9.30am monitor 
+sit - fri
+dev2,dte2 - 
+-------------------------------------Priority Work on 22nd Aug----worked at 2.00 am night-----------------------------------------------------------
+1. Illinois 	Abhimanyu - done  ...Illinois  - Some coverages differ between v5 and v11. Quote prices are different.  - done 
+
+2. Maine  V11 – Ran into error moving from Vehicle to Quote Screen ...1G6KD54Y9XU757303 - done 
+
+3. Maryland  - DONE 
+Custom Price differs between v5 and v11 
+V11 – Missing some coverages that are in v5. “Monthly/Paid In Full” option is displayed. ---1N4BLABV6LC125156
+                             
+4. Michigan - done 
+V5 – Quote declines after clicking Next on Vehicle screen 
+V11 – Navigates to Driver Screen after clicking Next on Vehicle Screen. Fails after clicking Next on Driver.  --> 
+
+5. New Hampshire - Some coverages differ between v5 and v11. Quote prices are different. ---1C3CDZBG8DN504146  - done 
+                   Payment Plan Discount has 3 differents payment plans in quote screen in V15 and V11 has one option..
+                    Payment Plan Discount has 3 differents payment plans in quote screen in V5 and V11 has one only one option..
+					Monthly/Paid In Full” option is displayed.
+
+Custom Price differs between V5 and V11
+Uninsured Motorist-Property Damage Coverage is missing in V11        020425285
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+AMP – V10:
+https://gwdev2.electricinsurance.com/account-management/home
+
+AMP – V5:
+https://gwqa2.electricinsurance.com/idp/login?postbackUrl=%2Faccount-management-portal%2Fhtml%2F#/home
+
+GPA – V10
+https://gwdev2.electricinsurance.com/producer-engage/login-page
+
+GPA – V5:
+https://gwqa2.electricinsurance.com/idp/login?postbackUrl=%2Fgateway-portal%2Fhtml%2F#/home
+
+Box Link  - Test Data:
+https://ge.box.com/v/R3-States-LN-Test-Data   
+
+user - sushmitha.ravichandran@gds.ey.com
+Pass - Giriharan@19
+
+https://ge.box.com/s/4h36wy9af5cmfxwbfsd94ogpha3splsv
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+6622	ReOpen	csanwarali	Q & B Portal	Abhimanyu
+6623	ReOpen	csanwarali	Q & B Portal	Abhimanyu
+
+Defect # || LOB || Product  ---> 6622||AUTO||QB 
+
+
+
+6392 - Description of Issue:IN Q&B, The Quote Declined message is not displayed in V11 when a Quote is rejected
+       Expected Result: The Quote Declined message to bes displayed as in V5
+       Actual Result:Please Contact Us Error is displayed
+
+6737 - with anwar
+
+-----------------------------------------------------------------------------------------------------------------------
+
+6831 - AM Portal - File a claim - Confirmation screen is mismatching between V5 and V11 
+                  Description of Issue: AM Portal - File a claim - Confirmation screen is mismatching between V5 and V11  - Completed send mail to Anwar  
+   
+Expected Result: Confirmation screen should match with V5 and V11
+Actual Result: Confirmation screen is not matched with V5
+Policy output/ snapshot of issue included - Yes/No: yes, please have a look at the attachment [Attachment: AM - File a claim - Confirmation screen.docx]
+  
+ 
+
+
+6443  -->  In, Q&B: Payment Page, When a Payment Plan discount is selected in Quote page, only that Payment Plan should be displayed in Payment details, 
+             but in V11 all the available options are displayed when a payment plan discount is selected ----> Not Done, getting quote issue.mail to anwar with attachment.
+
+6716 - Q&B Auto - Payment Successful/ Purchase Confirmation page missing details and ID card generation requirements
+
+99017	5425	CATHLEEN		FULLER		666663174	01-01-1968	F	B13527197	40949	N COURAGE TRL	
+	ANTHEM	AZ	'85086'	BARBARA	FULLER					40949	N COURAGE TRL		ANTHEM	AZ	'850862537'	YV1LS5379W1461563	
+	VOLVO S70	1998	2.00809E+17	23-02-2019	23-02-2019	N	6752			6752	C					
+	0	C														
+
+-------------------------------------19th Aug--------------------------------------------------------------
+
+6637 - 
+Description of Issue: Quote page on homeowners form (HO2, HO3, HO5, HO8) Help text is missing from V11. All help text should be in V11 that is in V5. 
+Expected Result: See help icons (?) with help text when you hover over it. 
+
+6635 - Quote Page - Homeowners (ex HO3) - doesnt have * to show what questions are mandatory. Expected Result: * show what fields are mandatory - done
+
+6645 - Description of Issue: Quote page for Homeowners (ex HO3) has "additional limit" for Coverage A-D. "Additional Limits should not be shown in the UI. - done 
+       Just the main coverages should appear. Expected Result: No addtional limits are shown.
+
+6648 - Description of Issue: Quote page for HomeownersLoss setlement for windstorm or hail losses to roof surfacing question should be a read only field. - done 
+        In V11 it has a dropdown with options. It should just be read only and show replacement cost.  Expected Result: Read only
+
+-----------------------------------------20th Aug----------------------------------------------------------------------
+6843 - Condo Quote page Option for monthly breakdown - done (quote is not in V5)
+
+6849 - Description of Issue: Condo - Quote Page - Coverage Package Should be at the top of the screen
+       Expected Result: Coverage package should be displayed at the top of the screen - Done same as 6843 screenshots
+
+6637 - Description of Issue: Quote page on homeowners form (HO2, HO3, HO5, HO8) Help text is missing from V11. All help text should be in V11 that is in V5. 
+       Expected Result: See help icons (?) with help text when you hover over it.
+-------------------------------------24th Aug---------------------------------------------------------------------
+Q & B Portal-3-High	6632	Fixed	-- Description of Issue: Quote page for homeowners form (Ex HO3) is showing premium broken down by month in V11. It should show yearly premium.
+                                       Expected Result: Yearly premium amount on quote page
+									   Actual Result: Monthly premium amount shown. 
+									   
+Q & B Portal	3-High	6647	ReOpen	revathy doing -- Description of Issue: Quote Page for Homeowners (ex. HO3) - Coverage package should have 3 options in the dropdown.
+                                                                 It currently only has "Homeowners Plus" as a dropdown option. It should have "Basic", "Homeowners Plus" and 
+																 "Premiere Choice". The default for the UI should be "Homeowners Plus" but the other options must be avaliable
+																 for the user to select. 
+                                           Expected Result: 3 options for Coverage Package question and default to Homeowners Plus
+                                           Actual Result:Only option is Homeowners plus
+Dev2 V10/11 - https://gwdev2.electricinsurance.com/quote-and-buy/?zip=06103&lobCode=Homeowners&policyType=homeowners 
+Sit2 V5     - https://gwqa2.electricinsurance.com/quote-portal/html/#/eicquoteentry?zip=62946&lobCode=Homeowners&policyType=homeowners
+
+										   
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=10512-6002&lobCode=Homeowners&policyType=homeowners    ,  212609833 ,10512-6002
+	   
+	   06103
+	   65101
+-----------------------------------------------------------------------------------------------------------
+11026	2.02005E+14	MARY	L	YZGTK		666768693	22-07-1973		2920483240	1506	LA HACIENDA CT		
+JEFFERSON CITY	MO	'65101'	MARY	YZGTK	666768693	22-07-1973		2920483240	1506	LA HACIENDA CT	
+	JEFFERSON CITY	MO	'651013793'	1FAHP2E89HG140050	FORD TAURUS	2017	2.02005E+14	17-09-2020		
+	4500	1500	C	3000	C																
+
+	
+
+java.lang.IllegalStateException: Cannot update the contact: ab:406 unless AutoSync is Allowed. 
+Yet to start the Analysis.
+
+
+ Account Number : 999861317 , event name - LEXMARK_INV_DUNNINGLETTER1
+Message Exceeded Retries
+gw.api.util.DisplayableException: java.lang.NullPointerException
+at com.guidewire.pl.system.typelist.TypeCodeAliasMap.buildKey(TypeCodeAliasMap.java:124)
+at com.guidewire.pl.system.typelist.TypeCodeAliasMap.getAliasesByInternal
+Insured
+
+
+
+
+1. Domicilliary claim or submit claim 
+ernstandyoung@mediassit.in 
+---Autism or Development disability covered under OPD Basis including behviour therapy,physiotherapy,OT(Occupational Therapy),speech therapy etc..
+
+Autism or Development disability,behviour therapy,physiotherapy,OT(Occupational Therapy),speech therapy etc..
+
+Autism or Development disability,behviour therapy,physiotherapy,OT,Occupational Therapy, speech therapy etc.
+
+
+92308 -- ZIP Code 
+99017	7893	MARIA		PATTERSON		666489765	06-04-1955	F	A0246468(DL no.)	
+
+21259	ROSEWOOD ST		APPLE VALLEY	CA	92308'	DAVID	ROJAS	
+									
+	JT3HP10VXV0132467	TOYOTA RAV4	1997	2.00809E+17	24-11-2015	24-11-2015		29020			5452	C							11193	C							375	C					12000	C				
+
+
+
+99017	7893	MARIA		PATTERSON		666489765	06-04-1955	F	A0246468	21259	ROSEWOOD ST		APPLE VALLEY	CA	92308'	DAVID	ROJAS								
+
+JT3HP10VXV0132467	TOYOTA RAV4	1997	2.00809E+17	24-11-2015	24-11-2015		29020			5452	C							11193	C							375	C					12000	C				
+
+
+
+99016	2.02005E+14	JEANNE	A	AAYTPA		666799936	14-04-1950		D1921565(DL No.)
+	476	BDVVXETXH DR		AUBURN	CA	'95603'	JEANNE	AAYTPA	666799936	14-04-1950		D1921565
+	476	BDVVXETXH DR	14	AUBURN	CA	'95603'	19XFC2F59JE042241	HOND CIVIC	2018	
+	2.02005E+14	17-09-2020		A	2000			1000	C											1000	C														
+
+62946  --> zipCode
+99109	2.02005E+14	MARY	J	FXHPXZ		666701861	10-06-1970		S26334941148(DL No.)	
+422	W LINCOLN ST		HARRISBURG	IL	'62946'	MARY	FXHPXZ	666701861	10-06-1970	
+	S26334941148	422	W LINCOLN ST		HARRISBURG	IL	'629462010'	1C4PJMLX2KD185725	
+	JEEP CHEROKEE	2019	2.02005E+14	17-09-2020	25-06-2016	A	30756	9500	C	16193	C	
+	4474	C	589	O												
+
+1511 -- IL Zipcode
+422	2.02005E+14	MARY	J	FXHPXZ		666701861	10-06-1970		422	W LINCOLN ST		HARRISBURG	IL	'629462010'	422	W LINCOLN ST
+		HARRISBURG	IL	'62946'											2.02005E+14	H			02-08-2018	U		0		
+		0	C														
+		
+		
+	
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=06103&lobCode=Homeowners&policyType=homeowners   -  06103
+
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=62946&lobCode=Homeowners&policyType=landlordhouse_ext
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=62946&lobCode=Homeowners&policyType=condounitowner
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=62946&lobCode=Homeowners&policyType=landlordcondo_ext
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=62946&lobCode=Homeowners&policyType=renter	
+		
+		
+		
+	
+
+https://gwsit2.electricinsurance.com/quote-and-buy/ --> V11 ,
+https://gwqa2.electricinsurance.com/quote-portal/html/#/zipCode ---> V5
+
+
+		
+		
+		200	18022	DAVID	RAY	ALAVI		666651231	24-04-1950	M	709	WASHINGTON ST S		HARRISBURG	IL	'62946'	709	WASHINGTON ST S		HARRISBURG	IL	'62946'	
+		DAVID	ALAVI				2.00809E+17	H	JPMORGAN CHASE BANK N A	22389	12-05-2020	U	N	686				
+		686	C												
+
+
+
+		
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		90445	2.02005E+14	DAVID	R	GKDXF		666707485	02-01-1970		818	W OGARA ST	
+		HARRISBURG	IL	'629462511'	818	W OGARA ST		HARRISBURG	IL	'62946'					
+		2.02005E+14	H			17-04-2019	U		17684										
+		17684	C																																																						
+
+Jane Doe Bvn, Hartford, CT 06103
+PC Dev2-
+E80001770, Submission 0002011544
+
+
+0001215648
+0001215648
+
+0001460120,	0001545929
+
+
+GPA – V10
+https://gwdev2.electricinsurance.com/producer-engage/login-page
+
+GPA – V5:
+https://gwqa2.electricinsurance.com/idp/login?postbackUrl=%2Fgateway-portal%2Fhtml%2F#/home
+
+
+
+Abhimanyu - Dev2 and SIT2	Retest	6549
+
+GPA Portal_ Open Submissions(Quotes)Tab_While creating a new quote for an existing customer_ Product field  is named as product code in SIT2
+
+
+Description of Issue:GPA Portal_ Open Submissions(Quotes)Tab_While creating a new quote for an existing customer_ Product field is named as product code in SIT2
+  
+Expected Result:Product should be displayed in SIT2
+ 
+ Actual Result: Product Code is displaying in SIT2
+ 
+ 
+	Only “Product” field name is getting displayed
+	
+	15k = 60k 
+	
+	Description of Issue:
+'6749 - GPA Portal_New Quote_Yacht option is displayed in Product code dropodown which is not available in version5
+ 
+Expected Result:
+While creating a new quote, Yacht option should not get displayed in Product dropdown
+
+
+6565 - GPA Portals_Landing page _Policies_Open Submissions Created Tab_ Columns are mis matching with Version5
+Description of Issue:GPA Portals_Landing page _Policies_Open Submissions Created Tab_ Columns are mis matching with Version5
+ 
+ 
+Expected Result:Columns should not be mismatch in V11 when compared to V5 
+ 
+Actual Result:Columns are mismatching in V11 when compared to version V5
+ 
+ 
+Policy output/ snapshot of issue included - Yes/No:yes,Please have a look at the attachment.
+
+
+6913	Abhimanyu	3-High	AM Portal - GW Upgrade
+
+6913 - AM Portal-Home LOB-Summary screen-File a claim-Unable to submit a claim due to an error popup
+Description of Issue: AM Portal-Home LOB-Summary screen-File a claim-Unable to submit a claim due to an error popup
+
+Testdata: T1660908409133
+
+Expected Result:  AM Portal-Home LOB-Summary screen-File a claim-User should be able to submit a home claim without any errors
+Actual Result: AM Portal-Home LOB-Summary screen-File a claim-Unable to submit a claim due to an error popup
+
+
+AMP – V10:
+https://gwdev2.electricinsurance.com/account-management/home
+
+AMP – V5:
+https://gwqa2.electricinsurance.com/idp/login?postbackUrl=%2Faccount-management-portal%2Fhtml%2F#/home
+
+
+ClaimCenter Contact Broadcast
+NATALIA GOREGLIAD
+
+6565	Abhimanyu
+6567	Abhimanyu - 
+6568	Abhimanyu
+6569	Abhimanyu
+
+
+
+GPA – V10
+https://gwdev2.electricinsurance.com/producer-engage/login-page
+
+GPA – V5:
+https://gwqa2.electricinsurance.com/idp/login?postbackUrl=%2Fgateway-portal%2Fhtml%2F#/home
+
+
+bajajAllianz - 12saal ,,,13 saal se ..305000, 24l invest  .. 30 saal  ----2052 
+2033---24lac
+2035 --> 305000......17/18 - 2460 , 24 = 4860000
+
+99053	26724	MARY		HENDERSON		666594126		F	H65128159271	103	TIMBER CT	
+	ASHKUM	IL	'60911'	MARY	HENDERSON	666594126		F	H65128159271	103	TIMBER CT	
+	ASHKUM	IL	'609119688'	1Y1SK52881Z420164	CHEVROLET PRIZM	2001	2.00809E+17	28-12-2018	06-02-2019	
+	45																							45	C	
+	
+
+37400
+
+1lac ---> 150000....
+
+
+27k, starhealth...
+
+
+i- 8649
+h- 82774
+s- 88473
+s sbc - 55,646.99
+-------------------------------------------------------------------------------------------------------------------------------
+AMP – V10:
+https://gwdev2.electricinsurance.com/account-management/home
+
+AMP – V5:
+https://gwqa2.electricinsurance.com/idp/login?postbackUrl=%2Faccount-management-portal%2Fhtml%2F#/home
+
+ 
+ 6584 - GPA Portal_Quote Summary_There is a mismatch in UI of Quote summary in V11 compared to V5
+         Description of Issue:GPA Portal_Quote Summary_There is a mismatch in UI of Quote summary in V11 compared to V5 - 
+         Expected Result:The Quote Summary Screen of V11 should match the screen in V5
+         Actual Result:There is a mismatch in UI of Quote summary in V11 compared to V5   
+		 
+99019	2.02005E+14	DAVID	R	GKDXF		s	02-01-1970		H91075748066	818	W OGARA ST
+	HARRISBURG	IL	'62946'	DAVID	GKDXF	666707485	02-01-1970		H91075748066	818	W OGARA ST	
+	HARRISBURG	IL	'629462511'	1C4RJEAG2JC338996	JEEP GRAND CHEROKEE	2018	2.02005E+14	17-09-2020	
+	A	2500	1500	C													1000	C				
+	
+	99019	2.02005E+14	DAVID	R	GKDXF		666707485	02-01-1970		H91075748066(dl NO.)	818	W OGARA ST	
+	HARRISBURG	IL	'62946'	DAVID	GKDXF	666707485	02-01-1970		H91075748066	818	W OGARA ST		
+	HARRISBURG	IL	'629462511'	1C4RJEAG2JC338996	JEEP GRAND CHEROKEE	2018	2.02005E+14	17-09-2020	
+	A	2500	1500	C													1000	C														
+
+
+
+6877- AM Portal - Policy Change - Policy changes screen mismatch between V5 and V11 
+     Description of Issue: AM Portal - Policy Changes Screen
+               Issue#1: V5 Sub header name : Set Date of change , V11 Subheader name : Policy Change Effective Date"
+               Issue#2: V5  : Select changes, V11 : Select type of changes
+               Issue#3: V11 Name  of the check boxes (Changes) are different from V5 and V11
+
+V5 field names: 
+	
+Vehicles
+Drivers
+Coverages
+ 
+ V11 field names:  
+Address change
+Add,Edit or Remove Driver
+Add,Edit or Remove Vehicle
+Coverage change
+
+Expected Result: V11 should be a match with V5 
+ 
+Actual Result: V11 is not matching with V5
+
+
+
+6882 - AM Portal - Policy Change - Vehicles screen mismatches between V5 and V11    ---> Leave the testing for 6877 and 6882,It was tested by austin,ALM is not updated
+      Description of Issue: AM Portal - Policy Change - Vehicles screen
+      Issue#1: Text "Edit the vehcile details below, then press "continue" button" below the Vehicles header is displayed in V5 but not in V11
+      Issue#2: Under vehicle usage section, percentage usage of driver is displayed in the form of table in V11 but not in V5.
+                    Also, Table is NOT alligned correctly
+
+Expected Result: V11 should be a match with V5
+Actual Result: V11 is not matched with V5
+
+
+
+
+-----------------------------------------------------------------------30 Aug-----------------
+AMP – V10:
+https://gwdev2.electricinsurance.com/account-management/home
+
+AMP – V5:
+https://gwqa2.electricinsurance.com/idp/login?postbackUrl=%2Faccount-management-portal%2Fhtml%2F#/home
+
+6920 - AM Portal : Address Broker (verisk) call not made for address changes   --> Done
+              
+Steps:
+1. Open AM Portal 
+2. Make Address Changes
+3. Enter incorrect city or Zip (there is a possiblity user can made typo)
+4. Navigate to next screen
+
+Actual Result : Verisk Call is not initiated during address related changes (Refer slide #4 inthe attachment)
+Expected Resuult: Verisk call should be made and system should recommend the correct (nearby matching address) 
+
+Refer v5 (1minute 25 seconds) - https://ge.ent.box.com/file/997330970491
+
+
+6882 - AM Portal - Policy Change - Vehicles screen mismatches between V5 and V11
+                  Description of Issue: AM Portal - Policy Change - Vehicles screen
+Issue#1:
+Text "Edit the vehcile details below, then press "continue" button" below the Vehicles header is displayed in V5 but not in V11
+
+Issue#2:
+Under vehicle usage section, percentage usage of driver is displayed in the form of table in V11 but not in V5.
+Also, Table is NOT alligned correctly
+
+-------------------------------------------------------------------31st Aug -------------------------------------------------------------------
+QB Portal 6843 - Condo Quote page Option for monthly breakdown - done (quote is not in V5) --->Reopen  ---> Done --pass
+QB Portal 6815 - Renters Coverage Display - Quote Page - Coverages need to be listed in dollar amounts. Not %.  --->Reopen - failed
+                 https://gwdev2.electricinsurance.com/quote-and-buy/?zip=62946&lobCode=Homeowners&policyType=renter
+				 
+QB Portal 6644 - Quote Page for Homeowners (ex HO3) Coverage A, C and D should show the actual dollar amounts. In V11 it is showing %. 
+                 Coverage B should be the only coverage that is shown as a %. 
+				  comments - none of the check boxes are clickable under porperty coverage for both HO3 policy and landlordhouse_ext. amount also not reflected for all coverages.
+				  
+		  
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=85086&lobCode=Homeowners&policyType=landlordhouse_ext
+
+
+AM Portal 6543 - GW Upgrade::AM Portal:In the Side bar when the hyper link "Get a Homeowner Quote " is clicked it is not navigating to Q&B Application in V11				 
+                 ---> not sure whether m following correct steps or not,. Get A New Policy Quote is not working for me in both DEV2 or as well in SIT2.
+
+AM Portal 6424 - AM Portal - Home Screen - Document section is missing in V11   ---> passed in both SIT2 and DEV2 
+                             Description of Issue: AM Portal - Home Screen - Document section is missing in V11 
+                            1. Launch the AM Portal
+                            2. Reach to 'Home Screen'
+                            3. Verify the Documents Section
+                            Expected Result: Documents section should be present
+                            Actual Result: Documents section is not present
+ sai sahithi obilisetty <saisahithi>, 8/25/2022[M/d/yyyy]:   Hi, Retested this defect in SIT2 today. Not working as expected.
+Please find the mismatches in Documents section b/w V5 and V11 below:
+1. Header in V5: Documents
+   Header in V11: Upload Documents
+2. V5: The Dropdown Fields "What type of document would you like to upload?" and "Policy Number" are 
+   displayed after clicking Upload Documents button
+   V11: Button Uplaod Documents is missing
+3. The Verbiage: below is missing in V11
+Note: Only documents provided by Electric Insurance Company will be viewable
+If  you have trouble retrieving your documents, you may need to disable the pop up blocker on your internet browser
+
+----------------------------------------------------------------------sept 1st--------------------------------------------------------------------
+6976 - Quote and Bind Issues - End to End transaction with Payment Processing - Q&B Portal - Auto LOB - AZ state - Policy is not Bound after Payment is accepted in V11 - SIT2
+AZ State: Policy is in Quote status and not Bound even after the payment is accepted and moved to Payment successful screen
+
+LN Data	AZ	0004822175 	85029	tejadeepthi.veerapureddy@ge.com
+Normal Data	AZ	0004381439	           85014	Lavanya.rajendran@ge.com
+ 
+Expected Result: Policy should be Bound
+ 
+Actual Result: Policy is not Bound and remains in Quote status
+
+  
+
+Guidewire - Portals	6980	Fixed	Sushmitha	SIT2 ---> Quote and Bind Issues - End to End transaction with Payment Processing - 
+                                                          Q&B Portal - Auto LOB - Payment is succesful even there is a Binding Referral in V11
+
+Description of Issue:
+
+Issue#1:
+Payment is accepted even when there is a "UW Referral" exists in GWPC also getting "Please contact us" Error after clicking on Next.
+In GWPC, Submission is not bound and in Quote status
+
+Expectation: Customer should be informed about binding referral before accepting the payment.
+
+Please have a look at the recording attached: [Attachment: Binding referral after payment.pptx]
+
+
+----------------------------2nd sept 
+QB Portal 6815 - Renters Coverage Display - Quote Page - Coverages need to be listed in dollar amounts. Not %.  --->Reopen  - passed 
+
+6938 - AM Portal - Home LOB - Policy change - Coverages are editable in V11 where as not in V5 
+AMP – V10: https://gwdev2.electricinsurance.com/account-management/home
+AMP – V5: https://gwqa2.electricinsurance.com/idp/login?postbackUrl=%2Faccount-management-portal%2Fhtml%2F#/home
+
+
+
+BnkNifty - 39200 break down then 388800 possible touch and 39560 to 650 is the very strong resisitance hai  
+
+Nifty - 17650 resistance hai if 480 level brak then 350/300 tak gir skte hai, aftr 17180/120 
+US Tech gor reha hai high per sustain nai ker reha hai,IT n midCap mein selling aa sakti hai.
+upper bolenzer
+all are indicating weak this week like dollars,IT Tech support,monda possible engulfing candle ban sakta hai.
+bearkdown ho sakta hai, inflation ka data aane wala hai 13th sep ko.usse pehle market girnewale hain apne,usa gira then apne market kafi jyada girenge.
+bounce per sell kerna hai only. 
+
+--------------------------------------------05-sept------------------------------------------------------ 
+ DEV2 
+Q & B Portal	3-High	6822	Fixed	Abhimanyu-------------PASSED Done   https://gwdev2.electricinsurance.com/quote-and-buy/?zip=62946&lobCode=Homeowners&policyType=renter
+6822 - Renters - Quote Page - Recalculate clocks and then throws an error
+Description of Issue: Renters - Quote Page - Recalculate clocks and then throws an error
+Expected Result: Quote recalculates successfully
+Actual Result:Quote Clocks for a long time and then error displays to customer. I do not believe an error should display in the first place, 
+but if there is an error the customer should be directed to call eic. This error appears to be directed towards internal guidewire user. 
+It should not be displayed to customer. Quote number 0006331229
+
+
+Q & B Portal	4-Urgent	6906	Fixed	Sushmitha -----------------> 
+Drop down for affiliation Group n Q&B - has mercer groups and it should not
+Description of Issue: The drop down for affliations has mercer grousp in it and shoudl not
+Expected Result: Drop down shoudl match V5 listing
+Actual Result: Drop down has Mercer groups in it. 
+
+https://gwdev2.electricinsurance.com/quote-and-buy   
+
+https://gwqa2.electricinsurance.com/quote-portal/html/#/zipCode 
+
+
+----------------------------------------------06th Sept--------------------------------------------------------
+ 6584 - GPA Portal_Quote Summary_There is a mismatch in UI of Quote summary in V11 compared to V5
+         Description of Issue:GPA Portal_Quote Summary_There is a mismatch in UI of Quote summary in V11 compared to V5 - 
+         Expected Result:The Quote Summary Screen of V11 should match the screen in V5
+         Actual Result:There is a mismatch in UI of Quote summary in V11 compared to V5  
+		 
+Reopen --->   In Quote summary screen, status is not getting displayed under status lable. Please find the attachment for reference. Hence reopened
+
+		
+GPA – V10
+https://gwdev2.electricinsurance.com/producer-engage/login-page
+
+GPA – V5:
+https://gwqa2.electricinsurance.com/idp/login?postbackUrl=%2Fgateway-portal%2Fhtml%2F#/home
+---------------------------------------------07th Sept----------------------------------------------------------------------------------------
+6820 - Verbiage missing from valuable items coverage (scheduled personal property)
+         Description of Issue: Verbiage missing from valuable items coverage (scheduled personal property) 
+         Expected Result: Verbiage displays
+		 
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=62946&lobCode=Homeowners&policyType=renter
+
+
+QnB – V10:
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=62946&lobCode=Homeowners&policyType=renter 
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=65101&lobCode=Homeowners&policyType=homeowners
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=62946&lobCode=Homeowners&policyType=landlordcondo_ext 
+
+--------------------------------------08th----------------------------------------------------------
+6932 - AM Portal : Unable to see the Replace button in V11 while performing policy change.
+          AMP – V10: https://gwdev2.electricinsurance.com/account-management/home
+		  
+AMP – V5: https://gwqa2.electricinsurance.com/idp/login?postbackUrl=%2Faccount-management-portal%2Fhtml%2F#/home
+---------------------------------------09thSept--------------------------------------------------------------------
+Guidewire - Portals	3-High	6390 - Q & B - Rate Adjustment Pop Up Screen is not displaying in new version(V11) but displaying in old Version (V4)
+Description of Issue: Q & B - Rate Adjustment Pop Up Screen is not displaying in new version(V11) but displaying in old Version (V4)
+ 1.Launch the Q & B for V11
+ 2. Fill all the mandatory details and reach till 'Policy Information/Policy Info' screen
+ 3. Fill all the mandatory details on the 'Policy Information' screen and click on 'next'
+ Expected Result: 'Rate Adjustment' screen should be displaye(V4)
+ Actual Result: 'Rate Adjustment' screen is not getting displayed(V11)-------> give prority at last 
+ 
+
+Q & B Portal	2-Medium	7003	- Display of Vehicles in driver assignment table - should have spaces and possibly displaying the wrong data - done 
+
+AMP – V10: https://gwdev2.electricinsurance.com/account-management/home
+AMP – V5: https://gwqa2.electricinsurance.com/idp/login?postbackUrl=%2Faccount-management-portal%2Fhtml%2F#/home
+
+
+AM Portal	2-Medium	6926	Supreetha --> AM Portal - Vehicle screen fields mismatches with V5 and V11
+STEPS:
+Login into AM Portal which has Auto policy
+Start Policy change “Add, Edit or remove vehicle”
+Below fields behaviour is not matching with v5.
+            High Theft check box.
+            Is the vehicle owned, financed, or leased?
+            Does the vehicle primary home location is differ from primary street address?
+            Primary use  - Commute / Commute to work or school
+            Please select the percent of time that the vehicle is operated by each driver Note: The sum must total 100%
+4. click and continue & then Next button
+5. In coverage screen click on continue
+The error will be displayed as 'Something went wrong during this process'.
+
+
+
+AM Portal	3-High	7018	Supreetha  --> AM Portal_PolicyChange_Auto LOB_Vehicles screen: Fields are not getting displayed when we select "Yes" option for the field --> Done
+                                           "Does the vehicle's primary home location differ from your primary street address?" in V11										   
+Description of Issue: Fields are not getting displayed when we select "Yes" option for the field "Does the vehicle's primary home location differ from your primary street address?" in V11.
+Steps followed:
+1. Initiate a policy change on Auto policy.
+2. Start Editing the existing vechile details.
+3. Select option "Yes" for the field-"Does the vehicle's primary home location differ from your primary street address?"
+ 
+Expected Result:
+Fields like- Vehicle Garaging Address Line 1, Address Line 2, ZIP Code, City and State should be displayed.
+Actual Result:
+Fields are not getting displaying when we select "Yes" option.
+
+	
+
+
+@ELEC INS IT/Production Support''''''''''''' <ELECIN_IT_ProdSupport@ElectricInsurance.com>; 'ELEC INS EIC Guidewire Production Support' <EIC_GW_ProdSupport@ge.com>; 
+'ELEC INS IT/Operations' <Operations2@ElectricInsurance.com>; 'EY_EIC_Support.GID' <EY_EIC_Support.GID@ey.net>
+
+
+Expection from SFDC : System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, First name is required.: [FirstName]
+
+Class.GW_PersonAccountRTHandler.<init>: line 419, column 1
+Class.GW_Helper.GuidewireR
+
+
+	
+Expection from SFDC : System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, First name is required.: [FirstName]
+
+Class.GW_PersonAccountRTHandler.<init>: line 419, column 1
+Class.GW_Helper.GuidewireR
+
+---------------------------------------------------------12-09-2022-------------------------------------------------------------------
+GPA	Fixed	6969	3-High	PE Portal - GW Upgrade	Abhimanyu  - Dev2  --> https://gwdev2.electricinsurance.com/producer-engage/login-page, ---> Failed with 2 observation
+
+AM Portal	Fixed	6926	2-Medium	AM Portal - GW Upgrade	Abhimanyu  - Dev2 --> AMP – V10: https://gwdev2.electricinsurance.com/account-management/home  --> Done
+
+Q & B Portal	Fixed	6805	2-Medium	Q&B Portal - GW Upgrade	Abhimanyu  - Dev2 -- 
+Quote screen adjustments required for Homeowners products,
+ Minor adjustments required on quote screens for Homeowners products.  Details attached in work document.
+
+
+
+
+
+Guidewire - Portals	Fixed	6975	4-Urgent	Q&B Portal - GW Upgrade	Abhimanyu  - SIT2 
+Q&B Portal - Auto LOB -  Policy Successful Screen fields are missing in V11
+Description of Issue:
+
+Issue#1:
+In Payment Succesful screen - "Account Number:, Policy Number:, Payment Plan:, Current Payment Due:" fields are NOT displayed under Policy Summary.
+
+Issue#2. 
+"Generate ID card" is not working. when hitting, "Please try again" window is displayed.
+
+Issue#3:
+"Name" is not displayed under Driver Details -> Driver1 Details in Policy Success Screen
+
+Note: Not able to test in V5 as Paymentus is not working.
+
+
+
+
+99017	7893	MARIA		PATTERSON		666489765	06-04-1955	F	A0246468	21259	ROSEWOOD ST		APPLE VALLEY	CA	92308'	DAVID	ROJAS								
+
+JT3HP10VXV0132467	TOYOTA RAV4	1997	2.00809E+17	24-11-2015	24-11-2015		29020			5452	C							11193	C							375	C					12000	C				
+
+
+
+99016	2.02005E+14	JEANNE	A	AAYTPA		666799936	14-04-1950		D1921565(DL No.)
+	476	BDVVXETXH DR		AUBURN	CA	'95603'	JEANNE	AAYTPA	666799936	14-04-1950		D1921565
+	476	BDVVXETXH DR	14	AUBURN	CA	'95603'	19XFC2F59JE042241	HOND CIVIC	2018	
+	2.02005E+14	17-09-2020		A	2000			1000	C											1000	C														
+
+
+
+62946  --> zipCode
+99109	2.02005E+14	MARY	J	FXHPXZ		666701861	10-06-1970		S26334941148(DL No.)	
+422	W LINCOLN ST		HARRISBURG	IL	'62946'	MARY	FXHPXZ	666701861	10-06-1970	
+	S26334941148	422	W LINCOLN ST		HARRISBURG	IL	'629462010'	1C4PJMLX2KD185725	
+	JEEP CHEROKEE	2019	2.02005E+14	17-09-2020	25-06-2016	A	30756	9500	C	16193	C	
+	4474	C	589	O												
+
+1511 -- IL Zipcode
+422	2.02005E+14	MARY	J	FXHPXZ		666701861	10-06-1970		422	W LINCOLN ST		HARRISBURG	IL	'629462010'	422	W LINCOLN ST
+		HARRISBURG	IL	'62946'											2.02005E+14	H			02-08-2018	U		0		
+		0	C														
+		
+		
+99017	6572	JAMES	A	BURGESS		666019857	15-07-1947	M	B13164653	2535	W MORSE DR		ANTHEM	AZ	'85086'	
+												1HGEM22592L003366	HONDA CIVIC	2002	2.00809E+17	28-02-2018	28-02-2018		322					322	C			
+
+
+												
+99017	6573	JAMES	A	BURGESS		666019857	15-07-1947	M	B13164653	2535	W MORSE DR		ANTHEM	AZ	'85086'
+	JAMES	BURGESS	666019857	15-07-1947	M	B13164653	2535	W MORSE DR		ANTHEM	AZ	'850861880'	1B3ES26C23D129384
+		DODGE NEON	2003	2.00809E+17	26-03-2020	26-03-2020		5513	1000	C	3641	S					
+	872	C														
+
+
+ERNESTO	BUCCIARELLI	666707073	30-11-1974	M	B41082181012	1621	SOUTHRIDGE TRL	 ALGONQUIN	IL	60102'
+---------------------------------------------------13 sept ---------------------------------------------------------------------------------------------------------
+nrnagappan	Fixed	7013	3-High	Q&B Portal - GW Upgrade	Abhimanyu - Dev2
+rnewmark	Fixed	6827	2-Medium	AM Portal - GW Upgrade	Abhimanyu - Dev2
+
+-------------------------------------------------16th Sept--------------------------------------------------------
+https://gwdev2.electricinsurance.com/account-management/home - AM Portal
+
+AM Portal	Fixed	7052	2-Medium	AM Portal - GW Upgrade	---
+ AM Portal_PolicyChange_"Transfer Plate from prior vehicle?" field with yes/no options is not getting displayed while adding vehicle in V11.
+Description of Issue:
+ AM Portal_PolicyChange_"Transfer Plate from prior vehicle?" field with yes/no options is not getting displayed while adding vehicle in V11.
+
+LOB: Auto and State: TX
+Username/Password: guideware9905@gmail.com/@Pass123.
+
+Steps to Reproduce:
+1. Login to AM Portal and select Auto policy.
+2. Start policy change and select Vehicles check box in policy change screen.
+3. Try to add new vehicle.
+
+Expected Result:
+ "Transfer Plate from prior vehicle?" field with yes/no options should be displayed while adding vehicle in V11
+ 
+Actual Result:
+"Transfer Plate from prior vehicle?" field with yes/no options is not getting displayed while adding vehicle in V11
+
+
+Note: this field is displayed in v5 attached screenshot for the reference
+
+pol - A700097763
+
+
+AM Portal	Fixed	6962	2-Medium	AM Portal - GW Upgrade	----AM Portal - Home - Removed mortgage details are not reflected as expected in V11.
+Remove mortgage -Policy change summary issues.  -AUSTIN 
+
+Steps
+Open Home policy in AM portal
+Delete the existing Mortgage
+click on continue
+Click on Next
+Verify after quoting in the policy change summary
+ 
+Expected Result:
+ 
+The policy change summary should display the details which has been Removed.(Ex: Mortgage name: JP Morgan Intitution - Removed)
+ 
+Actual Result:
+ 
+ The policy change summary in V11 is not showing the Removed mortgage details as expected.
+ 
+ 
+
+
+Guidewire - Portals	Fixed	6584	2-Medium	PE Portal - GW Upgrade	---> https://gwdev2.electricinsurance.com/producer-engage/login-page --> Done 
+GPA Portal_Quote Summary_There is a mismatch in UI of Quote summary in V11 compared to V5
+Description of Issue:GPA Portal_Quote Summary_There is a mismatch in UI of Quote summary in V11 compared to V5
+
+Expected Result:The Quote Summary Screen of V11 should match the screen in V5 
+Actual Result:There is a mismatch in UI of Quote summary in V11 compared to V5  
+Policy output/ snapshot of issue included - Yes/No:yes,Please have a look at the attachment.
+
+
+
+--------------------------------------------------------------------------19sept-------------------------------
+
+Renters and Condo Q&B - can take a payment but do not get a policy back in the UI, nor does the id card work  
+
+
+https://gwsit2.electricinsurance.com/quote-and-buy/?zip=85086&lobCode=Homeowners&policyType=renter 
+
+-----------------------------------------------------------20sept--------------------------------------------------------------------
+Q & B Portal	1-Low	6286	Fixed	Abhimanyu
+Guidewire - Portals	2-Medium	6656	Fixed	Abhimanyu
+Q & B Portal	2-Medium	6890	Fixed	Abhimanyu
+AM Portal	2-Medium	7065	Fixed	Abhimanyu
+
+
+6286 - Issue - QnB - DEV2 - The Label content of the text field is not matched with story card - Passed Done 
+
+https://gwdev2.electricinsurance.com/quote-and-buy/?zip=02351&lobCode=Homeowners&policyType=homeowners  -- Dev2 
+V5 --> https://gwqa2.electricinsurance.com/quote-portal/html/#/eicquoteentry?zip=02351&lobCode=Homeowners&policyType=homeowners
+
+
+6656 - AM Portal - Drivers section is not displayed in UMBRELLA Policy Details Screen in V11 - Passed 
+         https://gwdev2.electricinsurance.com/account-management/home 
+
+6890 - Q&B Portal - Yacht - Previous button is present in both Operators and Watercraft screen in V5 but not in V11  - Passed ----Done 
+
+https://gwdev2.electricinsurance.com/quote-and-buy  
+https://gwsit2.electricinsurance.com/quote-and-buy 
+
+
+7065 - AM Portal_File a Claim_People Involved screen_Involvement dropdown is NOT editable for pedestrian in V5 but editable in V11 - done 
+
+          https://gwdev2.electricinsurance.com/account-management/home   
+	
+6323 - 	Issue - QnB - Unable to Quote for Umbrella LOB - Please contact us error message is blocking the quote - Failed ,Revathy defect
+
+tejadeepthi.veerapureddy@ge.com
+
+-----------------------------------------------------------   21sept 
+
+AM Portal	nrnagappan	Fixed	7074	3-High	AM Portal - GW Upgrade	Abhimanyu
+AM Portal - Claims Center	skadirappagari	Fixed	6997	3-High	AM Portal - GW Upgrade	Abhimanyu
+Q & B Portal	nrnagappan	Fixed	7019	3-High	Q&B Portal - GW Upgrade	Abhimanyu - Issue 2 & 3 (Issue 1 to be tested in SIT2)
+
+7074 - Coverages Showing Twice on Policy Page Under Vehicle Coverages   	- done  Passed 
+	
+6997 - AM Portal_File a claim_Claims created in AM portal have unverified policy in Claim Center - Passed 
+	
+7019 - Q&B Portal - Home LOB - Renters and Condo owners issues in V11 
+
+Q&B Portal - Home LOB - Renters & Condo issues
+
+Issue#1:
+When tried to retrieve the Quote - Policy information, Payment Details and Success screens are not displayed 
+
+Issue#2;
+For Condo Owners:
+Payment Plans are not displayed to make a payment
+Average Monthly Premium & Total Premium fields are null with no value
+
+Issue#3:
+when tried to Retrieve from the Q&B Portal :
+"How many units are in the building?" and "Number of Occupants?" fields are not saved and blank
+
+Note: when tried to Retrieve from the stage EIC - we are directly moved to Quote screen           
+		  
+----------------------------------------------------------------22sept
+6760 - Q&B: Yacht: Quote Screen: No values are displayed in the Dropdown:Increased water skiing liability in V11
+Description of Issue:Q&B: Yacht: Quote Screen: No values are displayed in the Dropdown:Increased water skiing liability in V11
+
+The Dropdown:Increased water skiing liability: with None,$25,000/$50,000,$50,000/$100,000,$100,000/$300,000,$300,000/$500,000 values should be present
+ 
+ 
+Expected Result:  The Dropdown:Increased water skiing liability: should be displayed with values as in V5. 
+ 
+Actual Result:The Dropdown:Increased water skiing liability: is not displayed with values in V11
+
+
+7068 - AM Portal - Coverages screen - Coverages mismatches between V5 and V11
+
+-------------------------------------------30th Sept -------------------------------------------------------
+7122 - AM Portal Auto Claims - theft loss cause does not populate the theft indicator in V11 as it does in V5 
+          Description of Issue:  Theft indictor is not poulated for theft claims 
+          Expected Result:  Theft indicator should be yes 
+          Actual Result: Theft indicator is blank 
+		  SIT2 Test -->  https://gwsit2.electricinsurance.com/account-management/home
+
+7123 - GPA auto claim - theft loss cause does not let you get past screen the people involved screen - no error is provided 
+       Description of Issue: Cannot select next
+       Expected Result:  Should be able to select next or an error should be dicplayed so the used knows why
+       Actual Result: Cammot select next
+	     https://gwsit2.electricinsurance.com/producer-engage/login-page
+ -----------------------------------------------6th Oct ---------------------------------------------------------------------------------
+6942 - Q&B_State Specific inconsistencies between V5 & V11
+
+Description of Issue: Issue: Q&B_State Specific inconsistencies between V5 & V11
+Test Results: Test Evidences for all State Inconsitencies are updated in below sharepoint Folder
+EIC GW Upgrade - V5 and V11 - Inconsistencies - All Documents (sharepoint.com)
+
+Alabama 
+V11 – A few coverage fields in quote screen are missing. Policy Information header is missing in Policy Information screen. The text “We will now verify driving records and claims history for all drivers on the policy.” is missing under Drivers section. 
+
+Delaware 
+Disclaimer is slightly mismatched in Your Info Screen. Text in Incidents Screen is slightly mismatched. Labels in Vehicle Screen (VIN, Make, Model, Year, Body Type) are not matched. 
+
+Georgia 
+Quote price values are vastly different between V5 and V11. 
+V5 – No warning shows when proceeding past Vehicle Screen. 
+V11 – “The policy must specify at least one vehicle” warning appears when first trying to proceed past Vehicle screen. Additional general coverages are added in Quote screen. Vehicle-Specific coverages (called Vehicle Level Coverages in V5) are added as well. 
+
+Illinois 
+Some coverages differ between v5 and v11. Quote prices are different. 
+
+Indiana 
+V11 – Please contact us error screen when trying to move from Incidents to Vehicle Screen 
+
+Kentucky 
+V5 – Tort-Threshold is displayed 
+V11 – “Monthly/Pay In Full” option is displayed. Extra Vehicle Level Coverages are displayed. Tort-Threshold is missing. 
+
+Maine 
+V11 – Ran into error moving from Vehicle to Quote Screen 
+
+Maryland 
+Custom Price differs between v5 and v11 
+V11 – Missing some coverages that are in v5. “Monthly/Paid In Full” option is displayed. 
+
+Michigan 
+V11 – Navigates to Driver Screen after clicking Next on Vehicle Screen. Fails after clicking Next on Driver. 
+
+New Jersey 
+V5 – Vehicle Recovery System field in Vehicle Screen is labelled as required. 
+V11 – Great Driver App is missing in Driver Screen. Vehicle Recovery System field is not labelled as required. Unable to proceed to Quote Screen. 
+
+New York 
+Some coverages differ between v5 and v11. Quote prices are different. 
+V5 – CARCO inspection warning triggers after clicking Next on Policy Info Screen 
+V11 – Rate Adjustment popup triggers after clicking Next on Policy Info Screen. CARCO warning is missing. 
+
+New Hampshire 
+Some coverages differ between v5 and v11. Quote prices are different. 
+
+North Carolina 
+V11 – Custom option is only available option. Recalculate button not working 
+
+Ohio 
+V11 – Please contact us error screen when trying to move from Incidents to Vehicle Screen 
+
+Rhode Island 
+Coverages shown in Quote Screen differ 
+V11 – Quote price is missing. Please contact us error screen when trying to move from Quote to Policy Info 
+
+Washington 
+V11 – Next button is disabled with multiple vehicles. Please Contact Us Error screen show after clicking Next on Vehicle Screen (after deleting all but one vehicle) 
+
+
+ 1.	Alabama AL , Delaware DE,Georgia GA,Illinois IL,Indiana IN,Kentucky KY,Maine ME,Maryland MD,Michigan MI,
+ New Jersey NJ,New York NYC ,New Hampshire NH ,North Carolina NC, Ohio OH,Rhode Island RI,Washington  WA
+ 
+	   
+
+1.Indiana - done
+185	27984	KENNETH	J	CARNEY		666139839	01-01-1965	M	170145760	1613	N CANAL ST		ALEXANDRIA	IN	'46001'	MELISSA	CARNEY					1613	N CANAL ST		ALEXANDRIA	IN	'460011007'	1J8HR58297C571029	JEEP GRAND CHEROKEE	2007	2.00809E+17	15-07-2019	15-07-2019		993			251	S															242	S					500	S				
+
+2.Michigan - done 
+99060	43953	NADINE	K	COVACEVICH		666155217	15-04-1957	F	C613368011067	3535	RINGLE RD		AKRON	MI	'48701'															0	2.00809E+17	25-02-2020	25-02-2020		64					64	C																								
+99017	43954	NADINE	K	COVACEVICH		666155217	15-04-1957	F	C613368011067	3535	RINGLE RD		AKRON	MI	'48701'	CHARON	COVACEVICH					3535	RINGLE RD		AKRON	MI	'487019607'	JA4MR41H8RJ002406	MITSUBISHI MONTERO	1994	2.00809E+17	28-02-2019	28-02-2019		0															0	C														
+
+3.Ohio   - Done 
+889000000000	MARYLOU	LOU	XXZRKD		21451	666004791		OH	RG146191		PO BOX 241		CINCINNATI	OH	'45202'		MARYLOU	LOU	XXZRKD		21451	666004791		OH	RG146191		PO BOX 241		CINCINNATI	OH	'45202'		1FTMF1C52KKC59545	FORD F150	2019	202000000000000	88507	202000000000000	44633		N	N	1500					1500	C																								
+
+4.Washington - Paased
+889000000000	JEREMY		CREMW		35141	375456355	M	WA	KBIZJJUQU1ZV	1616	SPRINGFIELD CT NE		OLYMPIA	WA	'98506'	'5185'	JEREMY		CREMW			375456355				1616	SPRINGFIELD CT NE		OLYMPIA	WA	'98506'	'5185'	WDBWK73FX6F086631	MERCEDES BENZ SLK55AMG	2006	201000000000000000	99017	202000000000000	44303	44303	N	N	1586			1586	C																										
+
+5.Delaware - Done
+2091	15531	MARIA	E	DELRIO		666252339	01-01-1944	F	672942	128	CARLOTTA DR		BEAR	DE	'19701'	MARIA	DEL RIO	666252339	18-01-1952	F	672942	128	CARLOTTA DR		BEAR	DE	'197012104'	1GYFK63877R120175	CADILLAC ESCALADE	0	2.00809E+17	20-12-2018	20-12-2018		875			0	C											875	C														
+99053	15781	PAUL	THOMAS	BRYANTSR		666434736	01-01-1974	M	1431065	2810	CHRISTIANA MDWS		BEAR	DE	'19701'	GLENN	BRYANTSR					2810	CHRISTIANA MDWS		BEAR	DE	'197012855'	2MEFM75WXWX665551	MERCURY MARQUIS	1998	2.00809E+17	23-01-2020	23-01-2020	A	5499			1436	C											4063	C														
+
+Observation – 
+ V5 - If you would like a copy of our privacy policy please contact us at 800 227 2757      
+ V11 - “If you would like a copy of our privacy policy, please contact us at 800.227.2757.”
+
+
+6.Maine - Done 
+99017	42762	LAVERNE		BURGESS		666109176	01-01-1954	F	3919281		PO BOX 464		ANSON	ME	'04911'													JA4MT31P2VP012410	MITSUBISHI MONTEROSPORT	1997	2.00809E+17	02-11-2018	02-11-2018		84					84	C																								
+220	41368	STEPHANIE	L	BENNETT		666717711	29-06-1961	F	6089071	10	CHARLES ST		AUBURN	ME	'04210'	STEPHANIE	BENNETT	666717711	29-06-1961	F	6089071	10	CHARLES ST		AUBURN	ME	'042105014'	5N1AA08A66N738908	NISSAN ARMADA	2006	2.00809E+17	25-02-2020	25-02-2020		68					68	C																								
+
+7.New Jersey  - done
+2063	62727	VICKIE	L	PABON		666694860	08-12-1967	F	K20417506154664	61	BREZA RD		ALLENTOWN	NJ	'08501'	VICKIE	PABON	666694860	08-12-1967	F	K20417506154664	61	BREZA RD		ALLENTOWN	NJ	'085011828'	UNK	TOYOT	2005	2.00809E+17	20-05-2018	20-05-2018		14964			10614	C											4350	C														
+
+
+------------------------------------------------------------------continue 07th Oct
+
+
+8. North Carolina - Done with observation 
+99053	55168	MIGUEL		HOFFMAN		666303066	01-12-1944	M	2022931	295	GRIFFITH RD		ADVANCE	NC	'27006'	ARTHUR	LANG											1C3BU6636JD216936	CHRYSLER NEW YORKER-C BODY	1988	2.00809E+17	02-11-2015	02-11-2015		774															774	C														
+
+9. Alabama - done (issue - The text “We will now verify driving records and claims history for all drivers on the policy.” is missing under Drivers section)
+99017	2196	B		PATAWARAN		666381702	30-07-1962	F	7882267	114	BRANDON AVE		ADAMSVILLE	AL	'35005'	EVA	THAKORBHAI											WBAAV53491JS90880	BMW 330I	2001	2.00809E+17	26-12-2018	26-12-2018		664															664	C														
+
+10.Georgia - done (Getting error “Please Contact us” & unable to Quote )
+99017	18456	BRAD		NORGERG		666511716	19-11-1940	M	887346680	4212	HUDDLESTONE BRIDGE PKWY	P	ACWORTH	GA	'30101'	ZERMAIN	DYAL											2FALP73WXRX107949	FORD CROWN VICTORIA	1994	2.00809E+17	23-07-2016	23-07-2016		2690					2690	C																								
+
+
+ , ,Illinois IL,,Kentucky KY,,Maryland MD, New York NYC ,New Hampshire NH ,Rhode Island RI,  
+ 
+11. Illinois - done (Quote prices are different. )
+422	26600	BILL	S	CHURCHILL		666513453	01-01-1949	M	C00078864915	865	N TAMARAC BLVD		ADDISON	IL	'60101'													1GCCT19W8T8196230	CHEVROLET 'S'TRUCK	1996	2.00809E+17	04-06-2018	04-06-2018		58																							58	C						
+          V11
+Custom - $476.00 463
+auto plus - $416.00  395 
+premier choice - $443.00     421
+Premier Choice Plus - $481.00    463 
+
+12.Kentucky KY - (observation -  Tort-Threshold is missing)
+1852	HAR10025102000000201	DONALD		CHILDS		325250394	15-12-1958	M	K39590157			ALVATON	KY	'42122'	DONALD	CHILDS	325250394	15-12-1958	M	K39590157	15	TALLEY DR		ALVATON	KY	'42122'	1N4DL01A61C120777	NISSAN ALTIMA	2001	PA289921	12-07-2016		A	5000			5000	C																										
+           
+		   
+13. Maryland MD - done (Quote prices are different. ) 
+99017	39913	MICHAEL	W	BRITO		666231252	08-11-1960	M	B416744105929	612	HOLLY CIR		ABERDEEN	MD	'21001'	MICHAEL	BRITO	666231252	08-11-1960	M	B416744105929	612	HOLLY CIR		ABERDEEN	MD	'210013436'	1FTZF0722YKB39088	FORD LGT CONVTNL 'F'	0	2.00809E+17	09-07-2017	09-07-2017		3443															3443	C														
+99017	39655	JACK	A	WILLIAMS		666539379	01-01-1969	M	W200461730045	2040	FLAGSTONE CT		ABINGDON	MD	'21009'													1GNCS13W012162138	CHEVROLET BLAZER	2001	2.00809E+17	11-09-2019	11-09-2019		40																							40	C						
+
+
+14. New York NY -  CARCO warning is missing
+11026	2.02005E+14	MARC	K	MKHP		666680965			322329753	13235	MAIN RD		AKRON	NY	'14001'	MARC	MKHP	666680965			322329753	13235	MAIN RD		AKRON	NY	'140019328'	1FT7X2B68JEB55875	FORD F250	2018	2.02005E+14	17-09-2020			8029	3202	C													4827	C														
+195	70196	EDDY	M	LOFTON		666590034	01-01-1952	M	888324692	35	FAIRWAY CT		ALBANY	NY	'12208'	ELAINE	LEAL-URRIAGO											5Y2SL63865Z477135	PONTIAC VIBE	2005	2.00809E+17	09-03-2020	09-03-2020		680															680	C														
+
+
+15. New Hampshire NH  -  unable to Quote
+99006	61423	DONALD	E	BURDETT		666613374	12-08-1973	M	01MIR85201	16B	RIVER RD		ALLENSTOWN	NH	'03275'	CLIFF	BURDETT					16	RIVER RD		ALLENSTOWN	NH	'032751800'	SALSF25496A913057	LAND ROVER RANGE ROVER SPORT	2006	2.00809E+17	12-03-2018	12-03-2018		0			0	O																										
+
+16. Rhode Island RI - done , Getting Error “Contact us” while click on Reference Number & Getting Error “Please Contact us” while click on Recalculate 
+12535	79296	JAMES		BAUGHER		666506298	01-01-1969	M	2613413	8	CHERRY LN		BARRINGTON	RI	'02806'	JAMES	BAUGHER	666506298	01-01-1969	M	2613413	8	CHERRY LN		BARRINGTON	RI	'028062902'	1FMCU24X2MUC89154	FORD EXPLORER	1991	2.00809E+17	23-06-2019	23-06-2019	N	0	0														0															
+
+
+

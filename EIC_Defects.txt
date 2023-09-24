@@ -1,0 +1,1052 @@
+From local PC Setting -----------------------------------
+
+from server Tools , EICAddressStanderlization,pcbc need make it true
+from..script parameters, set enableveriskintegration and enableveriskkytax to false
+EICRating stub flag to true from Integration Configuration
+---------------------------------------------------
+
+
+submission 
+batch run policyrenewalstat in pc 
+renewal get trigger 
+inititate pc 04/08  add vechicle 
+applying change to renewal ...so button it wil get PC 
+
+
+
+Were you able to analyze the related invoice objects on the PolicyPeriod in question
+
+
+one more pc then delete vehicl 
+
+aftr then initiate  pc ...delete vehicle 
+
+1. submission
+2. run the batch PolicyRenewalStart in pc 
+3. do pcc for adding the vehicle 
+4.
+
+
+REN:
+
+PC: https://gwren.electricinsurance.com/pc/PolicyCenter.do
+
+BC: https://gwren.electricinsurance.com/bc/BillingCenter.do
+
+CC: https://gwren.electricinsurance.com/cc/ClaimCenter.do 
+
+user - su2
+pass - EIC@3456
+
+
+Prod UI - EYMS3 (@Pass345)
+
+
+Arora DB -- amazon using DB ,,, apart from AWS 
+Flipcart - 
+Oracle dB using all top 10 Banks domestic ans as well abroad
+
+
+
+
+Incident_Description--- OUT OF SEQUENCE POLICY 
+
+GEINC11676320 - UNABLE TO QUOTE WHEN REMOVING A VEHICLE
+
+Unable to quote when removing a vehicle | Error: "Due to the vehicle being financed or leased, please add the loss payee or leasing company to the Additional Interest tab prior to issuing the policy. (04/08/2022)"
+
+1. What is the issue? (NOTE: If applicable, please add supporting screenshots or documentation)
+- trying to quote removing a vehicle and receiving an error: "Due to the vehicle being financed or leased, please add the loss payee or leasing company to the Additional Interest tab prior to issuing the policy. (04/08/2022)"
+2. When did the issue occur? (i.e., date/time, frequency)
+- 6/22/22
+3. Where is this issue taking place? (i.e., Contact Manager, Policy Center, Claims Center, Billing Center, Portals, Datahub)
+- Guidewire
+4. Please provide additional information: (i.e., Impact & Volume, Submission  Number, Account Number, Policy Number, Claim Number)
+- A6560066A1
+5. Have you reviewed this issue with a support team member? If yes, please provide the name of the team member that reviewed this issue.
+- N/A
+
+[12:31] Sushmitha Ravichandran
+A700001714
+
+VIN  FORMAT 
+State	License Format
+New Hampshire	2 Numeric + 3 Alpha + 5 Numeric
+New Jersey	1 Alpha + 14 Numeric
+New Mexico	8-9 Numeric
+New York	1 Alpha + 7 Numeric 1 Alpha + 18 Numeric 8-9 Numeric 16 Numeric 8 Alpha
+
+
+Prod UI - EYMS3 (@Pass345)
+
+N12345678912345
+
+REN --> user - su2
+pass - EIC@3456
+
+in local --- 
+View your policy (#A100000004)...------A100000005),,#A100000007).A100000020
+
+PersonalVehicleValidation.gs 173 --> 
+PaPolicyPlugin.gs 80,74,75 --> vehicle.FinancedYN_inx == true && vehicle.LeaseOrRent == false) 
+
+on 8th --->  policy (#A100000008),#A100000009......A100000010,11,12,A100000013,14) #A100000016),17 partially replicate,18,A100000020
+..............A100000023
+
+A100000024)---new 
+
+
+
+A100000020 ---> pol,,,    a/c -E10000039
+in this policy , add vehicle on 08th april as in PC.,
+
+Due to the vehicle being financed or leased, please add the loss payee or leasing company to the Additional Interest tab prior to issuing the policy. (04/08/2022) 
+Web.Policy.PA.Validation.IsLeasedOrFinanced_Ext = 
+Due to the vehicle being financed or leased, please add the loss payee or leasing company to the Additional Interest tab prior to issuing the policy.
+
+
+Web.Job.OOS.Warning = Your {0} is an out-of-sequence transaction. There are future transactions at {1}.
+
+on policy 21 - try with future date
+
+PAVehiclesPanelSet.pcf --> create and remove vehicle UI 
+PersonalAuto_VehicleDV.pcf --> vehicle form---basic vehicle info 
+
+PersonalAutoLineEnhancement.gsx --> createAndAddVehicle(),removeVehicle()
+StartPolicyChange.pcf --->  action="job.checkScheduleItemOnPolicyChange_Ext(policyPeriod,job.RequestTypeReason_Ext,effectiveDate);
+                                     if (gw.web.job.policychange.StartPolicyChangeUIHelper.refreshAndStartJobAndCommit(job, policyPeriod, effectiveDate, CurrentLocation)) 
+									 {gw.web.job.policychange.StartPolicyChangeUIHelper.sfdcPolicyChangeIntiate(job.LatestPeriod); PolicyChangeWizard.go(job, job.LatestPeriod) }"
+                            available="policyPeriod.Policy.canStartPolicyChange(effectiveDate) == null"
+                            confirmMessage="gw.web.job.policychange.StartPolicyChangeUIHelper.getConfirmMessage(inForcePeriod, effectiveDate)"
+StartPolicyChangeUIHelper.gs -->  getConfirmMessage()
+
+
+ Indicates if a new version of a policy on the supplied effective date
+   * would be out-of-sequence or not. A policy version is out of sequence
+   * if there is a bound version of that policy in the same period with a
+   * later effective date. (By definition, handling OOS changes is an
+   * "intra-branch" operation, meaning we are only ever operating on a
+   * single branch, the current branch with OOS changes.)
+   * @param periodEffectiveDate Effective date which is checked to see if
+   *                            it would result in an out-of-sequence change.
+   * @return True if a change on "periodEffectiveDate" would be out-of-sequence,
+   * and false otherwise.
+   */
+  public boolean isOOSChange(java.util.Date periodEffectiveDate) {
+    return ((com.guidewire.pc.domain.policy.PolicyPublicMethods)__getDelegateManager().getImplementation("com.guidewire.pc.domain.policy.PolicyPublicMethods")).isOOSChange(periodEffectiveDate);
+  }
+  
+  
+PolicyCenter supports out-of-sequence policy transactions. A policy transaction is out-of-sequence if its effective date is earlier 
+than the effective date of another policy transaction that is already bound on the policy for that contractual period. PolicyCenter 
+warns you that the policy transaction is out-of-sequence and prompts you to address any conflicts that occur as a result.
+
+Trans Eff Date = Policy Effective date
+
+
+
+
+Web.Job.OOS.VerifyOOSChange = This would be an out-of-sequence transaction. Are you sure you want to continue?
+
+issue getting with financed vehicle when we are trying to delete it from OOS policy.... not for the date 
+
+Policy in local --> A100000023
+
+
+ if we can try with different name for "Personal Vehicle Additional Interest" then its working fine. 
+ i think, there is an issue when we are keeping same name("Personal Vehicle Additional Interest") with diffwerent vehicles 
+ Vehicle contacts should be differ.then issue will not trigger else its similer then got issue.
+ now this incident is closed 
+ 
+ 
+ Muller batch --> MuellerBatchProcess.gs 
+MuellerUtil.gs -->  Util class for Muller , queryAndCreateFile()  --> 
+
+populateMullerDTO(policyPeriod: PolicyPeriod): MuellerDTO {} -->This Method creates and populates MuellerDTO instance from PolicyPeriod object passed
+MuellerDTO.gs --> contains data as Policy_Number,Mail_Address,Insured_Name,Phone_Number,Location,Report_Type,Elec_Heat_Supplement
+                                   Mobile_Home_Supplement,Coastal_Supplement,MultiFamily_Supplement,Other_Supplement,DayCare_Supplement,
+                                   Interior_Supplement,Woodstove_Supplement.
+
+
+
+This can happen at multiple points in the Guidewire application. It has been seen in both configuration and integration code. 
+
+All objects in PolicyCenter can either be in slice or window mode.
+
+Slice - Contains the version of the object at a specific point in time, such as the effective date of the job. This is the mode that most people interact with.
+
+Window - Contains the data for all the versions of the object for the life of the policy term.
+
+There are many functions in the system that assumes we are running in slice mode. 
+Each of these functions will throw the Illegal Argument Exception. To fix this, we need to find the PolicyPeriod. 
+This may be in the current method or we may need to look in calling functions or traverse the entity model. We can then use the
+
+getSlice(thePropertyYouNeedToMap)
+
+method to get the slice that is effective on that particular field.
+
+
+								   
+								   
+								   value="job.LatestPeriod.EditEffectiveDate"/>
+								   sortBy="job.LatestPeriod.EditEffectiveDate, job.CreateTime"
+          sortDirection="descending"
+          sortOrder="1"
+          value="job.LatestPeriod.EditEffectiveDate"/>
+		  
+		  
+		    value="job.LatestPeriod.PeriodDisplayStatus"/>
+			
+			
+			report generation in BC --- help sushmitha for furthr work
+			how to do this ?
+			
+			
+			 generating the report for cancelled policies
+			Policyholder Last Name is invalid. Doesn’t match what is on record.
+
+document generation and upload -- himanshu
+
+
+[12-07-2022 16:50] Sushmitha Ravichandran
+UPDATE dbo.cc_message SET Status = 3 WHERE DestinationID = 50 AND PublicID = 'ccProd:2659776'
+
+[12-07-2022 17:01] Sushmitha Ravichandran
+GEINC11769925
+
+[12-07-2022 17:01] Sushmitha Ravichandran
+ask them to execute this query once
+
+[12-07-2022 17:25] Sushmitha Ravichandran
+Abhimanyu
+
+[12-07-2022 17:25] Sushmitha Ravichandran
+insurpay is there right
+
+
+Hi InfraTeam, Could you please execute the query mentioned in the ticket. DevOps Ticket - USER STORY 41025,
+
+on 22nd July - 41610
+
+
+
+
+Dashboard Statistics batch - CC   --- Statistics for the executive dashboard
+com.guidewire.pl.system.exception.TransactionException: Transaction aborted by exception:null
+com.guidewire.pl.system.exception.ServiceException: com.guidewire.pl.system.exception.TransactionException: Transaction aborted by exception:null
+at com.guidewire.cc.system.statistics.dashboard.DashboardStatsCalculatorImpl.calculateStatisticsNow(DashboardStatsCalculatorImpl.java:137)
+at com.guidewire.cc.system.statistics.dashboard.DashboardStatsBatchProcess.doWork(DashboardStatsBatchProcess.java:24)
+at com.guidewire.pl.system.batchprocessing.SinglePhaseBatchProcess$1.act(SinglePhaseBatchProcess.java:21)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.actOnCurrentPhase(MultiPhaseBatchProcess.java:106)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.runPhases(MultiPhaseBatchProcess.java:93)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.run(MultiPhaseBatchProcess.java:71)
+at com.guidewire.pl.system.batchprocessing.BatchProcessStartupHelper$1$1.run(BatchProcessStartupHelper.java:262)
+at gw.api.profiler.Profiler.maybeProfileBlock(Profiler.java:103)
+at com.guidewire.pl.syste
+
+
+com.guidewire.pl.system.exception.TransactionException: Transaction aborted by exception:null
+com.guidewire.pl.system.exception.ServiceException: com.guidewire.pl.system.exception.TransactionException: Transaction aborted by exception:null
+at com.guidewire.cc.system.statistics.dashboard.DashboardStatsCalculatorImpl.calculateStatisticsNow(DashboardStatsCalculatorImpl.java:137)
+at com.guidewire.cc.system.statistics.dashboard.DashboardStatsBatchProcess.doWork(DashboardStatsBatchProcess.java:24)
+at com.guidewire.pl.system.batchprocessing.SinglePhaseBatchProcess$1.act(SinglePhaseBatchProcess.java:21)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.actOnCurrentPhase(MultiPhaseBatchProcess.java:106)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.runPhases(MultiPhaseBatchProcess.java:93)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.run(MultiPhaseBatchProcess.java:71)
+at 
+
+
+Quest Inbound Bulk Invoice-- CC 
+Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure.
+gw.api.util.DisplayableException: Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure.
+at ey.saas.common.utils.ExceptionHandler.handleException(ExceptionHandler.gs:26)
+at eic.integration.quest.bulkinvoice.batch.QuestBulkInvoiceInboundBatchProcess.doWork(QuestBulkInvoiceInboundBatchProcess.gs:141)
+at com.guidewire.pl.system.batchprocessing.SinglePhaseBatchProcess$1.act(SinglePhaseBatchProcess.java:21)
+at co
+
+
+Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure.
+gw.api.util.DisplayableException: Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure.
+at ey.saas.common.utils.ExceptionHandler.handleException(ExceptionHandler.gs:26)
+at eic.integration.quest.bulkinvoice.batch.QuestBulkInvoiceInboundBatchProcess.doWork(QuestBulkInvoiceInboundBatchProcess.gs:141)
+at com.guidewire.pl.system.batchprocessing.SinglePhaseBatchProcess$1.act(SinglePhaseBatchProcess.java:21)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.actOnCurrentPhase(MultiPhaseBatchProcess.java:106)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.runPhases(MultiPhaseBatchProcess.java:93)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.run(MultiPhaseBatchProcess.java:71)
+at com.guidewire.pl.system.batchprocessing.BatchProcessStartupHelper$1$1.run(BatchProcessStartupHelper.java:262)
+at gw.api.profiler.Profiler.maybeProfileBlock(Profiler.java:103)
+at com.guidewire.pl.system.batchprocessing.BatchProcessProfiler.maybeProfileBlock(BatchProcessProfiler.java:45)
+at com.guidewire.pl.system.bat
+
+
+run query in CC 
+
+use electric_prod_cc
+select pol.Verified,cs.Name,c.ClaimNumber,c.UpdateTime,pol.Policynumber,c.* from cc_claim c
+join cc_policy pol on pol.ID = c.policyID
+join cctl_claimstate cs on cs.ID = c.State
+where c.claimNumber in ()
+
+
+
+in leankit 
+Abhimanyu Kumar
+5:27 PM
+@Jennifer_Keyes - Quest Inbound Bulk Invoice Batch Failed on 07/22, below is the feed location
+
+Location: /share/eicprod/Quest/Inbound/Feed
+
+File names: Quest_Glass_220721_090648
+
+Error from Logs: Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure.
+
+In Quest_Glass_220721_090648 file, claims(20220519A13,20220616A56)is in closed status and in this scenario when batch is trying to create a exposure on the closed claim it was throwing the exception
+"Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure."
+
+Please check the same and take necessary actions.
+
+
+
+
+@Jennifer_Keyes - Quest Inbound Bulk Invoice Batch Failed on 07/29, below is the feed location
+
+Location: /share/eicprod/Quest/Inbound/Feed
+
+File names:   Quest_Glass_220728_091941
+
+Error from Logs: Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure.
+
+In Quest_Glass_220728_091941 file, claims(20220419A41,20220420A22,20220718A38)is in closed status and in this scenario when batch is trying to create a exposure on the closed claim it was throwing the exception
+"Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure."
+
+Please check the same and take necessary actions.
+
+
+20220419A41,20220420A22,20220718A38
+
+
+Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure.
+gw.api.util.DisplayableException: Exposures cannot be added to closed claims. Please reopen the claim before adding an exposure.
+at ey.saas.common.utils.ExceptionHandler.handleException(ExceptionHandler.gs:26)
+at eic.integration.quest.bulkinvoice.batch.QuestBulkInvoiceInboundBatchProcess.doWork(QuestBulkInvoiceInboundBatchProcess.gs:141)
+at com.guidewire.pl.system.batchprocessing.SinglePhaseBatchProcess$1.act(SinglePhaseBatchProcess.java:21)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.actOnCurrentPhase(MultiPhaseBatchProcess.java:106)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.runPhases(MultiPhaseBatchProcess.java:93)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.run(MultiPhaseBatchProcess.java:71)
+at com.guidewire.pl.system.batchprocessing.BatchProcessStartupHelper$1$1.run(BatchProcessStartupHelper.java:262)
+at gw.api.profiler.Profiler.maybeProfileBlock(Profiler.java:103)
+at com.guidewire.pl.system.batchprocessing.BatchProcessProfiler.maybeProfileBlock(BatchProcessProfiler.java:45)
+at com.guidewire.pl.system.ba
+
+
+
+
+PolicyChangeExpireProcess - PC 
+The object you are trying to update was changed by another user. Please try your change again.
+com.guidewire.pl.system.exception.ConcurrentDataChangeException: The object you are trying to update was changed by another user. Please try your change again.
+at com.guidewire.pl.system.entity.proxy.EffDatedBranchProxy.checkBranchVersionMostRecent(EffDatedBranchProxy.java:1530)
+at entity.PolicyPeriod$_Internal.checkBranchVersionMostRecent(PolicyPeriod.java:7464)
+at com.guidewire.pl.system.entity.proxy.EffDatedBranchProxy.handleEffDatedBranchChanges(EffDatedBranchProxy.java:195)
+at com.guidewire.pl.system.database.DatabaseBundleWriter.prepareBundleForWritePreIDGeneration(DatabaseBundleWriter.java:98)
+at com.guidewire.pl.system.bundle.BundleWriter.commitBundle(BundleWriter.java:82)
+at com.
+
+
+RMV Notice To Carrier Batch - PC 
+null
+gw.api.util.DisplayableException
+at ey.saas.common.utils.ExceptionHandler.handleException(ExceptionHandler.gs:25)
+at eic.integration.masrmvvehicle.batch.RMVNoticeToCarrierBatchProcess.doWork(RMVNoticeToCarrierBatchProcess.gs:157)
+at com.guidewire.pl.system.batchprocessing.SinglePhaseBatchProcess$1.act(SinglePhaseBatchProcess.java:21)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.actOnCurrentPhase(MultiPhaseBatchProcess.java:106)
+at com.guidewire.pl.system.batchprocessing.MultiPhaseBatchProcess.runPhases(MultiPhaseBatchProcess.java:93)
+at com.g
+
+
+showstopper  --> A showstopper bug is a hardware or software bug that causes an implementation to stop and become essentially useless.
+                 This critical bug must be fixed for the development process to proceed further.  
+
+				 
+
+Testing Portal Defects ...connect Anwar.. from 17th Aug 
+----------------------------------------------------BC Defect---------------------------------------------------
+6854 - Mercer Employee ID Did Not Pass to Billing Center When Re-Added to Policy Center
+
+Description of Issue: Mercer employee ID did not pass to Billing Center when re-added to Policy Center after being removed on the Policy Center side. 
+Removal of employee ID passed without issue. This was tested with GE and Youdecide accounts as well, both of which passed the removal and re-adding of the employee ID without issue.
+ Two seperate Mercer billing center accounts were tested, both did not pass re-added employee ID. Supports attached for all tests.
+ 
+Expected Result: A payroll deduct employee ID number added in Policy Center will pass to Billing Center and display on the account summary screen field.
+Actual Result: Mercer employee ID when removed passed from Policy Center to Billing Center. but when re-added did not pass from Policy Center to Billing Center.
+
+
+-----------------------------------------GEINC12127857-------------------------------------------
+GEINC12127857
+GE Employee is appearing as active on the GE Eligibility File, however, the customer is being removed from PD through the automated roll off process in GW.
+
+1. What is the issue? (NOTE: If applicable, please add supporting screenshots or documentation)
+
+- GE Employee SSO 212726676 is appearing as active on the GE Eligibility File, however, the customer is being removed from PD through the automated roll off process in GW. 
+This has happened multiple times since August and the customer has escalated to GE.
+Customers appearing as active on the Eligibility file should not be removed from payroll deduct.
+
+The PD Estimator shows this customer on Active Payroll. The QV dashboard Eligibility exception monitor has the reason for terminated.
+ Both Billing Center and Policy Center show the status as Active. GE has confirmed the employee is active.
+The customer wants to continue to pay their premium through payroll deductions.
+
+2. When did the issue occur? (i.e., date/time, frequency) 8/12, 9/11, 9/12
+
+-  8/12, 9/11, 9/12
+
+3. Where is this issue taking place? (i.e., Contact Manager, Policy Center, Claims Center, Billing Center, Portals, Datahub)
+
+-  Billing Center
+
+4. Please provide additional information: (i.e., Impact & Volume, Submission Number, Account Number, Policy Number, Claim Number)
+
+-  Account 999161873
+
+5. Have you reviewed this issue with a support team member? If yes, please provide the name of the team member that reviewed this issue.
+
+- Kim Cordima
+
+
+based on that do we know how the message was sent from BC to PC to update the account and/or contact?
+How the payload was composed? How the batch process would modify the account?
+DH data would help. Do you know how the xxCenters communicate? There are MQs that update between BC and PC
+You can look in the message transport in BC, find PAS, and deduce how the data is transformed and sent based on the event. You can see how the data is changed from the PD batch.
+
+Well you can certainly follow how that data is transformed/sent but ultimately the PC MQ and data is the root of the defect right?
+
+
+I don't know about the expected behavior - there are requirements for the batch process in Box.
+
+https://app.box.com/folder/23321352235 
+You can ask the client to reference requirements if necessary or look for yourself
+
+
+ANALYSIS ---> PASMessageRequest.GS (mQ) -->policy systems that send message to the billing system 
+
+ab05122866 ---- 9958418884    
+
+
+I have attached analysis document on the PD issue.
+
+GEINC12127857
+
+999161873 - 
+
+I reviewed the analysis and we need a meeting to discuss.  
+
+Auto - Current and renewal term both show Karen as the PNI, the expired term has Brian as PNI
+
+Home - Current term is Karen,  Renewal term is Brian and expired term is Brian
+
+The billing rep believes that the if the PNI is changed on all terms - current, expired and renewal terms the employee will not be removed in the automated process.  
+
+Will need to discuss with business requirement for synching the SSO to prior term.  
+
+Please advise if it we should go ahead and manually change the expired term PNI's? 
+
+
+
+schedule the call today on GE with stephen
+
+kim asked about the some manual workaround with manual changes the expired term PNI's
+
+
+------------------------------------------------------------------script
+------------integ prod db 
+use electric_prod_integ;
+select * from PD_DAILY_ACTIVITY where account_number = '999161873';
+---select TOP 5* from RENEWAL_QLIKVIEW where POLICY_number = 'H6518800H1';
+select * from PD_QLIKVIEW where account_number = '999161873';
+
+use electric_prod_bc; --select count(*) from bcx_cifrecorddata_ext with (nolock)
+                     --- select * from bc_processhistory with (nolock) where ProcessType in(10007) order by CreationDate desc 
+
+----select * from bc_account where accountnumber = '999161873'    ---id-50700
+---select * from bctl_employeestatus_ext
+---select * from bc_history where AccountID = '50700' --...userid - 252(Integration Admin),1703,
+---select * from bc_user where id = '252' 
+select * from bctl_event
+
+
+use electric_prod_integ;
+select * from PD_DAILY_ACTIVITY where account_number = '999161873';
+
+select * from PD_QLIKVIEW where account_number = '999161873';
+
+
+public static final var QV_REPORT_INSERT : String =
+function insertQVReport(exceptionReason : String): Boolean {
+res = detailsDTO.insertQVReport(reason)
+
+	18th Nov Release - GEINC8684919,D20220902KC01,
+---------------------------------------------------23rd Sept
+local policy pc -- A100000045, 
+
+1. D20220902KC01 - Earned premium due notices are displaying tax charge details as negative when partially or fully paid
+ 
+ 1. What is the issue?  Earned premium due notices are displaying tax charge details as negative when partially or fully paid. This also can affect the premium detail line, 
+ which will display the total min due rather than the total premium portion of the min due.
+
+NJ Home policy cancelled with earned premium due, including a tax charge that rolled up with a portion of its balance still due. On the final premium due notice,
+ the detail table displays a negative value equal to the amount paid toward the charge, not the remaining balance of the charge. In addition, 
+ the premium detail line displays the total min due rather than the portion of the min due attributed to premium
+
+For example, E10224856 / H100007428 issued a final premium due notice on 6/12/22. The tax due was $0.12 but displayed as -$1.26 in the detail table. 
+Premium detail is correct for this example.
+
+Expected Action:  
+
+Final Premium Due notices will display the remaining amount due for the given charge, and if nothing is due then $0.00 is displayed.
+
+Actual Action:  
+
+Final Premium Due notices are displaying the amount paid towards the tax charge and not the remaining amount due. Premium details on these invoices are also incorrect, 
+displaying total min due rather than the portion attributed to premium.
+
+2. When did the issue occur? (i.e., date/time, frequency)
+
+Recent PROD examples from June 2022
+
+E10310142 / H100012446 (6/25/22 EP notice)
+
+E10224856 / H100007428 (6/12/22 EP notice)
+
+3. Where is this issue taking place? (i.e., Contact Manager, Policy Center, Claims Center, Billing Center, Portals, Datahub)
+
+Billing Center
+
+4. What is the Severity of this issue? (i.e., Low, Medium, High, Critical)
+
+High
+
+5. Additional information: (i.e., Workaround, LeanKit Link, Impact & Volume, Submission / Account / Policy / Claim Number, etc.)
+
+No workaround
+
+Total volume of earned premium notices issued in the last year August 2021 to July 2022 for states with tax is 2113.
+
+Fully earned states is 1288
+
+Pro-rated states is 825
+
+6. Have you reviewed this issue with a Leader? Yes, Kim Cordima
+
+
+Comment - I have few clarification on the requirement provided.Since the policy is already corrected in prod,
+          it will be helpful if the scenario is replicated in any lower environment or please provide the replication steps for further analysis. 
+
+		  
+		  		  
+		  
+                        ----Update State Address on Home Policy ----Pc-> Data change 85page ----
+uses eic.integration.addressstandardization.mapper.LOBType
+uses ey.saas.acord.core.AddressStandardizationImpl
+var account = Account.finder.findAccountByAccountNumber("999839829")
+var locations = account.AccountLocations
+var addrStandardizer = new AddressStandardizationImpl()
+gw.transaction.Transaction.runWithNewBundle(\bundle -> {
+  var editLoc = locations.firstWhere(\elt -> elt.LocationNum == 1)
+  bundle.add(editLoc)
+  editLoc.setState(State.TC_OH)
+  editLoc.setAddressLine1("9025 E Kemper Rd")
+  editLoc.setCity("Montgomery")
+  editLoc.setPostalCode("45249-2705")
+  addrStandardizer.standardizeAccountLocation(editLoc, LOBType.HOME)
+  print("After Update - " + editLoc.AddressLine1 + " " + editLoc.City + " "+editLoc.State+" " + editLoc.PostalCode)
+}, User.util.UnrestrictedUser)
+
+
+
+
+
+
+
+
+2 . GEINC11058126 - Mercer Cancel Transactions
+Updated: 
+
+1.  The Cancel transaction amount term number is incorrect on the daily Activity file. The data pull is picking up multiple terms with a cancelation transaction.
+
+Change: Cancel transaction amount on manual file output will pull from the correct term and populate with that term’s cancel transaction amount.
+
+2. Cancel Code 1 is being sent on the daily filer as a positive balance: Mercer is requesting this be sent as negative value.
+
+Change mercer splitter logic to force a negative value for Cancel Code 1 on the daily file
+
+3. EIC is sending the term number at the end of the policy number. i.e. -1,-2.  On the renewal this creates a new policy number in their system.  Mercer requested we stop sending the the term in the policy field. 
+
+Change: Turn off the special logic to add the term number to the policy number. Open question to mercer: Do they need the term number in a different location
+
+Short Description: Cancel transaction amount and term number on the Mercer Daily Activity file is incorrect
+
+Description: Cancel transaction amount and term number on the Mercer Daily Activity file is incorrect. The data pull is picking up multiple terms with a cancelation transaction.
+
+The term number for the policy on the Mercer Daily Activity file is incorrect. The cancel transaction was associated with term 2 however term 1 is reflected on the activity file.
+
+
+Example:
+
+Auto policy term 2 cancelled on 1/24/22 for -$1685.53 in Billing Center. This transaction was on the 1/26/22 manual file sent to IT with a transaction amount of $0.00. The output file sent to Mercer has a transaction amount of -$3176.01, which is incorrect. Auto policy has two cancel transactions in Billing Center, -$1490.48 for Auto term 1 and -$1685.53 for Auto term 2. Total of both transactions is -$3176.01 which is what’s listed on the manual file. The expected transaction amount was -$1685.53.
+
+
+Test Data (acct/submission/policy/claim #):
+
+E10141199 / A100003761 (1/26/22 Mercer Manual File)
+
+
+Expected Action:
+
+Cancel transaction amount on manual file output will pull from the correct term and populate with that term’s cancel transaction amount.
+
+Actual Action:
+
+Cancel transactions are totaling all the policy term’s cancellations.
+
+
+
+
+3.  Need a mechanism to re-inject failed payments from Paymentus to PC or BC --- Enhancement 
+Executive Sponsor: Mike Mucher Business Owner(s): Cordima,Kimberly Systems Impacted: Guidewire BillingCenter What is this addressing?: Enhancement - New configuration or change
+
+When do you need this?:
+
+Is there a work around for this issue?: No
+
+Full Description - When there is a payment failure sending a real-time Paymentus payment to PC or BC an email is sent to the Billing inbox
+– Failed Payment Notification for PAS. A Billing rep needs to manually enter the payment into Billing Center. 
+There needs to be a mechanism to re-inject the failed payments to PC or BC when this occurs.
+
+
+8340178021 - anand 
+
+--------------------------------------------25th Oct -------------------------------------------------
+High Priority
+
+GEINC9241188 - The Collections R1 Carryover process has 11 separate defects that are impacting billing accounts - Remove code 
+
+D20220902KC01
+
+DEV2 --> policy quote for local ...in dev2(submission no. - 0000560698,Account #E80002428Policy #A800000164)
+setp --> admin -->testPages --> EIC Rating test page (DRC)
+
+GEINC11553527 - UncollectibleWriteoffPayments and CollectionsWriteoffPayments Activities are not being created   ------>>>> Requirement clear 
+
+1. What is the issue? (NOTE: If applicable, please add supporting screenshots or documentation)  
+
+UncollectibleWriteoffPayments and CollectionsWriteoffPayments Activities are not being created consistently when payment is made on policies that have collection or 
+uncollectible write off.  
+
+2. When did the issue occur? (i.e., date/time, frequency) 
+
+Identified on 5/26
+
+3. Where is this issue taking place? (i.e., Contact Manager, Policy Center, Claims Center, Billing Center, Portals, Datahub) 
+
+Billing Center
+
+4. What is the Severity of this issue? (i.e., Low, Medium, High, Critical) 
+
+Severity is High due to refunds being issued when the customer owes money. 
+
+5. Additional information: (i.e., Workaround, LeanKit Link, Impact & Volume, Submission / Account / Policy / Claim Number, etc.) 
+
+Control in place (1.5 hours per day) / 1884 annualized volume impact
+
+6. Have you reviewed this issue with a Leader? If so, please provide the name of the Team Leader that reviewed this issue with.  
+
+Kim Cordima
+
+Narrative/Description:  
+UncollectibleWriteoffPayments and CollectionsWriteoffPayments Activities are not being created consistently when payment is made on policies that have collection or 
+uncollectible write off.  
+Policy A517914A1 had a collection’s write off in the amount of $575.84 on 5/17/22. Payment in the amount of $250 was received on 5/24/22 and
+ an activity was not created to notify the billing rep to reverse the write off. 
+ A disbursement was created for the overage and subsequently was rejected.  
+ The write was reversed and the payment applied.  
+An activity was not created to notify billing of the payment.  
+Test Data (acct/submission/policy/claim #):  999161474 policy A517914A1
+Expected Action:   UncollectibleWriteoffPayments and CollectionsWriteoffPayments Activities should be created if a payment is received on an account where 
+there is a write off for uncollectible or collections. 
+The  Activity “Payment on collections Writeoff” or “Payment on uncollectible Writeoff” should be sent to the Billing General Activity Queue to be reviewed, worked and closed. 
+Actual Action:   No Activity was created.
+Story card:    https://ge.box.com/v/AssignActivities
+
+
+Clarification --> @Kim - 
+
+received amount > Total WriteOff Amount due to Uncollectable Reason on Account
+
+
+5652 Flinchum Way S, Noblesville, IN 46062-7122 
+
+
+-----------------------------------------------------------------------------------------------
+
+GEINC8684919(Normal Priority) - Payment Reversal Opened Delinquency with Incorrect Event target dates and all events completed on the same date.  
+              Payment Reversal Opened Delinquency with Incorrect Event target dates and all events completed on the same date.
+Payment reversal on 1/14/21 opened delinquency as expected, however, the Event Target dates are out of order and all events completed on the same date.
+
+The order of events should be Past Due Reminder, Late Fee, Send Cancel Request but the target dates are 1/18/21 – Send Cancel Request, 1/19/21 – Late Fee, 1/20/21 – Past Due Reminder. etc. In this example the target date for the Send cancel request was before the Past Due reminder notice – See attached screen shots. The trigger date appears to be missing the required number of days to execute each step. The events all completed on 1/20/21.
+
+Test Data (acct/submission/policy/claim #):
+999875971
+999879342 (account has same issue)
+
+Expected Action:
+It is expected that a delinquency will complete Event dates in the standard order per delinquency requirements, even when opened due to payment return.
+
+Actual Action:
+Delinquency that opens after a payment return has incorrect Event target dates and all events completed the same day.
+
+
+
+A5A16477A1-2  --> 
+Yes
+01/20/2021  01/20/2021 Past Due Reminder Notice 1     --> should be 18th 
+01/19/2021  01/20/2021 Late Fee         ----> should be 19th 
+01/18/2021  01/20/2021 Send Cancellation Request to PAS  --> should be 20th Jan
+
+
+
+
+
+E20220923KC01(Normal Priority)  - Wabtec Requested to Terminate Payroll Deduction Services 
+                                   Wabtec requested to terminate Payroll deduction services. Will need to eliminate offering Payroll Deduction payment plan  options 
+								   and discounts  in GW.  Additionally, stop FTP processing between EIC,  ART and Wabtec.
+
+                                   The existing policies on Payroll deduct will be removed via a manual process and no automation for that aspect will be required 
+								   
+GEINC11625147 - Tax Cancel Credit Did Not Apply to Earned Premium and Created Cancel Disbursement 
+
+
+GEINC12248846 - insurpay
+
+
+
+1.	E20220907BB01 (Srivalli, Krishna and Stephen.
+2.	D220042 ( Abhimanyu, Krishna and Stephen(optional) - D220042 CW(MU),Home,Application,Dog Bite Waterfall Questions No Null,Defect,GW
+
+-------------------------------------------------9th or 23rd Relese---------------------------------------------------------------
+both cards are  conjunction  (equivelent)  
+
+D20220902KC01 - Earned premium due notices are displaying tax charge details as negative when partially or fully paid
+                dev2 (a/c - E80002455. HO policy need to create for this defects)
+
+DEV2 POLICY - H800000060 - HO POLICY , E80002455, SUB - 0000145442 
+
+
+
+
+	
+ZAKARIA HAFDANI
+Address	
+16 Daleron Pl
+Laurence Harbor, NJ 08879-2903
+Phone	
+Email	
+zakaria.hafdani@ge.com
+
+Dev 2, --> HO Policy , Condo Premier Choice. H800000061 - 
+
+
+
+GEINC10881667 - Invoice Billing Details Displays Tax Charges Paid Prior to Invoice Bill Date 
+
+
+
+
+GEINC12393884 - 3 policy cancellations that are "pending" in Guidewire | Transactions need to be widthdrawn] by Evan Paradis.
+
+18th nov - 
+GEINC8684919 - Payment Reversal Opened Delinquency with Incorrect Event target dates and all events completed on the same date....do not work 
+
+
+
+
+Invoice Billing Details Displays Tax Charges Paid Prior to Invoice Bill Date
+
+Relate to completed ticket GEINC10359074
+
+Tax charges to be billed on 1/27/22 were fully paid by credit distributions on 1/20/22. 
+On 1/27/22, the invoice issued and the billing details on the back of the invoice displayed the tax charges with their full charge amounts even though they are fully paid.
+
+Test Data (acct/submission/policy/claim #):
+999167874
+
+Expected Action:
+Invoice billing details only displays charges that are unpaid or partially paid, and the amount displayed matches the remaining amount due on the charge.
+
+Actual Action:
+Invoice billing details displays charges that are fully paid.
+
+
+PROPERTY-LIABILITY INSURANCE GUARANTY A
+
+
+D20220720KC01,
+--------------------------------------------------------------------
+
+GEINC8684919 - Payment Reversal Opened Delinquency with Incorrect Event target dates and all events completed on the same date.
+GEINC11625147 - Tax Cancel Credit Did Not Apply to Earned Premium and Created Cancel Disbursement 
+GEINC9241188 - The Collections R1 Carryover process has 11 separate defects that are impacting billing accounts - Remove code
+GEINC11553527 - UncollectibleWriteoffPayments and CollectionsWriteoffPayments Activities are not being created - clarification raised to business, awaiting for response.
+GEINC11391021 - The delinquency steps are not triggering correctly for a policy with equity when the cancelation date is set for after expiration date of the policy. 
+GEINC11058207 - Pay cycle changes are identified on the Guidewire Payroll Deduct Eligibility Exceptions Monitor Dashboard however the pay cycle is already correct in BC and ART
+GEINC10999313 - Delinquency Cancellation Date After Expiration of Policy Term ---> GEINC11391021(This was previously fixed) 
+
+-------------------------------------------------------Nov/Dec Release -----------------------------------------------------
+D20220902KC01 - Earned premium due notices are displaying tax charge details as negative when partially or fully paid
+GEINC10881667 - Invoice Billing Details Displays Tax Charges Paid Prior to Invoice Bill Date
+ALM 7222 -  white screen 212696081 attach the video - amanda Rocca - BC - Amanda Rocco gets white screen in BC payment screen - only one, a/c no. - 999161563
+                                                                   access payment screen page, Request a working session with the user to run the profile with the client navigating. 
+GEINC12439145  (Retired Policy Graph Disconnector batch failed in PROD CC)  - worked 
+GEINC12452980 – Eligibility File batch failed in PROD BC       - worked 
+GEINC12071099 - PolicyCenter Contact Broadcast - AB MQ Discussion - woked 
+GEINC12543282  - Customer paid the policy in full and the rescind was triggered, but it never made it to PC and the policy is still showing as pending cancellation - worked 
+GEINC12521663  - ISO ClaimSearch Report batch failed 
+
+
+E210258 - Need a mechanism to re-inject failed payments from Paymentus to PC or BC ...not worked 
+GEINC8684919 - Payment Reversal Opened Delinquency with Incorrect Event target dates and all events completed on the same date. -- 2hrs
+GEINC11625147 - not worked 
+GEINC9241188 - not worked 
+GEINC11553527 - UncollectibleWriteoffPayments and CollectionsWriteoffPayments Activities are not being created (worked in oct,,commented 28 oct )
+GEINC11391021 - The delinquency steps are not triggering correctly for a policy with equity when the cancelation date is set for after expiration date of the policy. - not worked 
+GEINC11058207 - Pay cycle changes are identified on the Guidewire Payroll Deduct Eligibility Exceptions Monitor Dashboard however the pay cycle is already correct in BC and ART - not worked 
+GEINC10999313 - Delinquency Cancellation Date After Expiration of Policy Term - not worked 
+
+
+		  
+		  
+--------------------------Update State Address on Home Policy ----Pc-> Data change 85page ----GEINC12071099 -- try with this script for removing/updating primary address 
+uses eic.integration.addressstandardization.mapper.LOBType
+uses ey.saas.acord.core.AddressStandardizationImpl
+var account = Account.finder.findAccountByAccountNumber("999839829")
+var locations = account.AccountLocations
+var addrStandardizer = new AddressStandardizationImpl()
+gw.transaction.Transaction.runWithNewBundle(\bundle -> {
+  var editLoc = locations.firstWhere(\elt -> elt.LocationNum == 1)
+  bundle.add(editLoc)
+  editLoc.setState(State.TC_OH)
+  editLoc.setAddressLine1("9025 E Kemper Rd")
+  editLoc.setCity("Montgomery")
+  editLoc.setPostalCode("45249-2705")
+  addrStandardizer.standardizeAccountLocation(editLoc, LOBType.HOME)
+  print("After Update - " + editLoc.AddressLine1 + " " + editLoc.City + " "+editLoc.State+" " + editLoc.PostalCode)
+}, User.util.UnrestrictedUser)
+
+
+
+
+
+
+
+
+
+
+It could have some permission issue or server timeout issue so that user unable to access payment screen page, 
+ we need to request a working session where we run the profiler with the client navigating. Add comments to the defect along with the analysis.
+ Request a working session if required with the user - we may need to profile her interaction
+  Request a working session with the user to run the profile with the client navigating.  
+  
+  [16-11 19:34] Stephen Hartman
+PROCEDURE
+the underlying cause of the issue.
+
+Here is the sample code which changes the theme of 'su' to 'Guidewire Desktop Dark' for 'su'. Each theme is defined in Client_Properties.json.
+uses gw.api.web.prefs.PreferenceObject
+uses gw.api.web.prefs.UserPreferencesImpl
+
+var prefs = "{\"gw-PrefPanel\":{\"prefType\":\"gw-PrefPanel\",\"theme\":\"gw-theme--green-white-web\"}}"
+
+var upi = new UserPreferencesImpl(User.util.getUnrestrictedUser()) // UnrestrictedUser='su'
+var po1 = PreferenceObject.deserialize(prefs)
+upi.applyPreferencesForPreferenceKey("UI_PREFS_KEY", po1)
+upi.flush()
+
+[16-11 20:36] Stephen Hartman
+Use something like this in a script to deserialize the ui preferences with a script - you can try in hotfix
+
+[16-11 20:44] Abhimanyu Kumar
+Ok, sure
+
+
+s]
+FROM    dbo.bc_user bu WITH (NOLOCK)
+        INNER JOIN dbo.bc_contact bc WITH (NOLOCK)
+                   ON bc.ID = bu.ContactID
+        INNER JOIN dbo.bc_credential bcc WITH (NOLOCK)
+                   ON bcc.ID = bu.CredentialID
+        LEFT OUTER JOIN bc_userrole ucr WITH (NOLOCK)
+                        ON ucr.UserID = bu.ID
+        LEFT OUTER JOIN dbo.bc_role br WITH (NOLOCK)
+                        ON br.ID = ucr.RoleID
+WHERE   bcc.ACTIVE = 1
+AND     bcc.UserName = '212696081'
+ORDER BY bc.LastName ASC
+
+
+
+selectedPayment!=null
+
+ ISO ClaimSearch Report  - Encrypt daily ISO ClaimSearch logs and move them to staging 
+ 
+ 
+Batch process 'ClaimSearchReport' is already running
+com.guidewire.pl.system.exception.AlreadyRunningException: Batch process 'ClaimSearchReport' is already running
+at com.guidewire.pl.system.batchprocessing.BatchProcessManagerImpl.createLease(BatchProcessManagerImpl.java:384)
+at com.guidewire.pl.system.batchprocessing.BatchProcessManagerImpl.createBatchProcessStartRequest(BatchProcessManagerImpl.java:347)
+at com.guidewire.pl.system.batchprocessing.BatchProcessManagerImpl.startScheduledBatchProcess(BatchProcessManagerImpl.java:325)
+at com.guidewire.pl.system.scheduler.DistributedScheduler.startBatchProcess(DistributedScheduler.java:730)
+at com.guidewire.pl.system.scheduler.DistributedScheduler.checkSchedule(DistributedScheduler.java:606)
+at com.guidewire.pl.system.scheduler.DistributedScheduler$DistributedSchedulerService.run(DistributedScheduler.java:834)
+at com.google.common.util.concurrent.AbstractExecutionThreadService$1$2.run(AbstractExecutionThreadService.java:66)
+at com.google.common.util.concurrent.Callables$4.run(Callables.java:119)
+at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+ 
+
+GEINC12452980   - Eligibility file BC , now cal 9.30am  ----- 0n 16th Nov, completed 
+null
+ey.saas.common.utils.IntegrationException
+at ey.saas.common.utils.ExceptionHandler.handleException(ExceptionHandler.gs:49)
+at eic.integration.eligibilityfileoutbound.EligibilityFileOutboundProcess.createFileByGroup(EligibilityFileOutboundProcess.gs:129)
+at eic.integration.eligibilityfile.plugin.EligibilityFileInboundProcess.doWork(EligibilityFileInboundProcess.gs:264)
+
+
+1. 
+GEINC12439145 - Retired Policy Graph Disconnector - CC 
+ Null   java.lang.NullPointerException
+at gw.surepath.cc.configuration.timeline.creation.TimelineUtil.registerCallback(TimelineUtil.gs:250)
+at rules.Preupdate.PolicyPreupdate_dir.PPU10000ClaimTimelineUpdate.doAction(PPU10000ClaimTimelineUpdate.gr:15)
+at jdk.internal.reflect.GeneratedMethodAccessor1388.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+
+ 
+  please debug and see , i suspect policy is expired and claim is active in CC . So batch is picking those claims and trying to do some manipulation .
+  So try to replicate same scenario as wel and provide update by today EOD. 
+  
+  select all open claims from 21dec with doesn't have timeline entries
+  
+  Till 22nd dec ,,we need to fetch open claims with no timeline entries
+  
+                ------------script--------------------
+						use electric_prod_cc
+          -- select pol.Verified,cs.Name,c.ClaimNumber,c.UpdateTime,pol.Policynumber,c.* from cc_claim c
+          -- join cc_policy pol on pol.ID = c.policyID
+          -- join cctl_claimstate cs on cs.ID = c.State
+		--  select top 5 * from       --cc_claim c
+		 --   ccx_TimelineEntry_SP te 
+		 --  join ccx_Timeline_SP tl on te.Timeline=tl.ID
+         --  join cc_claim cl on cl.ID = tl.Claim 
+		--   join cctl_claimstate cs on cs.ID = cl.State 
+		 --  where cl.State = "Open"
+     
+		 -- where c.claimNumber in ('20221109A40')
+
+
+---select * from ccx_TimelineEntry_SP te join ccx_Timeline_SP tl on te.Timeline=tl.ID
+---join cc_claim cl on cl.ID = tl.Claim and 
+---cl.claimnumber='20221109A40'
+
+select count(*) from cc_claim where CreateTime <='2022-12-22' and state = 2    --------count 4905
+select * from cctl_claimstate
+select ClaimNumber,clmstate.name  from cc_claim  cl , cctl_claimstate clmstate where CreateTime <='2022-12-22'  -> 28th nov to 21dec 
+and clmstate.id = 2
+and cl.state = clmstate.id
+
+
+select top 5* from ccx_timeline_sp
+select top 5* from cctl_timelinestatus_ext ...TimelineStatus - 10003_new,10002 - Cleaned,10001=active, 10004 - restoring
+
+
+  hsbc collection team - 18001024722/18004191144......
+  
+2. GEINC12595681 - Issuing PUP policy getting error of License number, license state, year licensed, and license class are all required for licensed drivers/operators.
+                  
+  1. create auto policy with 2 drivers with one US state and other non usa state.then quote and issue policy.
+  2. create umbrella policy and retrieve policies from account.thn  quote and issue 
+ 
+ QA 
+ pup a/c - E20254999  (with two drivers)
+ policy - P200000521
+ 
+ su2 --> QAs_gw1223
+ 
+ E20255010
+ 
+ 20221229A57 MASRMVReporting
+01/06/2023 2:31:12 AM EST
+0
+1
+0
+0
+java.io.FileNotFoundException: /apps/ssl/masrmv.jks (No such file or directory)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(Fi
+
+DocumentGeneration
+20221017A80
+01/06/2023 2:23:42 AM EST
+0
+1
+0
+0
+Message Exceeded Retries
+gw.api.util.DisplayableException: UTF-16 Codepoint 0x16 is not valid for XML content
+at ey.saas.common.utils.ExceptionHandler.handleException(ExceptionHandler.gs:26)
+at eic.integration.lexmark.documentgeneration.adapter.BatchDo
+
+
+
+
+
+---------------------------------------------------31st Dec 2022------------------------------------------------
+Total issues LN and ALM :
+ 
+1. GEINC12595681 - Issuing PUP policy getting error of License number, license state, year licensed, and license class are all required for licensed drivers/operators. 
+2. GEINC12071099 - (no stuck)PolicyCenter Contact Broadcast - AB MQ Discussion - woked(https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Felectricinsurance.leankit.com%2Fcard%2F1801533596%2Fcomments&data=05%7C01%7Cabhimanyu.kumar3%40gds.ey.com%7Cb52cefb65b9c4cc130da08dac31d30eb%7C5b973f9977df4bebb27daa0c70b8482c%7C0%7C0%7C638036827383397992%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=bHQJp0uzxCvlQ6UPgyAQyz2LjN%2Bm3dusvIlSnLwMhNQ%3D&reserved=0) 
+3. GEINC9390508 - Errored Guidewire Message Queue Payloads_PAS
+4. GEINC12217754 - Null pointer exception in BillingSystem PC([Yesterday 11:29] Sushmitha Ravichandran
+                         can you try to replicate that scneario in sit
+                         create a submission with some date like 09/12/2022 then cancel it with today's date then initiate a policy chage with jan 1,
+						 Able to replicate the same scenario in SIT2. Currently analysis in-progress to find the root cause. on 5th sushmitha did)
+5. GEINC12714603 - 21 customers where the payment instrument in the BC account summary page is not updating from Responsive to Recurring EFT or Recurring Credit Card
+
+how to process paymentus file 
+
+after call on 4th  --> RecurringPaymentInboundBatchProcess.gs --> Function to process and update  the payment instrument from the inbound file
+TC_RECURRINGPAYMENTS_EXT -- batch process 
+
+[19:18] Cordima, Kimberly (Electric Insurance)
+While not ideal, it is possible to create an adhoc “enrollment file”, have PROD Support push it to the PROD GW location, 
+then run the batch (or if it has a unique name, it can even run overnight at the normal time, as it will be picked up along with the actual enrollment file for that night).
+ 
+Anyway, we can discuss, but this is a potential method in which to fix accounts that are not correct in GW.
+
+
+
+
+A PaymentInstrument is a financial instrument that can be or has been used to make a payment.
+If the PaymentInstrument points at an Account or a Producer, the payment instrument can be used to request more payments.
+For example, a credit card payment instrument that has enough information to be used to request more payments from the payment system can have an Account set on it. 
+We also request money from the Responsive (PaymentMethod) payment instruments by asking the Payer to send the payment and waiting for them to send the money."
+  
+A PaymentInstrument may be associated with either an Account or a Producer for re-use, but not both."
+
+
+Producer ID = 
+The Producer which has this instrument as one of its available instruments for initiating payments.
+A PaymentInstrument may only belong to one Account or Producer (or neither), so if this field is set,Account must be null."
+
+
+Token = The identifier of the PaymentInstrument in the external payment system"
+
+PaymentMethod = The method of payment used by this instrument (CreditCard,EFT,check,ACH,Cash,Responsive etc)     

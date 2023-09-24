@@ -1,0 +1,443 @@
+
+
+
+GPN - IN010M83196	...Abhimanyu.Kumar3@gds.ey.com	  
+
+
+https://portal.mediassist.in/ResetPassword.aspx
+IN010M83196@ey
+pass- Aaya@123
+
+
+GIT update code base
+
+git fetch upstream
+git pull upstream R2
+
+
+
+
+
+
+260 defect 
+smoke 168
+
+20201881+RSA Token 	
+
+https://web.microsoftstream.com/video/965fcecc-9e92-41e2-8143-200ad7992c19
+
+
+QA and SIT 
+https://sit-safetyinsurance.sbp.eyclienthub.com/cc/ClaimCenter.do
+anlayton /gw
+ancheriyan/NewUser
+su/53@now -- not working
+su/53r3n17yN0w
+
+Claims Adjuster --> Permissions for a claims adjuster. This includes ability to set up a claim. (Does not have )
+Pass - NewUser
+Bob Deleire - rodeleire
+Owen Kerrigan - owkerrigan
+Daniel Magee - damagee
+Sharon Twombley - shtwombley
+Mary Gantley - magantley
+Celia Renrick - cerenrick
+Deborah Penniman - depenniman
+Sarah O'Garro - sagarro
+Paula Litchfield - palitchfie
+Kate LeFevre - kalefevre
+Bill Delaney - bidelaney
+Evelyn Owens - evowens
+Vincent Datri - vidatri  ,,,,working NewUser
+Wayne Dubois - wadubois
+Courtney Mellen - comellen
+
+
+
+9th to 11th May --> meena on leave 
+
+
+
+
+document generation and upload -- himanshu
+
+NO:AABTB7832N
+
+
+
+https://qa-safetyinsurance.sbp.eyclienthub.com/cc/ClaimCenter.do
+
+
+LAMA105F3A
+
+XML Stream Error
+
+Tagged with new concellor - Senthil Kumar Tc (senthil.kumar.tc@gds.ey.com)
+
+https://web.microsoftstream.com/group/5162ee7f-947b-4f98-af98-026e3d409f18?view=highlights  -- All KT Videos
+https://web.microsoftstream.com/group/5162ee7f-947b-4f98-af98-026e3d409f18?view=videos
+
+https://fso-to.visualstudio.com/Safety_Insurance/_git/CC_ExternalizedProperties?path=/sit/Integration_sit.properties  --> Share points(all env properties detials like, qa,sit,prod)
+
+https://access.safetyinsurance.com/Citrix/SafetyVAppsWeb/  --> VDI
+
+Safety Insurance engagement (E-65414600)  66259147  ----------> ChargeCode-       66259147
+
+Here are your safety credentials:
+Username:          Abkumar
+Password:          8bH&gSXi8fi22F*6, ArYONETHeRVAlcom(Expired)
+
+6199 - BC & PC 
+
+
+[11:26] Supreetha Srirangapatna Prabhakara
+just check in that whether that table is present or not
+
+[11:27] Supreetha Srirangapatna Prabhakara
+or else ask Jishnu clearly could you tell me whether table is present or not
+
+
+
+
+local Soap ---> http://localhost:8080/cc/ws/qw/webservice/cc/cc1000/claim/ClaimAPI ---> create claim from local 
+
+
+8777812589  - calling 
+8013109861- chanrima 
+
+VPN Connect for DB of lower environments..SIT,QA
+https://vpn.000apsa.sbp.eyclienthub.com/vdesk/webtop.eui?webtop=/Common/EYP2SAPMpolicy-Patched_webtop&webtop_type=webtop_full
+
+RSA token first time setup --> 	https://aprsassp.ey.net/index.jsp
+
+Safety Production env Url  --->	https://claims.safetyinsurance.com/cc/ClaimCenter.do
+
+Contact Manager Prod url ---> 	https://ab.safetyinsurance.com/ab/ContactManager.do
+
+Service now url	   --->  https://eyct.service-now.com/
+
+ECM UI Document --> https://ecmqaotds01.safetyinsurancenet.com:8443/otdsws/login?RFA=8956a066%2D6303%2D4a0a%2Db832%2D7623998f9b87%3Ahttps%3A%2F%2Fecmqacontent%2Esafetyinsurancenet%2Ecom%3A8443%2FOTCS%2Fcs%2Eexe%3Ffunc%3Dotdsintegration%2Eredirect%26NextURL%3Dhttps%253A%252F%252Fecmqacontent%252Esafetyinsurancenet%252Ecom%253A8443%252FOTCS%252Fcs%252Eexe&PostTicket=true&PostParams=true&ux_version=1&PreserveFragment=true&logon_style=signin-cs&loginMessage=timeout_cont
+                    (admin/ot@dmin)   --->    in Safety VDI
+
+-Xmx4048m
+-Xms256m
+--------------------------------------------------------------SIT & PROD DB Access--------------------------------------------------------------------
+
+Connect to vpn for SIT and Prod DB
+https://vpn.000apsa.sbp.eyclienthub.com/vdesk/webtop.eui?webtop=/Common/EYP2SAPMpolicy-Patched_webtop&webtop_type=webtop_full
+
+1. Run ---> mstsc then 
+2. Enter IP ---> 10.26.153.213...aftr eneter then cancel it then enter it will work 
+3. provide username/pass ---> Username: inexus-prd.sbp.local\kumabi , inexus-dev.sbp.local\kumabi ,,Temporary password: Changeit1!(notWorking)
+4. then enter in SIT DB ....murthy has given this paasword  --->   Password@1234#
+5. SafetylowerAKS.rdp ---> from desktop ,,,use only for create the password 
+6. 10.26.153.214 ---> use this ip for SIT & 10.83.48.5 this for PROD
+                new created password ----> Aaya@123
+					
+
+Prod DB
+murthy has given this paasword  --->   Password@1234# 
+SafetyProdEastUS.rdp ---> login here for create new password 
+IP --> 10.83.48.5
+Username: inexus-prd.sbp.local\kumabi
+new created password ---->Dipaaya@123........... Aaya@123(expired).....
+
+safelite invoice batch faled 
+session is down error while moving/uploading the file in FTP but invoices are created.
+safety will come to know that invoices are created there is no issue but just file move has some issue.
+
+genericBulkinvoice failed 
+11invoices ...2nd june ...3files are prcessed ...invoice files moved from acrhive (3files were not to processed due to some error ) 
+-----------------------------------------ERAC Scheduled=------------------------------------------------------
+
+Please find the plan below for the ERAC invoice tracker update. on 24th May mail 
+
+1.           Apr 11th to 15th                            :             Meena
+2.           Apr 18th to 22nd                           :             Abhimanyu
+3.           Apr 25th to Apr 29th                    :             Madhu
+4.           May 2nd to May 6th                     :             Meena
+5.           May 9th to May 13th                    :             Abhimanyu
+6.           May 16th to May 20th                 :             Madhu
+7.           May 23rd to May 27th                 :             Meena
+8.           May 31st to June 3rd                   :             Abhimanyu
+9.           June 6th to June 10th                   :             Madhu
+
+
+
+Wishing you a day filled with happiness and a year filled with joy. Happy birthday!”
+
+
+----------------------------ERAC Script to run -----------------------------------------------------------------------------------------------------
+
+select cc.claimNumber, sr.ServiceRequestNumber, con.NameDenorm, sr.SpecialistID, sr.ClaimID
+from safety_prod_cc.dbo.cc_claim cc
+JOIN safety_prod_cc.dbo.cc_servicerequest sr ON cc.id = sr.ClaimID
+JOIN safety_prod_cc.dbo.cc_contact con ON con.id = sr.SpecialistID
+where con.NameDenorm like 'ENTERPRISE RENT-A-CAR' and
+cc.ClaimNumber in ('LAMA006D5B','LAMA006EC3','LAMA005F3B','LAMA008604','LAMA007121','LAMA007646','LAMA006DC','LAMA006FD0','LAMA0070EF',
+ 'LAMA00710F','LAMA0068C0','LAMA0064D4','LAMA006D26','LAMA00491E','LANH000625','LAMA0067F3','LAMA006E34','LAMA00489A','LAMA00781D',
+ 'LAMA005DEA','LAMA0072D3','LAMA0057C0','LAMA006286','LAMA0080D2','LAMA00727C','LAMA005679','LCNH000298','LAMA004779','LAMA00618F',
+ 'LANH000740','LAMA005A33','LCMA007972','LAMA006D47','LCMA004633','LCMA003F0C','LAMA002C24','LANH000541')
+
+sameesen gupta 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Query Ran in Prod(below)
+select cc_claim.ID from safety_prod_cc.dbo.cc_claim where cc_claim.ClaimNumber in ('LBMA00047A') --> get claim id -- 2116
+select * from safety_prod_cc.dbo.cc_document where ClaimID = '2116' --> get document list in perticular claim
+
+select * from cc_messagehistory mh join cc_claim c on mh.ClaimID = c.ID where c.ClaimNumber = 'LAMA00226A' --and mh.DestinationID = 324,16,61,101
+
+--select * from cc_messagehistory mh join cc_claim c on mh.ClaimID = c.ID where c.ClaimNumber = 'LAMA00226A' --and mh.DestinationID = 324,16,61,101
+--select doc.Name,doc.ID,doc.DocUID,doc.OTID from safety_prod_cc.dbo.cc_document doc where doc.OTID = '5064648'  ---doc.DocUID = '5064648' 
+--select * from safety_prod_cc.dbo.cc_document 
+select cc_claim.ID from safety_prod_cc.dbo.cc_claim where cc_claim.ClaimNumber in ('LAMA00226A') --> get claim id -- 2116
+select doc.Name,doc.ID,doc.DocUID,doc.OTID,doc.Author,doc.ClaimID from safety_prod_cc.dbo.cc_document doc where doc.ClaimID = '14906' --> get document list in perticular claim
+
+
+select cc.claimNumber, sr.ServiceRequestNumber, con.NameDenorm, sr.SpecialistID, sr.ClaimID
+from safety_prod_cc.dbo.cc_claim cc
+JOIN safety_prod_cc.dbo.cc_servicerequest sr ON cc.id = sr.ClaimID
+JOIN safety_prod_cc.dbo.cc_contact con ON con.id = sr.SpecialistID
+where con.NameDenorm like 'ENTERPRISE RENT-A-CAR' and
+cc.ClaimNumber in('LAMA00909E','LANH0003C5','LAMA0065F8','LAMA005552','LCMA00383E','LANH00078E','LAMA00A489','LAMA0085E5','LAMA0079A4','LAMA0081F3','LAMA008CC7','LAMA008C0A','LAMA009B8E','LAMA003745','LAMA006764','LAMA00960C','LAMA008DFA','LAMA0076D7','LAMA008621','LAMA008D78','LAMA007773','LAMA008EAE','LAMA0090F5','LAMA00861E','LAMA009997','LAMA004268','LAMA008CED','LAMA008A8C','LAMA0053A0','LAMA009800','LAMA003EBE','LAMA006FCB','LAMA00A64D','LCMA00AB25','LANH000595','LANH00079E','LAMA0089CA','LAMA008AF4','LAMA008A6B','LAMA005DA6','LAMA009F9B','LCMA007A15','LAMA006D06','LAMA007325','LAMA00756F','LAMA006599','AMA007CDE','LAMA008B6D','LAME000076','LAMA006C7C','LAMA008EA8','LAMA00A698','LAMA0097A2','LAMA0082BA','LAMA008527','LAMA008070','LAMA007A1E')
+
+
+
+
+
+
+
+ey.saas.common.utils.IntegrationException: An error occured while populating request data
+at eic.integration.masrmv.common.transformer.RMVReportRequestTransformer.process(RMVReportRequestTransformer.gs:162)
+at eic.integration.masrmv.messaging.MasRmvRepo
+
+
+
+
+17/06  - GenericBulkinvoice failed 
+
+
+1.opened by Excel move them to the archive/genericbulkInvoice folder if they aren’t 
+there are 11 files in claimcenter/archive/genericBulkinvoice
+
+2. Confirm if an error report generated in outbound/genericbulkInvoice 
+        outbound/genericbulkInvoice/error ---> here 11 files are there 
+3. 
+
+
+batch failed but file has been processed
+	
+Invoice files moved from archive 3 files are not processed	
+
+
+
+ERAC
+Feb 25,28 - Abhimanyu --> Done 
+Mar 3,4 – Abhimanyu ---> 
+
+Mar 28th to Apr 1st -->  Abhimanyu
+
+
+
+
+
+
+
+
+
+
+
+
+Exam : 
+I have a string "2500 - SomeValue". How can I remove everything before the 'S' in 'SomeValue'?
+
+var x = "2500 - SomeValue";
+var y = x.substring(x.lastIndexOf(" - "),
+// this is where I'm stuck, I need the rest of the string starting from here. 
+Thanks for any help.
+
+
+
+
+
+
+
+fso-to@vs-ssh.visualstudio.com:v3/fso-to/Safety_Insurance/CC_Modules.Abhi
+fso-to@vs-ssh.visualstudio.com:v3/fso-to/Safety_Insurance/CC_Base10.1.Abhi
+
+
+https://ue2dfsosafsta01.blob.core.windows.net/safety-ftp/sit/outbound/exstream/createupload2022-05-26/
+
+
+mandangi.rao@gds.ey.com
+101342092
+
+FNEWOPV415483
+
+STP - system trigger payment
+
+type %UserProfile%\.ssh\id_rsa.pub | clip
+
+https://fso-to.visualstudio.com/Safety_Insurance/_wiki/wikis/Safety_Insurance.wiki/404/Developer-workspace-setup --> Devops
+https://fso-to.visualstudio.com/Safety_Insurance/_git/CC_Modules.Abkumar?path=/modules
+https://dev.azure.com/EYGDSASMS/iNexus%20-%20Platform%20Support/_workitems/recentlycreated/
+
+
+Safety Insurance Materials
+https://eyus.sharepoint.com/sites/SafetyInsuranceMaterials/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FSafetyInsuranceMaterials%2FShared%20Documents%2FManaged%20Services%2FFebruary%20Release&viewid=a3aa5fcb%2De38e%2D48f7%2D88c5%2Db8d7beb776b7&OR=Teams%2DHL&CT=1644495604257&sourceId=&params=%7B%22AppName%22%3A%22Teams%2DDesktop%22%2C%22AppVersion%22%3A%2227%2F22010300409%22%7D
+
+ey@prudentbrokers.com; prudentplusadmin@prudentbrokers.com                to Medi Assist <ernstandyoung@mediassist.in>
+
+daily send mail on /before 4.30pm(daily health check)
+Batch monitoring,MessageQueue,Server clustor log ....total 8items check and send status to client across team 
+
+Safety Production Patching
+Cleint call - 7.30pm
+
+Completed
+runbook - all defects and incident ...every time got update..client can access regularly run book
+daily monitoring 
+patching 
+deployement 
+weekly . wsr 
+
+level - uma roy ...jameenwala
+
+ 
+You should have received a DUO email.  That needs to be configured first. 
+
+Safety Insurance
+EST in Boston, Massachusetts, USA
+
+
+
+
+Safety Insurance - USA (Auto,Home,Business)
+2nd Feb 2022
+
+open text - document
+datahub - data cc warehouse 
+middle ware system - cc to pc 
+onsite offsore model ...in cc, 4 resources ...1 onsite person ....three person sdm , senior manager technical arcitect...
+
+ tickets from client ...service now 
+ 
+ 
+ jeyameena.balasubramanian@gds.ey.com
+ 
+ 
+ rohit abastha 
+ 
+KT 
+Service Now, Run Book, CR log.
+
+Deployment Activities -  Implementation plan, Release Notes, Sanity Check Lists, Mail communication
+
+WSR Preparation – PowerBI report generation
+
+
+		
+		
+		safety pressure , client 
+		major release aug 
+		R2 - integration 		
+		nidhi - configuration 
+		
+		
+		Batch
+		1. FinancialEsclation Batch - main batch
+		   when you create check it will in awaiting info status when we run the batch , check status move to requested.
+		2. CheckFilesExport_Ext 
+		    later, when we run checkfilesExport_ext batch , it will be issued (check issued)
+		
+		
+		033-40713108 -> 2828
+        943----monthly .........
+3months ----2828..5656
+6months - 7.5% .....discount .... 5233......sms ....airtel Thanks link...799...6months 
+12months - 15%..discount ----> 9617rs ....
+ 		
+		
+		------------R2-------------------------------
+		fso-to@vs-ssh.visualstudio.com:v3/fso-to/Safety_Insurance/CC_Modules.Abkumar -- cc_modules
+		
+		fso-to@vs-ssh.visualstudio.com:v3/fso-to/Safety_Insurance/CC_Base10.1.Abkumar -- cc_Base10.1 
+		
+		
+		fso-to@vs-ssh.visualstudio.com:v3/fso-to/Safety_Insurance/CM_Modules.Abkumar
+		
+		fso-to@vs-ssh.visualstudio.com:v3/fso-to/Safety_Insurance/CM_Base10.1.Abkumar
+		
+		----------04th june-----------code base checked out from clone process ----------------------------------
+				
+		fso-to@vs-ssh.visualstudio.com:v3/fso-to/Safety_Insurance/CC_Modules.abhi.R2
+		fso-to@vs-ssh.visualstudio.com:v3/fso-to/Safety_Insurance/CC_Base10.1.abhi.R2
+		
+		
+		fso-to@vs-ssh.visualstudio.com:v3/fso-to/Safety_Insurance/CM_Base10.1.abhi.R2
+		
+		fso-to@vs-ssh.visualstudio.com:v3/fso-to/Safety_Insurance/CM_Modules.abhi.R2
+		
+		---------------------------------------------12th June--------------------------------------------------
+		fso-to@vs-ssh.visualstudio.com:v3/fso-to/Safety_Insurance/CC_Modules.AbhiK.R2
+		fso-to@vs-ssh.visualstudio.com:v3/fso-to/Safety_Insurance/CC_Base10.1.AbhiK.R2
+		
+		
+		
+		
+		
+		
+		
+		
+		Activty 
+		[07-03-2022 15:12] Nidhi G Singh
+download the document 
+
+[07-03-2022 15:12] Nidhi G Singh
+please dont open ther in sharepoint 
+
+
+
+		https://safetyinsurance.sharepoint.com/sites/GuideWire/Shared%20Documents/Forms/AllItems.aspx?newTargetListUrl=%2Fsites%2FGuideWire%2FShared%20Documents&viewpath=%2Fsites%2FGuideWire%2FShared%20Documents%2FForms%2FAllItems%2Easpx&id=%2Fsites%2FGuideWire%2FShared%20Documents%2FInception%2FFeature%2FSystem%20Admin%2FActivity%20Patterns%2FR2&viewid=3e8b0d80%2D3abe%2D485b%2D8aa1%2D68e6e13d52da
+		
+		
+		[16-03-2022 12:20] Nidhi G Singh
+http://ecmdevcontent/OTCS/cs.exe?func=ll&objId=231846&objAction=browse&logStopConditionID=12548_189360760_1_open
+
+[16-03-2022 13:45] Nidhi G Singh
+if(document.MimeType == null or document.MimeType.Empty){
+document.MimeType = doc.MimeType
+}
+
+
+
+[16-03-2022 12:50] Abhimanyu Kumar
+
+uses gw.api.database.Query
+uses gw.api.database.Relop
+var clm = Query.make(Claim).compare("ClaimNumber",Relop.Equals,"LANH000004").select().AtMostOneRow
+print(clm.Documents.Count)
+
+[16-03-2022 13:10] Abhimanyu Kumar
+[13:10] Nidhi G Singh
+ 
+
+gw.api.database.Query
+uses gw.api.database.Relop
+var clm = Query.make(Claim).compare("ClaimNumber",Relop.Equals,"LANH000004").select().AtMostOneRow
+print(clm.Documents.Count)
+
+for(doc in clm.Documents){
+if(doc.Name.equalsIgnoreCase("")){
+gw.transaction.Transaction.runWithNewBundle(\elt -> {
+doc.Name =""
+print("Document Name updated")
+},"su")
+}
+}
+
+
+
+

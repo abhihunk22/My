@@ -1,0 +1,574 @@
+in PC, alt + shift +T ---> ServerTools ---> integrationconfiguration -->
+EICAdressStanderiztion -- true 
+and ppcbceg should be true
+EICRating - StubFlag - true(if we r using stub data)
+and the EnableVeriskIntegration script parameters should be false from admin 
+
+EICBCEGSProcessor
+
+
+
+first you need to create a policy and let it flow to BC then check in msg queue whether you got any events trigered or not
+
+then cancel the policy and chekc the queue whether any event got trigered or not
+
+then move the clock and reinstate the policy then check for the events in the queue
+
+
+first "Lenderdock Corrections" and then  "Lenderdock corrections work queue"
+We have ran both the batches "Lenderdock Corrections" & "Lenderdock corrections work queue" and its got successfully completed
+Lenderdock Corrections" and then  "Lenderdock corrections work queue" 
+
+
+SIT2 
+E30010941,E30029554,E30043329 - billingSystemNullPointer 
+
+
+--------------------------------------------------Log_IP_from_UI___________________________________________
+[22-12-2022 17:08] Sushmitha Ravichandran
+https://pas.electricinsurance.com/idp/login?postbackUrl=%2Fsh%2FGuidewirelogs%2F
+
+[22-12-2022 17:11] Sushmitha Ravichandran
+PROD Logs-https://pas.electricinsurance.com/sh/Guidewirelogs/
+Production Environment - gweicprod / Brod3awrah
+
+--------------------------------------------------Jan Release-----------------------------------------------
+
+--------------------------------------------------Feb Release-----------------------------------------------
+3A.GEINC12769231 -  Unable to merge account | 
+                    Error: "Cannot merge account or transfer policies until all pending messages on impacted accounts and policies have been processed..."
+                                   Trying to merge account 999163675/H6522214H1 with 999163677/A5A36970A.
+
+           Getting this error:
+                  Cannot merge account or transfer policies until all pending messages on impacted accounts and policies have been processed. 
+				  There are pending messages on at least account 999163675. Please try again later or contact your system administrator if the condition persists.
+                      Merging 999163675/H6522214H1 with 999163677/A5A36970A1
+ 
+3B. GEINC12749538 - Cannot merge account or transfer policies until all pending messages on impacted accounts and policies have been processed 
+I am trying to move a policy to a different account and I get this error:
+
+Cannot merge account or transfer policies until all pending messages on impacted accounts and policies have been processed. 
+There are pending messages on at least account 999139652. Please try again later or contact your system administrator if the condition persists.
+
+Trying to move policy A6542027A1 from account: 999139652 to account: E10478024
+
+
+--------------------------------------------------March Release-----------------------------------------------
+Analysis needs to be done to find out what went wrong with that transaction and how to fix it.
+
+1. GEINC12217754 - Errored Guidewire Message Queue Payloads in PC - "Billing System".----> Fixed on 28th Feb 1.30pm and move to SIT on 04thMarch.
+                      xCenter: Policy Center
+                      Issue: Message payloads failed to be processed.
+  Prod Data Below -->   Next Steps: Analysis needs to be completed to determine to identify root cause & process payloads
+1. 999119526 - ChangePeriod - A100012900, 01/06/2022, 01/06/2023, 0300497663
+2. E10137899 - ChangePeriod - A100015626, 05/01/2022, 05/01/2023, 0051695252
+3. 999135732 - ChangePeriod - A6465661A1, 03/24/2022, 03/24/2023, 0243952423 
+4. E10416254 - ChangePeriod - H100020421, 12/28/2022, 12/28/2023, 0514780726					  
+5. 999805110 - ChangePeriod - A100021127, 10/24/2022, 10/24/2023, 0340764511
+
+----------------------------GEINC13043639---------------------------
+999804515,E10192008
+
+For Account number E10192008 - From account summary level we could see that the Phone number is not available,once the phone number gets update, 
+                                 we can retry the stuck message so that it will flow from the queue.
+ESignature -  message stuck
+MASRMVReporting ---- message stuck
+ 
+ 
+
+
+-------------------------------------------		
+we need to commit 3 files --> BillingAPITransactionUtil.gs,BillingAPI.gs & invoiceAssembler.gs 
+                              i have removed all loggers which we had applied for as analysis the issue.
+					  
+				worked on billingsystem, fix got deployed in SIT today.and its moved to QA lane.	  
+					  
+					  by mistaken , taken old build , so that it got missed 
+					  
+					  
+					  Note : There is an issue accessing GPA portal, currently team is looking into it and we will updated in group once it is completed.(Please refer the attached email  for the issue)
+					  
+					  normal transaction 
+					  submission
+					  pc
+					  cancel
+					  reinstatement
+					  
+					  
+					  address - 16215 Rhyolite Cir, Reno, NV 89521-9639
+					  PATRICK VANCE 408-495-0161
+					  
+					  
+					  51223,51741,51890
+					  
+					  
+					  
+					  
+					  
+					  
+					   if(policyPeriod.PaidAmount.IsPositive and policyPeriod.InvoicesSortedByEventDate.first().InvoiceItems.hasMatch(\elt1 -> elt1.PolicyPeriod == policyPeriod &&
+         ( (elt1.Amount - elt1.PaidAmount) != 0)) and !(policyPeriod.PaymentPlan.PublicID.equals("eicbc:5"))){
+       policyPeriod.startDelinquency(DelinquencyReason.TC_PASTDUE)
+     }
+	 
+	 var nextPlannedInvoice = policyPeriod.InvoiceStream_Ext.Invoices.where(\elt -> elt.Status == InvoiceStatus.TC_PLANNED and !elt.IsRolledCancelInvoice_Ext and !elt.AdHoc)
+    
+	
+	
+	
+	function withPolicyWithSomeItemsBilled() {
+    var policyPeriod = new IssuanceBuilder().createAndCommit()
+
+    for (var i in 0..2) {
+      var item = policyPeriod.InvoiceItemsSortedByEventDate[i]
+      item.Invoice.makeBilledWithClockAdvanceToEventDate()
+      item.Bundle.commit()
+    }
+  }
+  
+  
+  
+  enhancement InvoiceEnhancement : entity.Invoice {
+  /**
+   * Advance the clock to the day after the invoice's event date and make it billed
+   */
+  function makeBilledWithClockAdvanceToEventDate(){
+    gw.transaction.Transaction.runWithNewBundle( \b -> {
+      var invoice = b.add(this)
+      if(invoice.EventDate.addDays(1).after(Date.CurrentDate) ){      
+        (invoice.EventDate.addDays(1)).setClock()
+      }
+      invoice.makeBilled()
+    })
+  }
+}
+
+
+ if(firstReinstateEntry != null) {
+            //Adjust the invoice item amount -  Fix for off amount in full pay reinstate.
+            firstReinstateEntry.setAmount(firstReinstateEntry.Amount - difference)
+          }
+          else {
+            //Place this charge on first planned invoice that is in planned state.
+            var newEntry = initializer.addEntry(difference.negate(), TC_INSTALLMENT,
+                firstPlannedInvoice != null ? firstPlannedInvoice.PaymentDueDate : (orderedEntries.first() != null ? orderedEntries.first().EventDate : Date.Today))
+            newEntry.setInvoice(firstPlannedInvoice)
+          }
+        }
+
+					  
+					  
+			policyPeriod.Account.Invoices.firstWhere(\elt -> elt.IsRolledCancelInvoice_Ext and elt.Planned) === null 
+			
+					  
+		policyPeriod.InvoiceItems.firstWhere(\elt -> elt.Invoice.isIsRolledCancelInvoice_Ext() and elt.Invoice.Planned)   = null 			  
+					  
+					  
+					  
+					  
+					  
+
+2. GEINC11140467 - Premium Missing on Cancel/Rewrite for Earlier Effective Date
+                   Hi Team,
+                   Insured, Megan Casey, E10332622/A100013382 called about billing as they have not received a bill. When I open the policy there is no premium listed.
+				   Please check and advise.
+                   Issue is specific to policies that were cancelled and rewritten for an earlier effective date with a policy change effective the same day
+				   as the original effective date
+Tom Flynn 8:48 PM   Account #E10449498  Policy #A100021655
+@Sushmitha_Ravichandran - this occurred recently on policy change 0208179228, but we were able to get passed it by changing the date. We know the exact steps to recreate the issue.
+1) Issue a policy.
+2) Cancel the policy, and then rewrite full term to an earlier effective date.
+3) Quote a policy change with an effective date equal to the effective date of the policy issued in step 1.
+		pol- - A100021655, a/c - E10449498, 
+		   
+				   
+				   
+				   
+3. GEINC12173265  - Issue between GW billing and the data hub causing a variance on the report Billing uses to balance payroll deduction processing:
+				   
+				   
+				   tfa --- commaricial pkg 
+	-----------------------------------------------Rewrite---------------------------------------
+rewrites are similar to renewals
+A rewrite is associated with another policy period (the canceled policy period).However,the rewrite typically has a new policy number unrelated to the one used by the previous policy period. 
+Insurers can also use rewrites to transfer a policy from one account to another. This is known as an account rewrite. In this situation, the original policy 
+under the original account is cancelled. The rewrite creates a new policy based on the original policy but for a different account. For example, suppose there is an account 
+for a household with two parents and a daughter. There are two personal auto policies - one for the parents and one for the daughter. The daughter is now an adult and 
+wants to move the policy to her own account. To do this, the insurer cancels the daughter's original policy and rewrites the policy to a new account in her name.
+
+Rewrites are usually categorized as one of the following types:
+
+Full-term - The rewrite replaces the entire term of the original policy. Typically, the original policy is cancelled as a flat cancellation. 
+            The effective date of the rewrite is usually the same as the effective date of the original policy.
+Mid-term - The rewrite replaces a portion of the original term of the original policy. Typically, the original policy is cancelled as a mid-term cancellation. 
+           The effective date of the rewrite is on or after the effective date of the cancellation. The rewrite may have an expiration date equal to the original policy's 
+		   expiration date. Alternatively, the rewrite may last for an entire new term and have an expiration date later than the original policy's expiration date.
+
+
+
+-----------------------------------------------------------	
+https://electricinsurance.leankit.com/card/1881681787/comments
+
+GEINC12969427- CIF is missing customer record and customer is unable to make payment
+Description --> The CIF is missing the account and policy information for E10376260. The customer is not able to make payment through paymentus. 
+                The customer was on the CIF on 7/15/22 and then dropped from the CIF 7/16/22. As of 2/21/23 the customer is still not on the CIF however 
+				there are 3 active policies on the account and we would expect a CIF record.
+
+Pol1 - H100017138-1 ---  cancellation date 15th july ,,,got cancelled on 15th july ...HO pol ,1trem n 2nd trem cancelled .....dev2 
+pol2 - A100023232-1      cancellation date is ...its open -------------Auto pol 
+pol3 - P100004107-1   ------- its open -----------------------Personal umbrella pol 
+
+
+
+
+var act = Query.make(Account).compare(Account#AccountNumber, Equals, "E10376260").select().AtMostOneRow
+
+
+print(act.AccountNumber)
+print(act.Policies.length)
+print(act.PolicyPeriods.Count)
+
+
+
+
+var vals = new ArrayList<String>()
+var act = Query.make(Account).compare(Account#AccountNumber, Equals, "E10376260").select().AtMostOneRow
+                           ///  .compare(Invoice#InvoiceNumber,Relop.Equals,"").select().AtMostOneRow
+for(poll in act.PolicyPeriods){
+  if (((poll.CancelStatus == PolicyCancelStatus.TC_OPEN or poll.CancelStatus == PolicyCancelStatus.TC_PENDINGCANCELLATION)
+      and poll.PolicyPerExpirDate > DateUtil.currentDate())
+      or ((poll.Cancellation.ModificationDate < DateUtil.currentDate()
+      and poll.Cancellation.ModificationDate > DateUtil.currentDate().addDays(-14)
+      and poll.LatestPolicyPeriod.Canceled and poll.CancelStatus == PolicyCancelStatus.TC_CANCELED))){vals.add(poll.PolicyNumberLong)
+    vals.join(",")
+  }
+print("CancelStatus is " + poll.CancelStatus)
+}
+
+
+--------------------script 
+
+
+uses gw.api.database.Relop
+uses gw.api.database.Query
+uses gw.api.util.DateUtil
+
+var  poool = Query.make(PolicyPeriod).compare(PolicyPeriod#PolicyNumber,Equals,"H100017138").select().toList()
+
+print(poool.firstWhere(\elt -> elt.CancelStatus == PolicyCancelStatus.TC_OPEN))
+
+print(poool.last().PolicyNumberLong)
+print(poool.last().CancelStatus)
+print(poool.last().PolicyPerEffDate)
+print(poool.last().PolicyPerExpirDate)
+
+
+print(poool.last().PolicyPerExpirDate > DateUtil.currentDate()) 
+
+print(poool.last().Cancellation.ModificationDate >  DateUtil.currentDate())
+
+print(poool.last().Cancellation.ModificationDate < DateUtil.currentDate().addDays(-14))
+print(poool.last().LatestPolicyPeriod.Canceled)
+
+print(poool.last().PolicyNumberLong)
+
+
+
+-----------------------------------
+
+uses gw.api.database.Relop
+uses gw.api.database.Query
+uses gw.api.util.DateUtil
+
+var  poool = Query.make(PolicyPeriod).compare(PolicyPeriod#PolicyNumber,Equals,"H100017138").select().toList()
+
+print("PP Open : "  + poool.firstWhere(\elt -> elt.CancelStatus == PolicyCancelStatus.TC_OPEN))
+
+
+print("PP CANCELED : "  +poool.where(\elt -> elt.CancelStatus == PolicyCancelStatus.TC_CANCELED))
+
+-----------------------------23rd
+
+uses gw.api.database.Relop
+uses gw.api.database.Query
+uses gw.api.util.DateUtil
+
+var vals = new ArrayList<String>()
+var act = Query.make(Account).compare(Account#AccountNumber, Equals, "E10376260").select().AtMostOneRow
+var date1 = DateUtil.currentDate().addDays(-223)
+print(date1)
+
+
+for(poll in act.PolicyPeriods){
+    if (((poll.CancelStatus == PolicyCancelStatus.TC_OPEN or poll.CancelStatus == PolicyCancelStatus.TC_PENDINGCANCELLATION)
+        and poll.PolicyPerExpirDate <  date1)
+        or ((poll.Cancellation.ModificationDate < date1
+        and poll.Cancellation.ModificationDate > date1.addDays(-14)
+        and poll.LatestPolicyPeriod.Canceled and poll.CancelStatus == PolicyCancelStatus.TC_CANCELED))) {
+        vals.add(poll.PolicyNumberLong)
+      vals.join(",")
+    } 
+print(poll.PolicyNumber+ " "  +poll.CancelStatus+ " "  + poll.PolicyPerExpirDate+ " " +poll.Cancellation.ModificationDate)
+
+}
+				   
+----------------------------------------------------------------------------				   
+			   
+REGISTRATION NO. - WB08N0475				   
+Model - TVS JUPITER ZX DISC BS6 
+ENGINE NO. - EG5BN1400996
+CHASSIS NO. - MD626CG52N1B05016
+
+DigiLocker - 198181
+
+dip 
+198484 
+
+
+4500+gst = 5040 *2 = 10,080 3nights including breakfast 
+30240 .... 
+saam 
+
+                    true/false boolean 
+false and  false = false  
+false and true  = false 
+true and false = false 
+true and true = true 
+
+false or  false = false  
+false or true  = true  
+true or false = true  
+true or true = true 
+
+
+
+
+Current Date1 is : 2022-07-16
+
+PolicyNumber : H100017138 CancelStatus is : canceled PolicyPerExpirDate is : 2023-07-15
+Cancellation ModificationDate is : 2022-07-15
+LatestPolicyPeriod is : false and 
+Policy CancelStatus is : canceled
+pol.PolicyPerExpirDate > date1 = true 
+pol.Cancellation.ModificationDate < date1 = false
+pol.Cancellation.ModificationDate > date1.addDays(-14) = true   -------> condition (false and true)  Or (true and true and false and true) 
+                                                                                                          false  or false = false 
+
+PolicyNumber : H100017138 CancelStatus is : canceled PolicyPerExpirDate is : 2023-07-19
+Cancellation ModificationDate is : 2022-07-19
+LatestPolicyPeriod is : false and 
+Policy CancelStatus is : canceled                                              
+
+pol.PolicyPerExpirDate > date1 = true 
+pol.Cancellation.ModificationDate < date1 = true
+pol.Cancellation.ModificationDate > date1.addDays(-14) = true      ---->  (false and true) or (false and true and false and true )
+                                                                                                       false or false= false    
+
+
+PolicyNumber : H100017138 CancelStatus is : open PolicyPerExpirDate is : 2023-07-22
+Cancellation ModificationDate is : null
+LatestPolicyPeriod is : false and 
+Policy CancelStatus is : open 
+pol.PolicyPerExpirDate > date1 = true 
+pol.Cancellation.ModificationDate < date1 = false
+pol.Cancellation.ModificationDate > date1.addDays(-14) = false      ----> (true and true) or (null[false] and null[false] and false and false)
+                                                                                                     true  or false = ture 
+
+                   -----------------
+if (((pol.CancelStatus == PolicyCancelStatus.TC_OPEN or pol.CancelStatus == PolicyCancelStatus.TC_PENDINGCANCELLATION)
+          and pol.PolicyPerExpirDate > date1)
+		  
+		  
+          or 
+		  ((pol.Cancellation.ModificationDate < date1
+          and pol.Cancellation.ModificationDate > date1.addDays(-14)
+          and pol.LatestPolicyPeriod.Canceled and pol.CancelStatus == PolicyCancelStatus.TC_CANCELED)))
+
+		  {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sat Jul 16 01:30:34 EDT 2022  ----- Current date 
+
+PolicyNumber : H100017138 CancelStatus is : canceled PolicyPerExpirDate is : 2023-07-15
+Cancellation ModificationDate is : 2022-07-15
+LatestPolicyPeriod is : false and Policy CancelStatus is : canceled    -------> condition (false and true)  Or (true and true and false and true)  ...false or false  =   false 
+                                                                                            false  or false 
+
+
+
+PolicyNumber : H100017138 CancelStatus is : canceled PolicyPerExpirDate is : 2023-07-19
+Cancellation ModificationDate is : 2022-07-19
+LatestPolicyPeriod is : false and Policy CancelStatus is : canceled   ---->  (false and true) or (false and true and false and true )
+                                                                               false or false 
+
+
+
+
+PolicyNumber : H100017138 CancelStatus is : open PolicyPerExpirDate is : 2023-07-22
+Cancellation ModificationDate is : null
+LatestPolicyPeriod is : false and Policy CancelStatus is : open    ----> (true and true) or (null[false] and null[false] and false and false)
+                                                                           true  or false 
+
+
+
+if (((pol.CancelStatus == PolicyCancelStatus.TC_OPEN or pol.CancelStatus == PolicyCancelStatus.TC_PENDINGCANCELLATION)
+          and pol.PolicyPerExpirDate > date1)
+		  
+		  
+          or 
+		  ((pol.Cancellation.ModificationDate < date1
+          and pol.Cancellation.ModificationDate > date1.addDays(-14)
+          and pol.LatestPolicyPeriod.Canceled and pol.CancelStatus == PolicyCancelStatus.TC_CANCELED)))
+
+		  {
+        vals.add(pol.PolicyNumberLong)
+		
+		
+		
+		
+		
+		
+Current Date is : 2022-07-16
+
+PolicyNumber : H100017138 CancelStatus is : canceled PolicyPerExpirDate is : 2023-07-15
+Cancellation ModificationDate is : 2022-07-15
+LatestPolicyPeriod is : false and 
+Policy CancelStatus is : canceled
+pol.Cancellation.ModificationDate < date1 = false
+pol.Cancellation.ModificationDate > date1.addDays(-14) = false
+
+
+
+
+
+PolicyNumber : H100017138 CancelStatus is : canceled PolicyPerExpirDate is : 2023-07-19
+Cancellation ModificationDate is : 2022-07-19
+LatestPolicyPeriod is : false and 
+Policy CancelStatus is : canceled
+
+pol.Cancellation.ModificationDate < date1 = true
+pol.Cancellation.ModificationDate > date1.addDays(-14) = false
+
+
+
+
+PolicyNumber : H100017138 CancelStatus is : open PolicyPerExpirDate is : 2023-07-22
+Cancellation ModificationDate is : null
+LatestPolicyPeriod is : false and 
+Policy CancelStatus is : open
+pol.Cancellation.ModificationDate < date1 = false
+pol.Cancellation.ModificationDate > date1.addDays(-14) = false
+
+
+
+--------------------------------------working Script to run in HF/Prod--------------------------------
+uses gw.api.database.Relop
+uses gw.api.database.Query
+uses gw.api.util.DateUtil 
+
+var vals = new ArrayList<String>()
+var act = Query.make(Account).compare(Account#AccountNumber, Equals, "E10376260").select().AtMostOneRow
+var date1 = DateUtil.currentDate().addDays(-222)
+
+print("Current Date is : "+date1)
+
+for(poll in act.PolicyPeriods){
+  if (((poll.CancelStatus == PolicyCancelStatus.TC_OPEN or poll.CancelStatus == PolicyCancelStatus.TC_PENDINGCANCELLATION)
+      and poll.PolicyPerExpirDate > date1)
+      or ((poll.Cancellation.ModificationDate < date1
+      and poll.Cancellation.ModificationDate > date1.addDays(-14)
+      and poll.LatestPolicyPeriod.Canceled and poll.CancelStatus == PolicyCancelStatus.TC_CANCELED))) {
+    vals.add(poll.PolicyNumberLong)
+    vals.join(",")
+  }
+  print(" PolicyNumber : " +poll.PolicyNumber+ " CancelStatus is : "  +poll.CancelStatus+ " PolicyPerExpirDate is :  "  + poll.PolicyPerExpirDate  + " Cancellation ModificationDate is :  " +poll.Cancellation.ModificationDate+ ""
+      + " LatestPolicyPeriod is : " +poll.LatestPolicyPeriod.Canceled  + " and " + " Policy CancelStatus  is : "  + poll.CancelStatus)
+
+ }
+print("policyperiod :  " +vals)
+var polNumb = vals.toString().remove("[").remove("]")
+var policyNumbersLong = polNumb?.split(",")
+var policyPeriod = Query.make(PolicyPeriod).compareIn(PolicyPeriod#PolicyNumberLong,policyNumbersLong)
+    .compare(PolicyPeriod#ClosureStatus, Relop.NotEquals,PolicyClosureStatus.TC_CLOSED)
+    .select().toList()
+
+print(policyPeriod)
+
+EYMS3 (@Pass345)
+------------------------------------------------------------------------------------
+
+Hi @Evan_Paradis - We have reviewed the account (E10376260) and verified from the prod database that account is available in today's CIF table (Screenshot attached).
+
+we have also checked in HF, record is available in CIF table(Screenshot attached).
+
+we have prepared the script which needs to be run into prod to get to know , why the particular account has not been added into CIF table. we have scheduled the  working session meeting at morning 09:00 am EST. 
+
+Please find the attachment(CIF_Record_GEINC12969427.gsp).
+
+---------------------------------
+
+
+Hi @Evan_Paradis - We have reviewed the account (E10376260) in prod and from DB we could see that this account is available in today's CIF table (Screenshot attached - CIFRecordExist_Prod.png). Could you please confirm whether this account was added in today's CIF file or not?
+
+If the account is not available in today's record, please execute the attached script (CIF_Record_GEINC12969427.gsp) in PROD BC to find why this particular account has not been added into CIF table. we have scheduled the working session meeting at morning 09:00 am EST. 
+
+In HF, using the gosu script, we have verified that this account is getting written in the CIF file (Screenshot attached - CIF_RecordExist_HF.png).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+uses gw.api.database.Relop
+uses gw.api.database.Query
+uses gw.api.util.DateUtil
+
+var vals = new ArrayList<String>()
+var act = Query.make(Account).compare(Account#AccountNumber, Equals, "E10376260").select().AtMostOneRow
+var date1 = DateUtil.currentDate().addDays(-222)
+
+print("Current Date is : "+date1)
+
+for(poll in act.PolicyPeriods){
+    if (((poll.CancelStatus == PolicyCancelStatus.TC_OPEN or poll.CancelStatus == PolicyCancelStatus.TC_PENDINGCANCELLATION)
+        and poll.PolicyPerExpirDate > date1)
+        or ((poll.Cancellation.ModificationDate < date1
+        and poll.Cancellation.ModificationDate > date1.addDays(-14)
+        and poll.LatestPolicyPeriod.Canceled and poll.CancelStatus == PolicyCancelStatus.TC_CANCELED))) {
+        vals.add(poll.PolicyNumberLong)
+      vals.join(",")
+    } 
+print(" PolicyNumber : " +poll.PolicyNumber+ " CancelStatus is : "  +poll.CancelStatus+ " PolicyPerExpirDate is : "  + poll.PolicyPerExpirDate)
+print( "Cancellation ModificationDate is :  " +poll.Cancellation.ModificationDate)
+print( "LatestPolicyPeriod is : " +poll.LatestPolicyPeriod.Canceled  + " and " + " Policy CancelStatus  is : "  + poll.CancelStatus )
+
+print(poll.PolicyPerExpirDate > date1)
+print(poll.Cancellation.ModificationDate > date1)
+print(poll.Cancellation.ModificationDate > date1.addDays(-14))
+print(vals)
+
+}
+

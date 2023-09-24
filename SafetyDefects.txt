@@ -1,0 +1,633 @@
+Work Queues Issues : 
+ClaimException	-----> a.	3 Failed with “NullPointerException” on a Claim Validation rule :ValidateAutoReserveLimit rule (which might require a fix) and 
+                       b.	4 claims are coverage in question.
+LAMA106148---SIT
+A764837--> SIT
+
+https://access.safetyinsurance.com/Citrix/SafetyVAppsWeb/
+
+Here are your safety credentials:
+Username:          Abkumar
+Password:          8bH&gSXi8fi22F*6.....ArYONETHeRVAlcom(expired)
+                  8bH&gSXi8fi22F*6  
+				  
+				  https://sos.safetyinsurance.com/
+	Bihar Mutation
+	pnbe@123456
+	
+	
+	23 items 
+	4item dhir 
+	2already june release 
+	17items ...day by day progress 
+	
+	
+	
+	
+	
+	
+				 18Documents  
+				  
+What could this individual do to have a greater impact?
+Being positive helps reduce stress, increases productivity as well as interpersonal relations with others. 
+Take the time to be proactive and originate new concepts.
+Take initiative to accomplish tasks
+Building long-term relationships has been shown to be vital to career growth.
+A forward-thinking employee is considered an asset.
+What particular strengths does this individual display?
+more emphasis on quality rather than quantity
+
+strength 
+I truly believe my strong work ethic is my biggest strength.
+When I commit to a deadline, I do whatever needs to be done to meet it in a quality manner. 
+
+My curiosity is one of my greatest strengths. When taking on a new project, 
+I enjoy asking clients questions about their hobbies and backgrounds. 
+This helps me establish a personal connection with them while keeping communication easy and productive.
+ I know how important establishing quality relationships with customers is for a sales program and company as a whole, 
+ and I feel I would fit into your climate well.”
+
+
+May Defects : 
+1.	Prod 332 STP Exception for TL resubmitted overnight and issued STP check
+
+Issue Description: Total loss appraisal received, all activities triggered as expected, STP exception triggered for Total Loss, 
+exception resubmitted overnight, should have remained but STP payment was issued as if the vehicle was repairable. 
+Different from Prod 130 because the STP exception did hold the payment initially & different from Prod 310 because the vehicle IS deemed a total loss in CC.
+Details:
+3/9 Total loss appraisal received.
+3/9 STP Exception (Settlement Type is Total Loss) triggered as expected
+3/9 Exposure assigned to ASU adjuster as expected.
+--STP Exception was not removed by adjuster--
+3/10 STP Estimate resubmitted for payment- as expected overnight
+3/10 STP payment issued- Not expected**
+
+See attached document for screen shots of claim history as well as CCC's history.
+
+
+when "Total loss appraisal received" in CC
+      - all activities triggered 
+	  - STP exception triggered for Total Loss
+      - exception resubmitted overnight
+	  - STP payment issued- Not expected**  ---- issue 
+
+STP Estimate Stopped due to STP Exceptions (Settlement Type is Total Loss)- as expected
+ how we can make clone drive for third party system
+	
+----in Postman/soap request ...this field need to be change-LAMA10615F----
+transactionType": "E",  
+"totalLossFlag": "Y", 
+echoField": "49911", 
+ "uniqueTransactionID": "49111-002", 
+
+
+	
+
+LAMA10615F, the newly saved claim (Alt+V) ---<> ServiceCreated -Check issued in this claim
+LAMA106179, the newly saved claim (Alt+V) - service sit ----STP Exception got created 
+
+LAMA10617C, --> STP exception
+LAMA106185 --> STP exception..manualy complte activity..given to nathenial..he has remove stp exception manually from the UI.
+
+LAMA106193 --> new service claim given to nathenial,,,with total loss   ...on 9th Apr
+
+Steps to follow:
+1. create claim with the service "Appraisal" . Settlement Type : Total Loss.
+2. closed the exisitng activities. 1. STP Exception for Estimate for $12175.65
+                                   2. New Total Loss Claim Received
+3. Run the batch "STP Exception Resubmit Batch"	
+4. After successfully ran the batch .
+5. create new activity  "STP Exception for Estimate for $12175.65"	
+6.						   
+
+ 
+
+
+LANH100A18, the newly saved claim (Alt+V)
+
+
+
+STP Exception Resubmit batch --> it as usaual it goes to reubmitAction, once resumbit action is done.
+    currentFlow --> it will remove all stp exception ,it will remove all the activity which is created for stp exception untill rerun.
+	                it will rerun DWSTPAYMENTUTIL,DDSTPPAYMENTUTIL,APPRAISALSTPPayment.initiateSTPPayment_Ext and then rerun, obuisously new exception,new activity gets created.
+					
+
+
+
+
+
+
+	transactionType": "E",  
+"totalLossFlag": "Y", 
+echoField": "49911", 
+ "uniqueTransactionID": "49111-002", 
+	
+	
+	
+	
+ 
+
+2.	Production Issue #130: TL appraisal received, Payment issued as if repairable
+
+-----> Total loss estimate received,payment issued via STP as if vehicle was reparible. 
+
+Claim Center Production Issue# 130: TL appraisal received, STP exception not triggered, indemnity payment issued to DTP A/B as if vehicle was repairable.
+
+Details: LAMA003C88 – Total loss appraisal received, confirmed total loss flipped to ‘Yes’, New Total Loss activity generated to a total loss adjuster,
+ however, payment issued to the DTP shop on file as if this was a repairable vehicle. 
+ 
+ That check has been stop paid – but why did that happen along with (it seems) the other correct/expected TL actions.
+Expected Result: STP exception activity, no payment, New Total Loss received activity and assignment to TL adjuster.
+See attached write up for screen shots. --- 
+
+LAMA006506 - Prod Claim
+
+Vehicle Location Type
+Body Shop
+Vehicle Location
+26 NZDVC VNE, SCITUATE, MA 02066
+Service Type
+Network Repair Shop
+Appraiser
+SAFETY INSURANCE DRP - VIP 1
+Instructions to Estimator
+
+
+
+
+
+1. Settlement Type : Repairable(130)----> 
+    LAMA106194-->  new service claim ,,,with repairable ----> Payment issued as if repairable.....
+    STP exception activity will not be create.it willprocess the payment and issued the check for the payment .
+	STP: Estimate for $11,175.65 successfully issued check #: 01860217
+
+
+2. Settlement Type : Total Loss(332) --> new Claim ,LAMA1061A9,LAMA106193
+   LAMA106185 --> STP exception activity will be create and stop the payment prcess.
+   Histoy = STP: Estimate for $12,175.65 stopped due to STP exceptions
+   ran the batch "STP Exception Resubmit batch" --> STP: Estimate for $12,175.65 resubmitted for payment,STP: Estimate for $12,175.65 stopped due to STP exceptions
+   if we remove the stp exception then may or maynot be process the payment.
+   History = STP: Estimate for $12,175.65 removed, payment did not process(when remove stp exception from UI manually)
+   
+
+STPUtil_Ext.gs --> resumbitaction_Ext-->
+AppriasalSTPPAYMENT_Ext.gs ---> line 22, if Settlement Type : Repairable then stp act will not be initiating.
+                                line 97, if Settlement Type : Total Loss then stp exception act trigger and stop the payment 
+CCCStandardEstimateUtil_Ext.gs --> line no. 44,setting totalLossFlag": "Y" & "N" here.here create estimate amount also								
+
+STP - Straight through processing
+
+LAMA1061AC, the newly saved claim (Alt+V) --New Test 
+
+on 14th Discussion
+[20:05] Abhimanyu Kumar
+Nathan said both are not reproducible in SIT, we need to ask safety for this concern.
+
+[20:06] Abhimanyu Kumar
+Nathaniel confirmed that he will update you on this defects after have words with safety.
+
+as a developer we can can not do anything, since issue is not reproducable in SIT.
+ask safety , how we can reproduce in SIT. steps needed.
+
+ LAMA1061F2 --> STP exceptinon
+
+
+3. PROD 182  
+Claim LHNH0004D3 user Pete Najarian & I both tried to upload an email. No error message. No document appears.
+Additional impacted claims:LAMA005C47
+LBMA0021B9
+LBMA00047A
+LHMA002096
+LHMA00144A  
+
+
+Documents not loading into ClaimCenter
+4 TIMES I PUT AN EMAIL INTO CLAIM # LHNH0004D3 - NEVER APPEARED IN THE DOCUMENTS- NEVER LOADED OR ERRORED OUT.
+Please create SNOW ticket with high severity.
+This issue appears to be affecting both AUTO and OTA and many claims are involved.
+Since yesterday afternoon additional claims reported are:
+LAMA005C47
+LBMA0021B9
+LBMA00047A
+LHMA002096
+LHMA00144A
+
+	We need to validate documents count of impacted claims in the both ECM prod and CC prod side.			
+		
+		in SIT 
+document table --> ClaimId-80201,DocUID
+claim table - ID-80201,PublicId
+
+CC Claim - 55103
+ECM Claim - 59282
+
+
+
+
+
+
+
+
+
+
+SELECT column_name(s)
+FROM table1
+LEFT JOIN table2
+ON table1.column_name = table2.column_name;
+
+
+select COUNT(safety_prod_cc.dbo.cc_document.DocUID) from safety_prod_cc.dbo.cc_claim
+join safety_prod_cc.dbo.cc_document 
+on safety_prod_cc.dbo.cc_claim.ID = safety_prod_cc.dbo.cc_document.ClaimID
+total records list of documents in prod --> 10,82,037
+
+select id from cc_claim where ClaimNumber = 'LAMA1060E6' ---> get Claim ID 
+select *from cc_document where ClaimID = '80201' ---> get list of documents of the claim 
+
+Query ran in SIT ->select id from cc_claim where ClaimNumber = 'LHNH0004D3' ---> get Claim ID 
+                       select *from cc_document where ClaimID = 'claimid' --->   
+
+Query ran in PROD DB --> 
+select cc_claim.ID from safety_prod_cc.dbo.cc_claim where cc_claim.ClaimNumber in ('LBMA00047A') --> get claim id -- 2116
+select * from safety_prod_cc.dbo.cc_document where ClaimID = '2116' --> get document list in perticular claim
+
+Query --> to get all documents of all 5 claims 
+1. select * from safety_prod_cc.dbo.cc_document where  ClaimID in('31870','2116','14558','14220','30582')
+
+2. a) to get claim id of all 5 claims 
+      select cc_claim.ID from safety_prod_cc.dbo.cc_claim where cc_claim.ClaimNumber in ('LHNH0004D3','LAMA005C47','LBMA0021B9','LBMA00047A','LHMA002096') 
+   b) to get all documents of particular claim thru claimID.
+       select * from safety_prod_cc.dbo.cc_document where ClaimID = '2116'   
+
+-------------------To get list of Total Documents Count per claim in prod -----------------------------------------------------------------------------------
+select  safety_prod_cc.dbo.cc_claim.ClaimNumber,COUNT(safety_prod_cc.dbo.cc_document.DocUID) as DocumentCount from safety_prod_cc.dbo.cc_claim
+join safety_prod_cc.dbo.cc_document 
+on safety_prod_cc.dbo.cc_claim.ID = safety_prod_cc.dbo.cc_document.ClaimID Group By safety_prod_cc.dbo.cc_claim.ClaimNumber
+
+
+select  safety_prod_cc.dbo.cc_claim.ID as ClaimID, safety_prod_cc.dbo.cc_claim.ClaimNumber,COUNT(safety_prod_cc.dbo.cc_document.DocUID) as DocumentCount from safety_prod_cc.dbo.cc_claim
+join safety_prod_cc.dbo.cc_document 
+on safety_prod_cc.dbo.cc_claim.ID = safety_prod_cc.dbo.cc_document.ClaimID Group By safety_prod_cc.dbo.cc_claim.ClaimNumber,safety_prod_cc.dbo.cc_claim.ID
+
+--------with distinct ...no duplicate and no null-----Total Claims with Total Documents count of particular claim-in Prod------DailyWork-------------------
+select  safety_prod_cc.dbo.cc_claim.ID as ClaimID, safety_prod_cc.dbo.cc_claim.ClaimNumber,COUNT(Distinct safety_prod_cc.dbo.cc_document.DocUID) as DocumentCount from safety_prod_cc.dbo.cc_claim
+join safety_prod_cc.dbo.cc_document 
+on safety_prod_cc.dbo.cc_claim.ID = safety_prod_cc.dbo.cc_document.ClaimID Group By safety_prod_cc.dbo.cc_claim.ClaimNumber,safety_prod_cc.dbo.cc_claim.ID
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Documents in ECM 
+LHNH0004D3 - 41
+LAMA005C47 - 57...upto we r good
+LBMA0021B9 - 21
+LBMA00047A - 68.......
+LHMA002096 - 30......correct 
+
+Documents in CC 
+Claim Number       ClaimID       Document Count
+LHNH0004D3           31870                41
+LAMA005C47           2116                 57
+LBMA0021B9           14558                21...corect
+LBMA00047A           14220                69...mismatch 
+LHMA002096           30582                30....
+
+Safety Insurance - Access to R2 DEV, QA and SIT DB.
+
+
+
+
+
+uses gw.api.database.Query
+uses gw.api.database.Relop
+var clm = Query.make(Claim).compare("ClaimNumber",Relop.Equals,"LAMA1060E6").select().AtMostOneRow
+print(clm.Documents.Count)
+
+
+
+
+
+
+4. Prod 22 - Error message received when trying to select documents and 'Create PDF'
+DocumentAdaptor.gs --> combineDocuments()111,122
+ClaimDocuments.pcf --> 
+"claimNumber":"LAMA1060E6",,,successfully with 10pdfs and 6pdfs
+
+fixed is ready on 19th Apr.  commit on 22nd Apr 
+
+Prod 22 - UI validation for more than 20documents 
+
+
+
+
+
+
+
+
+5. Prod 371 - Notes without Topic require Special Permission to view
+           Issue identified while attempting to validate Prod 241:
+Notes without a topic are only visible to users with special permissions. 
+
+This is possible when the note is created from the Activity Detail. The Topic is not prefilled or mandatory. 
+
+sit existing - LAMA106001 ...fixed is ready on 20th Apr
+
+SIT LAMA106243  ,, User - vidatri  Pass - NewUser
+
+Local User - abk , Pass - NewUser
+
+
+Vincent Datri - vidatri  ,,,,working NewUser
+
+And that previous erros are OOTB ""
+
+
+6. Smoke 103	CS0280817         	
+   Smoke 103: Document does not have the correct metadata in the Documents of the claim.
+   Smoke 103: Per meeting with EY, logging this new defect that has been discussed:   
+   when sending a document via email the document does not have the correct metadata in the Documents of the claim		
+    
+	SIT -- LAMA105F3A 
+
+Query for Prod DB
+
+--select cc_claim.ID from safety_prod_cc.dbo.cc_claim where cc_claim.ClaimNumber in ('LHNH0004D3','LAMA005C47','LBMA0021B9','LBMA00047A','LHMA002096') 
+--select COUNT(safety_prod_cc.dbo.cc_document.DocUID) from safety_prod_cc.dbo.cc_document where  ClaimID = '2116'
+--select COUNT(safety_prod_cc.dbo.cc_document.DocUID) from safety_prod_cc.dbo.cc_document where  ClaimID in('31870','2116','14558','14220','30582')
+--select * from safety_prod_cc.dbo.cc_document where ClaimNumber in (select * from safety_prod_cc.dbo.cc_claim)
+
+---SELECT safety_prod_cc.dbo.cc_claim.ID,safety_prod_cc.dbo.cc_document.ClaimID, safety_prod_cc.dbo.cc_claim.ClaimNumber,safety_prod_cc.dbo.cc_document.DocUID 
+---FROM  safety_prod_cc.dbo.cc_claim
+---INNER JOIN  safety_prod_cc.dbo.cc_document ON safety_prod_cc.dbo.cc_claim.ID = safety_prod_cc.dbo.cc_document.ClaimID;
+
+--select COUNT(safety_prod_cc.dbo.cc_document.DocUID), from safety_prod_cc.dbo.cc_claim
+--join safety_prod_cc.dbo.cc_document 
+--on safety_prod_cc.dbo.cc_claim.ID = safety_prod_cc.dbo.cc_document.ClaimID
+
+--select  COUNT(*)  from safety_prod_cc.dbo.cc_document Group BY safety_prod_cc.dbo.cc_claim
+
+
+select cc.claimNumber, doc.DocUID, doc.ClaimID,doc.Name,docT.NAME as DocumentType,docS.NAME as Section,doc.Author,doc.CreateTime,doc.MimeType--,delM.DESCRIPTION as del
+from safety_prod_cc.dbo.cc_claim cc
+JOIN safety_prod_cc.dbo.cc_document doc ON cc.id = doc.ClaimID
+INNER JOIN safety_prod_cc.dbo.cctl_documenttype docT On docT.ID = doc.Type
+INNER JOIN safety_prod_cc.dbo.cctl_documentsection docS On docS.ID = doc.Section
+---INNER JOIN safety_prod_cc.dbo.cctl_deliverymethod delM On delM.ID = doc.DeliveryMethod_Ext
+where cc.ClaimNumber in ('LAMA006D23') 
+--select * from safety_prod_cc.dbo.cc_document  
+--- 10005 = save a copy only ,             10005 - save a copy only, 10006 - Email,10001 - physical mail
+---select* from safety_prod_cc.dbo.cc_document  //=---doc.DeliveryMethod_Ext,
+
+--('LAMA106253')---('LAMA0054AE') --('LAMA006D23','LAMA002581','LAMA00579F') --,'LAMA006EC3','LAMA005F3B','LAMA008604')
+
+---LAMA104751,LAMA002581,LAMA006D23,LAMA00579F
+--select  safety_prod_cc.dbo.cc_claim.ID as ClaimID, safety_prod_cc.dbo.cc_claim.ClaimNumber,COUNT(Distinct safety_prod_cc.dbo.cc_document.DocUID) as DocumentCount from safety_prod_cc.dbo.cc_claim
+--join safety_prod_cc.dbo.cc_document 
+--join safety_prod_cc.dbo.cctl_documentsection
+--on safety_prod_cc.dbo.cc_claim.ID = safety_prod_cc.dbo.cc_document.ClaimID Group By safety_prod_cc.dbo.cc_claim.ClaimNumber,safety_prod_cc.dbo.cc_claim.ID
+
+
+--select cc_claim.ID from safety_prod_cc.dbo.cc_claim where cc_claim.ClaimNumber in ('LAMA00579F') 
+--select * from safety_prod_cc.dbo.cc_document as doc where  doc.NameDenorm = 'AutomaticDocument_LAMA008D39_RQOP_001'
+--select * from safety_prod_cc.dbo.cc_document where  ClaimID = '30518'
+---select * from safety_prod_cc.dbo.cctl_documentsection --- 10019 - email send, 10001-correspondence, 10003 - investigation, 10016 - appraisal, 10018 -Appraisal other 
+---select * from safety_prod_cc.dbo.cctl_docdeliverymethod_ext --- 10005 - save a copy only, 10006 - Email,10001 - physical mail
+--select * from safety_prod_cc.dbo.cctl_documenttype   --10044=	Email Sent by CreateEmail,	10067	=OutgoingDocuments, 10047=	GlassInvoice
+
+--select * from safety_prod_cc.dbo.cc_document
+
+
+
+
+
+select cc.claimNumber, doc.DocUID, doc.ClaimID,doc.Name,docT.NAME as DocumentType,doc.Type,docS.NAME as Section,doc.Section,doc.Author,doc.CreateTime,doc.MimeType,doc.DeliveryMethod_Ext--,delM.DESCRIPTION as del
+from safety_prod_cc.dbo.cc_claim cc
+JOIN safety_prod_cc.dbo.cc_document doc ON cc.id = doc.ClaimID
+INNER JOIN safety_prod_cc.dbo.cctl_documenttype docT On docT.ID = doc.Type
+INNER JOIN safety_prod_cc.dbo.cctl_documentsection docS On docS.ID = doc.Section
+---INNER JOIN safety_prod_cc.dbo.cctl_deliverymethod delM On delM.ID = doc.DeliveryMethod_Ext
+where cc.ClaimNumber in ('LAMA006D23') 
+
+
+SIT -- LAMA105F3A 
+
+
+
+7. Smoke 76	CS0280735         
+  "Smoke76 - Zero payment amount in Glass Payment Audit Letter, On the Glass Payment Audit Letter, 
+  Claim showing $0.00 payment amount when payments have been made on the claim. DevOps 242666"
+  
+     SIT Claim - LANH100A61,LANH100A64,,PolicyNumber-ANH8595421 ...from soap
+	 
+Steps to created "Glass Payment Audit Letter"
+1. request run from soap ui to create claim ,with  Cov -  Comprehensive,Loss Cause- Glass.
+2. Update this fields-->  ClaimNumber,PolicyNumber,BatchNbr,InvoiceNumber,TransmissionDate, in the file "jnpinvoicexml11.xml"
+3. after updating the fields, make a zip file and place this file(jnpinvoicexml11.xml) into SIT safelite ftp location ---> /ClaimCenter/Out
+
+login details - Source Server/IP:	EFT-DEV.safelite.com , 
+                Destination Server/IP:	172.18.3.252, Port - 22
+				FTP ID:	Safety, FTP Password:	ssh key
+ 
+4. Then Run the batch "SafeliteInvoiceBatch" from SIT Server tool  
+5. Invoice("Glass Payment Audit Letter") generated and located in desktop--> Bulk invoices 
+6. click on submit in invoice from BulkInvoice details (Desktop-> Invoices)
+7. Run BulkInvoiceEsc/FinancialsEsclation for change the status..Run financialEsc batch change the status to requesting
+8. Run checkfilesexport batch for the issued the check (in Status)..invoice status should be Issued (Patyment has been Done),,
+         check issued and payment done automatically and exposure closed automatically
+9. create a document from template manually from document UI for glass letter. IT will geneate with the payment 
+
+ 
+View LAMA106254, the newly saved claim (Alt+V) 
+ew LANH100A2E, the newly saved claim (Alt+V)
+LANH100A2F -- comp
+w LANH100A35, the newly saved claim (Alt+V)
+
+
+View LANH100A36, the newly saved claim (Alt+V) --> comp , glass ANH8595421
+ANH100A37, the newly saved claim (Alt+V)
+
+Smoke 168 ReOpen 
+Claim logs --> LAMA004634(12,13th April), LCMA00C00F(19,22aprl), LHMA000D93(13th April )
+LANH100A61 --> From Soap request 
+toalves
+NewUser
+
+
+Prod 34 from soap ...safelite 
+SIT - LAMA106599
+
+----------------------------------------------August Release-----------------------------------------------------
+1.Prod64  --> STP exception "Vehicle incident description must not be empty" is not clearing once that field is completed by the adjuster and "Resubmit" is selected. Error occurs.
+                Also occurs with errors: STP not eligible, claim description must not be empty
+12/8 MM: Also occurs with other errors requiring correction within the claim. Examples: LAMA003E2E; LAMA0039AE; LAMA003E94; LAMA003F31
+12/10 MS: Updated ticket with note and screen shots from LAMA00448A
+12/20 MM: increase to high severity 
+2/15 MS: EY asks SIC to review to see if this issue is still occurring and what the appropriate severity is so it can be prioritized accordingly.
+2/16 MM: Email to trainers to see frequency of this issue. 1st response LAMA0083F9 shows user was able to fill field and submit properly. Awaiting additional responses - possible user error.
+2/22 MM: User Sofia Ramirez rec'd error on claim: LAMA0085f3. Payment did issue - asked for more details about what user was doing when error received and how it resolved.
+4/1 MM: Also occurred on LAMA00B1BA, will add to write up & update SNOW
+4/14 MM: Occurred on LAMA00BD30 - sent video to EY
+5/17 MM: Occurred on LAMA00D9C6 - added to SNOW
+
+                          Status - not replicated
+
+2. Prod101 --->Disappearing deductible applied in full to first payment (to insured). Subsequent payment (to lienholder) is generating an approval to review for disappearing deductible
+                  example: LAMA0025F3
+11/23 MM: Engaged EY as a workaround will be required
+1/7 KT:  sent follow up to EY for more info.  Chris Rushton reports inability to close exposures when this occurs too, looking also to see if this is a separate issue 
+             and the volume of claims affected
+2/8 MM: Per Cate F., Marcus found workaround - enter a $0 payment under the Safety Shield Disappearing Deductible category & the subsequent check will issue without the approval
+           activity. I asked for claim number to review potential system generated letters advising of a $0 pmt. Claim is: LAMA0059EA. Does not appear letter generated.
+2/16 MM: EY advises there is no check with Disappearing Deductible to determine if an approval is needed. To change that would be a CR. Regarding the escalation & looping of the 
+               aprpoval - this is ADL issue - Indicator needs to be marked as "yes" for all group supervisors. Multiple R2 groups do not have the supervisor indicator. 
+			   KT will review submitted info.
+4/15 MM: Email to KT to see if this issue needs to remain open now that Marcus has been given supervisor indicator. He recommends I check with Marcus. 
+         I emailed Marcus to see if this is still an issue. Marcus has been using workaround to avoid this issue. He will avoid workaround on 1 claim to see if it processes correctly. 
+           Unk when qualifiying claim will arise.
+4/22 MM: Marcus advises the Activity is still creating (Per ntoes 2/16 - this would be a CR) but the looping has not persisted: Example: LAMA00B648. I reviewed requirements - 
+              there is no check on the Activity to see if the disappearing deductible has already been applied in the requirements. It appears that now the looping has resolved 
+              this item is behaving expected. Advised Marcus of same. We may be able to close this item.
+4/26 MM: Marcus thinks this should be considered for CR. I ask him to quantify impact.
+4/27 MM: Marcus states impact is several checks per week. Email to KT for his thoughts regarding whether this qualifies as CR and if it should be pursued.
+4/27 MM: KT agrees this is a defect. Payment approval submits if user does not apply ded based on soft warning. Soft warning should not appear if already applied and furthermore, 
+               the user does not have the ability to enter the disappearing deductible because the button is no longer available. Keeping item open.
+
+Replicated claim in march ---> LAMA106081
+SIT Claim --> pol - PRV8409993, LAMA106543 .....
+              View LAMA106544, the newly saved claim (Alt+V)
+
+TransactionApprovalRules.grs -->Tap13000 - DD Applicable but not applied_Ext			  
+DDVisibile_Ext() - lineCategory-
+Condition : 
+                Disappearing Deductible – Only applies when the conditions below are met
+* 1.) Policy State = MA
+* 2.) Exposure coverage = Collision - Full OR Collision - Limited exposures
+* i.Exposure’s risk unit must have Safety Shield or Shield+  ---> Shield = No, Shield Plus = Yes (claim-->policy-->Vehicle)
+* ii.Exposure’s vehicle incident must have a listed policy driver with an SDIP score of 98 or 99 (Claim-->PartiesInvolved --> SDIP Rating)
+* 3. ) Exposure Deductible "Waived" = N
+       In Exposure screen --> Disappearing deductible section will be visible after check creation. 
+	   
+    LAMA106548, the newly saved claim (Alt+V)
+Existing Claim - LAMA106081,LAMA10313F, Policy - PRV1370324 ...SDIP Rating -99, 
+
+SIT New Created -->  LAMA10654E, 
+
+PRV1370324
+w LAMA10655C, the newly saved claim (Alt+V)
+annie --> LAMA106549...issue created 
+
+SIT -- annie claim LAMA106549
+SIT --> ancheriyan/NewUser
+
+LAMA106570,
+
+ LAMA10657C, the newly saved claim (Alt+V) --- need to replicate 101
+ LAMA106588,sit 
+ 
+ 
+...awaitng submi
+1.c crete a claim
+2. add listed operator as driver 
+3. appaileld the deductable n make a payment to the isured 
+4. exposure--. waiv --> no , autom check issued 
+
+5run the bacth financialesc .
+6. and chckfil export batch 
+here check ll issued
+nw make a payement to lienholder 
+then gets warning ..finish, payment wl go  pending approavl
+ 
+
+ 
+Hi All,
+
+Today I didn’t get chance to work on my defect. Because I was working with the other engagement. 
+I will resume investigation on defect #101 (16/06).
+
+Note # Today I have faced a lot with system slowness & stuckness. 
+
+Thanks,
+Abhimanyu 
+
+
+----------------------------------DH_CC_Query-------------------------------------------------------------------------
+--select c1.ClaimNumber,v.Vin,p.PolicyNumber,v.CreateTime,v.UpdateTime ,inc.ID,v.ID,v.Model,v.Make from safety_prod_cc.dbo.cc_vehicle v 
+--left outer join safety_prod_cc.dbo.cc_incident inc on inc.VehicleID = inc.ID
+--left outer join safety_prod_cc.dbo.cc_claim c1 on c1.ID = inc.ClaimID
+--left outer join safety_prod_cc.dbo.cc_policy p on p.ID = c1.PolicyID
+--where inc.PublicID = 'cc:27045'  
+
+
+select Vin,i.PublicID,v.id,VehicleID,* from cc_incident i join cc_vehicle v on i.VehicleID= v.ID
+where    I.PublicID ='CC:27045'
+
+select Vin, 'GWCC-'+ upper(CC_INCIDENT.PublicID) AS INC_KEY,Make,Model,Year,*
+FROM (("CC_VEHICLE" "CC_VEHICLE" LEFT OUTER JOIN "CC_INCIDENT" "CC_INCIDENT"  ON ( "CC_INCIDENT"."VEHICLEID"  =  "CC_VEHICLE"."ID" ))
+LEFT OUTER JOIN "CC_CLAIM" "CC_CLAIM" ON ( "CC_CLAIM"."ID"  =  "CC_INCIDENT"."CLAIMID" ))
+LEFT OUTER JOIN "CC_POLICY" "CC_POLICY" ON ( "CC_POLICY"."ID"  =  "CC_CLAIM"."POLICYID" )
+where CC_INCIDENT.PublicID = 'CC:27045'
+
+
+
+--select  safety_prod_cc.dbo.cc_claim.ID as ClaimID, safety_prod_cc.dbo.cc_claim.ClaimNumber,COUNT(Distinct safety_prod_cc.dbo.cc_document.DocUID) as DocumentCount from safety_prod_cc.dbo.cc_claim
+--join safety_prod_cc.dbo.cc_document 
+----on safety_prod_cc.dbo.cc_claim.ID = safety_prod_cc.dbo.cc_document.ClaimID Group By safety_prod_cc.dbo.cc_claim.ClaimNumber,safety_prod_cc.dbo.cc_claim.ID
+
+--select c.claimnumber,a.createtime from safety_prod_cc.dbo.cc_claim c, safety_prod_cc.dbo.cc_activity a, safety_prod_cc.dbo.cc_activitypattern p where c.id=a.claimid
+--and a.activitypatternid=p.id and p.code='subro_doc' order by a.CreateTime desc;  
+
+--select Vin, 'GWCC-'+ upper(CC_INCIDENT.PublicID) AS INC_KEY,Make,Model,Year,*
+--FROM (("CC_VEHICLE" "CC_VEHICLE" LEFT OUTER JOIN "CC_INCIDENT" "CC_INCIDENT"  ON ( "CC_INCIDENT"."VEHICLEID"  =  "CC_VEHICLE"."ID" ))
+--LEFT OUTER JOIN "CC_CLAIM" "CC_CLAIM" ON ( "CC_CLAIM"."ID"  =  "CC_INCIDENT"."CLAIMID" ))
+--LEFT OUTER JOIN "CC_POLICY" "CC_POLICY" ON ( "CC_POLICY"."ID"  =  "CC_CLAIM"."POLICYID" )
+---where CC_INCIDENT.PublicID = 'CC:27045'
+
+select * from safety_prod_cc.dbo.cc_vehicle v left outer join safety_prod_cc.dbo.cc_incident inc on inc.VehicleID = inc.ID
+left outer join safety_prod_cc.dbo.cc_claim c1 on c1.ID = inc.ClaimID
+left outer join safety_prod_cc.dbo.cc_policy p on p.ID = c1.PolicyID
+--where inc.PublicID = 'cc:27045'
+
+--select * from  safety_prod_cc.dbo.cc_vehicle v,safety_prod_cc.dbo.cc_incident inc 
+
+
+
+
+
+
+
+	
+[11:51] Krishna K Sistla
+take Supreetha/Sushmitha how to get the table v9 create table query and ask infra team to create the table
+
+[11:51] Abhimanyu Kumar
+k
+
+
+
+
+3. Prod169 - 
+4. Prod34 - 
+for collision,propertydamage exposure its not working 
+MasRmvReportTransport.gs , line 57 need to debug 
+              There are three fields are not getting populate the value.
+			   NoticeDate,LastResponse,KnownToMA RMV 
+			   
+			   SIT - LAMA104608, POL - PRV1083538...........now 
+View LAMA106581, the newly saved claim (Alt+V)
+Required -- AUTO policy for MA(Massachusetts) State 
+266
+
+its working only for bodly injury 
+
+
+ LAMA106588, the newly saved claim (Alt+V)
+
+Prod - 
+
+
+5. Prod61 - 
+
+
+
+in dev2 -- integDB configure in Dev2?
+              Integration dB is configurable in DEV2 
+			  
+			  

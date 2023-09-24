@@ -1,0 +1,710 @@
+
+GEINC11792444 - leankit Ticket
+
+Policy #A6535844A1
+
+Unable to apply policy change #0026768535 to unbound renewal #0739150173. Clicking "apply change to unbound renewal" results in the following error:
+
+NullPointerException: null
+Exception occurred at 07/15/2022 12:08 PM. Stack trace available in server log file.
+
+Reviewed instructions in GW Defects Box spreadsheet, the floppy disk icon is grey.
+
+
+Job.Operation.ApplyToRenewal = Apply Change To Renewal ---JobWizardBillingToolbarButtonSet.PolicyChange.pcf
+Web.ApplyToRenewal.Title = Apply change to the bound renewal
+
+Original effective date of the selected policy. Value to r
+i have tried with  manual approach to fix this issue but  that apporache is not worked out here. tried with the same VIN no. to add ,mmmmmmmmmmmm different details and same details.
+and for code prospective ---> we are calling VIN service for vehicle the get the VIN details and validate the vehicle data based on policy effective date and transaction. 
+but ghere i am not sure which function/method is responsible for that, when addingVehicle and apply pc to Renewal txn.. 
+ 
+-----------in leankit--------PC Defect----------------------------------------------------
+Tom Flynn
+5:48 PM
+@Evan_Paradis - typically a Null Pointer error prevents navigation to other areas of the transaction which prevents being able to fix what is causing the error.
+ The workaround referenced here is to clear the error so that navigation in the transaction is possible. It does not actually fix what is causing the error.
+
+Evan Paradis
+Evan Paradis
+5:33 PM
+@Sushmitha_Ravichandran / @Tom_Flynn - Can we try replicating the issue in the HF environment since the A6535844A1 policy exists there?
+
+@Tom_Flynn - Can you provide the workaround instructions that the rep attempted to follow per their comments, "Reviewed instructions in GW Defects Box spreadsheet, 
+the floppy disk icon is grey.". 
+
+Yesterday 07/25/2022
+Tom Flynn
+Tom Flynn
+7:02 PM
+@Evan_Paradis - we need some EY analysis to determine a workaround (not a code fix) for this issue
+--------------------------------------------------------------------------------------------------------------------------------
+
+uses gw.api.web.job.JobWizardHelper
+var period = Job.finder.findJobByJobNumber("0002229816").LatestPeriod  	
+gw.transaction.Transaction.runWithNewBundle(\bundle -> {
+  period = bundle.add(period)
+  print(period.RenewalProcess.ActiveRenewalWorkflow)
+  if(period.RenewalProcess.ActiveRenewalWorkflow != null) {
+    period.completeActiveWorkflow()
+  }
+},"su")
+
+
+20220725A83
+07/27/2022 2:28:36 AM EDT
+0
+1
+0
+0
+gw.xml.XmlSortException: Unable to process children of element 'Claim'. Expected one of '{ClaimantFirstName}'
+Caused by: gw.xml.XmlSortException: Match error
+
+
+submission - 11/11/2020
+renewal - 11/11/2020
+PC1(Lienholder/Mortgagee Update)-  01/11/2021
+PC2 Del Vehicl - 02/10/2022
+Renewal  - 09/11/2022 or 11/29/2022
+
+
+
+
+user - su2
+pass - EIC@3456
+REN Environment  - https://gwren.electricinsurance.com/pc/PolicyCenter.do
+E70016046 - a/c , Pol - A700001731, A700001732(issue got replicated here) and 33
+
+in local 
+pol - 36 ,37...40 
+
+premium quotation - 28000---b2b,
+23000- engine, protection, 0dv , 
+
+coverage -- tata - 0DP,b2b,engine,
+ 
+CSGMedicalBillProcess
+20220725A83
+07/28/2022 8:46:03 AM EDT
+0
+1
+0
+0
+gw.xml.XmlSortException: Unable to process children of element 'Claim'. Expected one of '{ClaimantFirstName}'
+Caused by: gw.xml.XmlSortException: Match error
+
+
+
+
+
+	SFDCObjectCreation - PC
+Expection from SFDC : System.DmlException: Insert failed. First exception on row 0; first error: STRING_TOO_LONG, 
+First Name: data value too large: DITECH FINANCIAL LLC ITS AFFILIATES AND/OR (max length=40): [FirstName]
+Class.GW_PersonAccountRTHandler.<i
+
+
+Mail has been sent with impacted claim number.
+@'Keyes, Jennifer (Electric Insurance' –Please check and take necessary actions.
+
+
+Jul 8, 2023
+The open operation did not complete within the allotted timeout of 00:01:00. The time allotted to this operation may have been a portion of a longer timeout.
+ 
+
+07/28/2022 8:11:11 AM EDT
+AccountChanged
+SFDCObjectTransport
+6458
+ 
+Retryable Error
+0
+Th
+-----------------------------------Defect_BC_--------6590------------------------------------------------------------
+Description of Issue:
+Payment made is not applying to the oldest invoice as priority.
+
+Steps:
+
+1. Issue a policy and make payment to all invoices except the last invoice.
+2. Make the last invoice due and delinquency will get triggered.
+3. Bound the renewal and then delinquency of 1st term will get closed.
+4. Make the 1st invoice of renewal term to "Due" and Delqineucy will get triggered.
+5. There will be two invoices with Due status. Now make payment.
+
+Expected Result:
+Payment amount should apply first to 1st term and then to the renewal term. (Payment made should be applied to the oldest invoice first and then to the remaining invoices next)
+
+Actual Result: 
+Payment amount is getting applied to the renewal term and then to the 1st term. (Payment is getting applied to the invoice with due status for which deliquency just started and then applying next to the oldest invoice)
+
+Policy output/ snapshot of issue included - Yes/No:
+Listed in Requirements - Yes/No:
+
+LOCAL - pol - A100000042, E10000073
+
+user - su2
+pass - EIC@3456
+
+
+
+3.45 ---->> salt ....amri ke  pas ,, global eye hospital ....
+Changes the status of planned invoices whose billing date has passed to &quot;billed&quot;. As a consequence of this change, the invoices are sent to the account.
+
+Changes the status of billed invoices whose due date has passed to &quot;due&quot;. Delinquency will be triggered for any policies with past due amounts.
+
+Distributes a payment, moving funds from the account&apos;s unapplied T-Account to the account&apos;s policies.
+
+Checks for need to change payment request status
+----------------------------------------------------BACKLOG_BC_PC--------------------------------------------------------------------------------
+
+
+REN:
+
+PC: https://gwren.electricinsurance.com/pc/PolicyCenter.do
+
+BC: https://gwren.electricinsurance.com/bc/BillingCenter.do
+
+CC: https://gwren.electricinsurance.com/cc/ClaimCenter.do 
+
+user - su2
+pass - EIC@3456
+
+
+Prod UI - EYMS3 (@Pass345)
+
+
+
+
+Policy change for policy H6526025H1 did not pass from PC to BC- D20220801KC10,KC04
+
+
+What is the issue? The Policy change for policy H6526025H1 did not pass from Policy Center to Billing Center.
+
+Policy number: H6526025H1
+
+Date of transaction: 2020-01-08
+
+Transaction type: Policy Change
+
+Job number: 0115508110
+
+Transaction Amount: $21.80
+
+Where is this issue taking place (Policy Center, Claims Center, Billing Center, Portal)? Policy Center to Billing Center
+
+What is the Severity of this issue (Low, Medium, High, Critical)? Medium
+
+Additional information (Workaround, ALM #, SME, Impact/Volume, Submission/Account/Policy Number etc.)? No work around
+
+ Backlog D20220801KC04 - (Policy Change transaction did not pass from Policy Center to Billing Center) 
+        Script is ready and tested successfully in REN env. Issue is not replicated into lower env.
+...................................D20220801KC04-----------
+Policy Change transaction for policy A6544086A1 did not pass from Policy Center to Billing Center.
+
+What is the issue? The Policy Change transaction for policy A6544086A1 did not pass from Policy Center to Billing Center. 
+Please add transactions to Billing Center in the order they are listed.
+
+ Policy number: A6544086A1
+
+Date of transaction: 2020-06-03 (06th june)
+
+Transaction type: Policy Change
+
+Job number: 0500049816
+
+Transaction Amount: $624.44
+
+Where is this issue taking place (Policy Center, Claims Center, Billing Center, Portal)? Policy Center to Billing Center
+
+What is the Severity of this issue (Low, Medium, High, Critical)? Medium
+
+Additional information (Workaround, ALM #, SME, Impact/Volume, Submission/Account/Policy Number etc.)? No work around
+
+1. create policy in pc 
+2. suspend BillingSystem MessageQueue in pc 
+3. then create any pc like add vehicle 
+4. skip the meassage so msg will never follow in bc.
+5. run the script that we ll get this transaction in bc ...
+
+policy .... suspend billingssytm mq  in pc 
+then create pc add vehicle 
+skip msg  then ...script msg  
+ 
+
+--------------script ---------------------------------------------------
+uses gw.api.system.PCLoggerCategory
+uses gw.plugin.Plugins
+uses gw.plugin.billing.IBillingSystemPlugin
+uses gw.api.database.Relop
+uses gw.api.database.Query
+var policyPeriod =Query.make(Job).compare(Job#JobNumber,Relop.Equals,"0055525027").select().AtMostOneRow.getLatestPeriod()
+PCLoggerCategory.APPLICATION.info("publicID:"+policyPeriod.PublicID)
+policyPeriod=policyPeriod.getSlice(policyPeriod.EditEffectiveDate)
+print(policyPeriod+", EditEffectiveDate - "+policyPeriod.EditEffectiveDate)
+var plugin = Plugins.get(IBillingSystemPlugin)
+var transactionId = "PC:122370-CancelPeriod-66"  ------------ ("PC: -ChangePeriod-66")
+plugin.cancelPolicyPeriod(policyPeriod,transactionId)-------------plugin.issuePolicyChange(policyPeriod,transactionId)
+PCLoggerCategory.APPLICATION.info("Cancelled period - " + policyPeriod.Job.JobNumber)
+
+
+select pp.transactionCostRPT,pp.policynumber,j.jobnumber,pp.PublicID as transactionId 
+from pc_policyperiod pp
+join pc_job j on j.ID=pp.JobID
+where pp.policynumber = 'A507b7888A1' 
+
+
+--------------REN ---------------------D20220801KC04--Leankit--------------------------------------------
+uses gw.api.system.PCLoggerCategory
+uses gw.plugin.Plugins
+uses gw.plugin.billing.IBillingSystemPlugin
+uses gw.api.database.Relop
+uses gw.api.database.Query
+var policyPeriod =Query.make(Job).compare(Job#JobNumber,Relop.Equals,"0055851018").select().AtMostOneRow.getLatestPeriod()
+PCLoggerCategory.APPLICATION.info("publicID:"+policyPeriod.PublicID)
+policyPeriod=policyPeriod.getSlice(policyPeriod.EditEffectiveDate)
+print(policyPeriod+", EditEffectiveDate - "+policyPeriod.EditEffectiveDate)
+var plugin = Plugins.get(IBillingSystemPlugin)
+var transactionId = "PC:64568-ChangePeriod-66" 
+plugin.issuePolicyChange(policyPeriod,transactionId)
+PCLoggerCategory.APPLICATION.info("Changed period - " + policyPeriod.Job.JobNumber)
+
+
+Axis Bank, No 85, 1st Floor Bentick Street, Near, Bepin Behari Ganguly St, Lal Bazar, Kolkata, West Bengal 700001
+7, Chittaranjan Ave, Calcutta Medical College, College Square, Kolkata, West Bengal 700073
+
+uses gw.api.system.PCLoggerCategory
+uses gw.plugin.Plugins
+uses gw.plugin.billing.IBillingSystemPlugin
+uses gw.api.database.Relop
+uses gw.api.database.Query
+var policyPeriod =Query.make(Job).compare(Job#JobNumber,Relop.Equals,"0055631123").select().AtMostOneRow.getLatestPeriod()
+PCLoggerCategory.APPLICATION.info("publicID:"+policyPeriod.PublicID)
+policyPeriod=policyPeriod.getSlice(policyPeriod.EditEffectiveDate)
+print(policyPeriod+", EditEffectiveDate - "+policyPeriod.EditEffectiveDate)
+var plugin = Plugins.get(IBillingSystemPlugin)
+var transactionId = "PC:64566-ChangePeriod-66" 
+plugin.issuePolicyChange(policyPeriod,transactionId)
+PCLoggerCategory.APPLICATION.info("Changed period - " + policyPeriod.Job.JobNumber)
+-----------------------------------------Backlog_BC----------------------Service Now (503315579(Pune@2018p)--leankit--------------------------------------------------------------
+D20220801KC01 - Renewal and Cancel transactions for policy did not pass from PC to BC
+D20220801KC02 - Renewal, Policy Change, Rewrite, and two Cancellation transactions for policy A6458635A1 did not pass from PC to BC
+D20220801KC03 - Cancel transaction for policy A6526024A1 did not pass from PC to BC.------------Done
+D20220801KC04 - Policy Change transaction for policy A6544086A1 did not pass from Policy Center to Billing Center. - Done
+D20220801KC05 - Policy Change transaction for policy H100003884 did not pass from PC to BC - done 
+D20220801KC06 - Policy Change transactions for policy H6242754H1 did not pass from PC to BC-3pc - done 
+D20220801KC07 - Policy Change transaction for policy H6470654H1 did not pass from PC to BC --> Done - Robin L Waggoner and Janie Clark Revocable Trust Revocable Trust(Exceeds the maximum length of 30 characters)
+D20220801KC08 - The Policy Change transaction for policy H6479817H1 did not pass from PC to BC ---> Done...Exceeds the maximum length of 30 characters.
+D20220801KC09 - Cancellation and Reinstatement transactions for policy H6528827H1 did not pass from PC to BC - Done
+D20220801KC10 - Policy change for policy H6526025H1 did not pass from PC to BC--> this is for Cancellation txn not pc, -$177.92,txn - 0103166075.need to discuss on given txn
+D20220801KC11 - Policy change transactions for policy H6535208H1 did not pass from PC to BC-3PC
+D20220801KC12 - Reinstate transactions for policy H6563089H1 did not pass from Policy Center to Billing Center. --Done
+------------------------------------------------------------------D20220801KC01---------------------------------------------------------------
+D20220801KC01 - Renewal and Cancel transactions for policy did not pass from PC to BC - NOT DONE 
+
+What is the issue? The Renewal and Cancel transactions for policy A5077888A1 did not pass from Policy Center to Billing Center. 
+Please add transactions to Billing Center in the order they are listed.
+
+Policy number: A5077888A1
+Date of transaction: 2019-10-01
+Transaction type: Renewal
+Job number: 0010560153
+Transaction Amount: $2,015.00    ---> 
+
+Policy number: A5077888A1
+Date of transaction: 2019-11-12
+Transaction type: Cancellation
+Job number: 0018150124
+Transaction Amount: -$2,015.00
+Where is this issue taking place (Policy Center, Claims Center, Billing Center, Portal)? Policy Center to Billing Center
+What is the Severity of this issue (Low, Medium, High, Critical)? Medium
+Additional information (Workaround, ALM #, SME, Impact/Volume, Submission/Account/Policy Number etc.)? No work around
+
+CancellationScript
+
+uses gw.api.system.PCLoggerCategory
+uses gw.plugin.Plugins
+uses gw.plugin.billing.IBillingSystemPlugin
+uses gw.api.database.Relop
+uses gw.api.database.Query
+var policyPeriod =Query.make(Job).compare(Job#JobNumber,Relop.Equals,"0065292569").select().AtMostOneRow.getLatestPeriod()
+PCLoggerCategory.APPLICATION.info("publicID:"+policyPeriod.PublicID)
+policyPeriod=policyPeriod.getSlice(policyPeriod.EditEffectiveDate)
+print(policyPeriod+", EditEffectiveDate - "+policyPeriod.EditEffectiveDate)
+var plugin = Plugins.get(IBillingSystemPlugin)
+var transactionId = "PC:64662-ChangePeriod-66" 
+plugin.cancelPolicyPeriod(policyPeriod,transactionId)
+PCLoggerCategory.APPLICATION.info("Changed period - " + policyPeriod.Job.JobNumber)
+
+RenewalScript
+
+uses gw.api.system.PCLoggerCategory
+uses gw.plugin.Plugins
+uses gw.plugin.billing.IBillingSystemPlugin
+uses gw.api.database.Relop
+uses gw.api.database.Query
+var policyPeriod =Query.make(Job).compare(Job#JobNumber,Relop.Equals,"0065292569").select().AtMostOneRow.getLatestPeriod()
+PCLoggerCategory.APPLICATION.info("publicID:"+policyPeriod.PublicID)
+policyPeriod=policyPeriod.getSlice(policyPeriod.EditEffectiveDate)
+print(policyPeriod+", EditEffectiveDate - "+policyPeriod.EditEffectiveDate)
+var plugin = Plugins.get(IBillingSystemPlugin)
+var transactionId = "PC:64662-ChangePeriod-66" 
+plugin.renewPolicyPeriod(policyPeriod,transactionId)
+PCLoggerCategory.APPLICATION.info("Changed period - " + policyPeriod.Job.JobNumber)
+
+
+Script for Prod ------------------------------------------------------------------------------------------------------------------------->
+uses gw.api.system.PCLoggerCategory
+uses gw.plugin.Plugins
+uses gw.plugin.billing.IBillingSystemPlugin
+uses gw.api.database.Relop
+uses gw.api.database.Query
+var policyPeriod =Query.make(Job).compare(Job#JobNumber,Relop.Equals,"0010560153").select().AtMostOneRow.getLatestPeriod()  //0010560153...
+PCLoggerCategory.APPLICATION.info("publicID:"+policyPeriod.PublicID)
+policyPeriod=policyPeriod.getSlice(policyPeriod.EditEffectiveDate)
+print(policyPeriod+", EditEffectiveDate - "+policyPeriod.EditEffectiveDate)
+var plugin = Plugins.get(IBillingSystemPlugin)
+var transactionId = "PC:64662-ChangePeriod-66" 
+plugin.renewPolicyPeriod(policyPeriod,transactionId)
+PCLoggerCategory.APPLICATION.info("Changed period - " + policyPeriod.Job.JobNumber)
+
+CancellationScript---
+
+uses gw.api.system.PCLoggerCategory
+uses gw.plugin.Plugins
+uses gw.plugin.billing.IBillingSystemPlugin
+uses gw.api.database.Relop
+uses gw.api.database.Query
+var policyPeriod =Query.make(Job).compare(Job#JobNumber,Relop.Equals,"0018150124").select().AtMostOneRow.getLatestPeriod()
+PCLoggerCategory.APPLICATION.info("publicID:"+policyPeriod.PublicID)
+policyPeriod=policyPeriod.getSlice(policyPeriod.EditEffectiveDate)
+print(policyPeriod+", EditEffectiveDate - "+policyPeriod.EditEffectiveDate)
+var plugin = Plugins.get(IBillingSystemPlugin)
+var transactionId = "PC:64662-ChangePeriod-66" 
+plugin.cancelPolicyPeriod(policyPeriod,transactionId)
+PCLoggerCategory.APPLICATION.info("Changed period - " + policyPeriod.Job.JobNumber)
+
+------------------------------------------------------D20220801KC08-----------------------------------------------------------------------------------
+D20220801KC08 - The Policy Change transaction for policy H6479817H1 did not pass from PC to BC  =   Done
+What is the issue? The Policy Change transaction for policy H6479817H1 did not pass from Policy Center to Billing Center.
+Policy number: H6479817H1
+Date of transaction: 2020-01-08
+Transaction type: Policy Change
+Job number: 0115508110
+Transaction Amount: $21.80
+Where is this issue taking place (Policy Center, Claims Center, Billing Center, Portal)? Policy Center to Billing Center
+What is the Severity of this issue (Low, Medium, High, Critical)? High
+Additional information (Workaround, ALM #, SME, Impact/Volume, Submission/Account/Policy Number etc.)? No work around
+
+uses gw.api.system.PCLoggerCategory
+uses gw.plugin.Plugins
+uses gw.plugin.billing.IBillingSystemPlugin
+uses gw.api.database.Relop
+uses gw.api.database.Query
+var policyPeriod =Query.make(Job).compare(Job#JobNumber,Relop.Equals,"0058575333").select().AtMostOneRow.getLatestPeriod()
+PCLoggerCategory.APPLICATION.info("publicID:"+policyPeriod.PublicID)
+policyPeriod=policyPeriod.getSlice(policyPeriod.EditEffectiveDate)
+print(policyPeriod+", EditEffectiveDate - "+policyPeriod.EditEffectiveDate)
+var plugin = Plugins.get(IBillingSystemPlugin)
+var transactionId = "PC:64595-ChangePeriod-66" 
+plugin.issuePolicyChange(policyPeriod,transactionId)
+PCLoggerCategory.APPLICATION.info("Changed period - " + policyPeriod.Job.JobNumber)
+---------------------------------------D20220801KC07----------------------------------------------------------------
+D20220801KC07 - Policy Change transaction for policy H6470654H1 did not pass from PC to BC - done
+
+What is the issue? The Policy Change transaction for policy H6470654H1 did not pass from Policy Center to Billing Center. Please add transactions to Billing Center in the order they are listed.
+Policy number: H6470654H1
+Date of transaction: 2020-06-17
+Transaction type: Policy Change
+Job number: 0406476971
+Transaction Amount: $29.00
+Where is this issue taking place (Policy Center, Claims Center, Billing Center, Portal)? Policy Center to Billing Center
+What is the Severity of this issue (Low, Medium, High, Critical)? High
+Additional information (Workaround, ALM #, SME, Impact/Volume, Submission/Account/Policy Number etc.)? No work around
+
+uses gw.api.system.PCLoggerCategory
+uses gw.plugin.Plugins
+uses gw.plugin.billing.IBillingSystemPlugin
+uses gw.api.database.Relop
+uses gw.api.database.Query
+var policyPeriod =Query.make(Job).compare(Job#JobNumber,Relop.Equals,"0059146240").select().AtMostOneRow.getLatestPeriod()
+PCLoggerCategory.APPLICATION.info("publicID:"+policyPeriod.PublicID)
+policyPeriod=policyPeriod.getSlice(policyPeriod.EditEffectiveDate)
+print(policyPeriod+", EditEffectiveDate - "+policyPeriod.EditEffectiveDate)
+var plugin = Plugins.get(IBillingSystemPlugin)
+var transactionId = "PC:64601-ChangePeriod-66" 
+plugin.issuePolicyChange(policyPeriod,transactionId)
+PCLoggerCategory.APPLICATION.info("Changed period - " + policyPeriod.Job.JobNumber)
+----------------------------------------D20220801KC03------------------------------------------------------------------------
+D20220801KC03 - Cancel transaction for policy A6526024A1 did not pass from PC to BC----> done,,not replicated in ren(In REN,A700001750) 
+
+What is the issue? The Cancel transaction for policy A6526024A1 did not pass from Policy Center to Billing Center. 
+Please add transactions to Billing Center in the order they are listed.
+Policy number: Cancellation
+Date of transaction: 2020-04-28
+Transaction type: Cancellation
+Job number: 0072426031
+Transaction Amount: -$865.30
+Where is this issue taking place (Policy Center, Claims Center, Billing Center, Portal)? Policy Center to Billing Center
+What is the Severity of this issue (Low, Medium, High, Critical)? Medium
+Additional information (Workaround, ALM #, SME, Impact/Volume, Submission/Account/Policy Number etc.)? No work around
+
+uses gw.api.system.PCLoggerCategory
+uses gw.plugin.Plugins
+uses gw.plugin.billing.IBillingSystemPlugin
+uses gw.api.database.Relop
+uses gw.api.database.Query
+var policyPeriod =Query.make(Job).compare(Job#JobNumber,Relop.Equals,"0065292569").select().AtMostOneRow.getLatestPeriod()
+PCLoggerCategory.APPLICATION.info("publicID:"+policyPeriod.PublicID)
+policyPeriod=policyPeriod.getSlice(policyPeriod.EditEffectiveDate)
+print(policyPeriod+", EditEffectiveDate - "+policyPeriod.EditEffectiveDate)
+var plugin = Plugins.get(IBillingSystemPlugin)
+var transactionId = "PC:64662-ChangePeriod-66" 
+plugin.cancelPolicyPeriod(policyPeriod,transactionId)
+PCLoggerCategory.APPLICATION.info("Changed period - " + policyPeriod.Job.JobNumber)
+
+----------------------------------D20220801KC06------------------------------
+D20220801KC06 - Policy Change transactions for policy H6242754H1 did not pass from PC to BC --  done 
+
+What is the issue? Three Policy Change transactions for policy H6242754H1 did not pass from Policy Center to Billing Center. Please add transactions to Billing Center in the order they are listed.
+Policy number: H6242754H1
+Date of transaction: 2022-04-21
+Transaction type: Policy Change
+Job number: 0722401314
+Transaction Amount: $13.41  --->  done 
+
+Policy number: H6242754H1
+Date of transaction: 2022-04-28
+Transaction type: Policy Change
+Job number: 0325319710
+Transaction Amount: -$0.17  --> Done
+
+Policy number: H6242754H1
+Date of transaction: 2022-04-28
+Transaction type: Policy Change
+Job number: 0325449989
+Transaction Amount: -$13.24 -->
+
+Where is this issue taking place (Policy Center, Claims Center, Billing Center, Portal)? Policy Center to Billing Center
+What is the Severity of this issue (Low, Medium, High, Critical)? Medium
+Additional information (Workaround, ALM #, SME, Impact/Volume, Submission/Account/Policy Number etc.)? No work around
+
+uses gw.api.system.PCLoggerCategory
+uses gw.plugin.Plugins
+uses gw.plugin.billing.IBillingSystemPlugin
+uses gw.api.database.Relop
+uses gw.api.database.Query
+var policyPeriod =Query.make(Job).compare(Job#JobNumber,Relop.Equals,"0081146553").select().AtMostOneRow.getLatestPeriod()
+PCLoggerCategory.APPLICATION.info("publicID:"+policyPeriod.PublicID)
+policyPeriod=policyPeriod.getSlice(policyPeriod.EditEffectiveDate)
+print(policyPeriod+", EditEffectiveDate - "+policyPeriod.EditEffectiveDate)
+var plugin = Plugins.get(IBillingSystemPlugin)
+var transactionId = "PC:64821-ChangePeriod-66" 
+plugin.issuePolicyChange(policyPeriod,transactionId)
+PCLoggerCategory.APPLICATION.info("Changed period - " + policyPeriod.Job.JobNumber)
+
+
+6854 - bc defect 
+----------------------------------------D20220801KC05-------------------------
+D20220801KC05 - Policy Change transaction for policy H100003884 did not pass from PC to BC - done 
+
+What is the issue? The Policy Change transaction for policy H100003884 did not pass from Policy Center to Billing Center. 
+Please add transactions to Billing Center in the order they are listed.
+Policy number: H100003884
+Date of transaction: 2020-12-04
+Transaction type: Policy Change
+Job number: 0601410592
+Transaction Amount: $27.33
+Where is this issue taking place (Policy Center, Claims Center, Billing Center, Portal)? Policy Center to Billing Center
+What is the Severity of this issue (Low, Medium, High, Critical)? Medium
+Additional information (Workaround, ALM #, SME, Impact/Volume, Submission/Account/Policy Number etc.)? No work around
+
+uses gw.api.system.PCLoggerCategory
+uses gw.plugin.Plugins
+uses gw.plugin.billing.IBillingSystemPlugin
+uses gw.api.database.Relop
+uses gw.api.database.Query
+var policyPeriod =Query.make(Job).compare(Job#JobNumber,Relop.Equals,"0064727378").select().AtMostOneRow.getLatestPeriod()
+PCLoggerCategory.APPLICATION.info("publicID:"+policyPeriod.PublicID)
+policyPeriod=policyPeriod.getSlice(policyPeriod.EditEffectiveDate)
+print(policyPeriod+", EditEffectiveDate - "+policyPeriod.EditEffectiveDate)
+var plugin = Plugins.get(IBillingSystemPlugin)
+var transactionId = "PC:64657-ChangePeriod-66" 
+plugin.issuePolicyChange(policyPeriod,transactionId)
+PCLoggerCategory.APPLICATION.info("Changed period - " + policyPeriod.Job.JobNumber)
+
+
+------------------------------------------D20220801KC10-----------------------------------------
+D20220801KC10 - Policy change for policy H6526025H1 did not pass from PC to BC - this is for Cancellation txn not pc, -$177.92,txn - 0103166075.need to check once with sush/srival/suprt
+
+What is the issue? The Policy change for policy H6526025H1 did not pass from Policy Center to Billing Center.
+Policy number: H6526025H1
+Date of transaction: 2020-01-08
+Transaction type: Policy Change
+Job number: 0115508110
+Transaction Amount: $21.80
+Where is this issue taking place (Policy Center, Claims Center, Billing Center, Portal)? Policy Center to Billing Center
+What is the Severity of this issue (Low, Medium, High, Critical)? Medium
+Additional information (Workaround, ALM #, SME, Impact/Volume, Submission/Account/Policy Number etc.)? No work around
+
+--------------------------------------D20220801KC12----------------------
+D20220801KC12- Reinstate transactions for policy H6563089H1 did not pass from Policy Center to Billing Center. - Done
+
+What is the issue? The Reinstate transactions for policy H6563089H1 did not pass from Policy Center to Billing Center.  
+Policy number: H6563089H1
+Date of transaction: 2021-02-10
+Transaction type: Reinstatement
+Job number: 0702847575
+Transaction Amount: $959.12, which is $953.40 premium and $5.72 tax
+Where is this issue taking place (Policy Center, Claims Center, Billing Center, Portal)? Policy Center to Billing Center
+What is the Severity of this issue (Low, Medium, High, Critical)? Medium
+Additional information (Workaround, ALM #, SME, Impact/Volume, Submission/Account/Policy Number etc.)? No work around
+
+uses gw.api.system.PCLoggerCategory
+uses gw.plugin.Plugins
+uses gw.plugin.billing.IBillingSystemPlugin
+uses gw.api.database.Relop
+uses gw.api.database.Query
+var policyPeriod =Query.make(Job).compare(Job#JobNumber,Relop.Equals,"0067900525").select().AtMostOneRow.getLatestPeriod()
+PCLoggerCategory.APPLICATION.info("publicID:"+policyPeriod.PublicID)
+policyPeriod=policyPeriod.getSlice(policyPeriod.EditEffectiveDate)
+print(policyPeriod+", EditEffectiveDate - "+policyPeriod.EditEffectiveDate)
+var plugin = Plugins.get(IBillingSystemPlugin)
+var transactionId = "PC:64689-ChangePeriod-66" 
+plugin.renewPolicyPeriod(policyPeriod,transactionId)
+PCLoggerCategory.APPLICATION.info("Changed period - " + policyPeriod.Job.JobNumber)
+--------------------------------------------------D20220801KC09 ----------------------
+D20220801KC09 - - Cancellation and Reinstatement transactions for policy H6528827H1 did not pass from PC to BC - Done
+What is the issue? The Cancellation and Reinstatement transactions for policy H6528827H1 did not pass from Policy Center to Billing Center. Please add transactions to Billing Center in the order they are listed.
+
+Policy number: H6528827H1
+
+Date of transaction: 2020-05-08
+
+Transaction type: Cancellation
+
+Job number: 0228886512
+
+Transaction Amount: -$78.68
+ 
+
+Policy number: H6528827H1
+
+Date of transaction: 2020-10-19
+
+Transaction type: Reinstatement
+
+Job number: 0559053255
+
+Transaction Amount: $78.68
+
+Where is this issue taking place (Policy Center, Claims Center, Billing Center, Portal)? Policy Center to Billing Center
+
+What is the Severity of this issue (Low, Medium, High, Critical)? Medium
+
+Additional information (Workaround, ALM #, SME, Impact/Volume, Submission/Account/Policy Number etc.)? No work around
+
+for cancellation
+uses gw.api.system.PCLoggerCategory
+uses gw.plugin.Plugins
+uses gw.plugin.billing.IBillingSystemPlugin
+uses gw.api.database.Relop
+uses gw.api.database.Query
+var policyPeriod =Query.make(Job).compare(Job#JobNumber,Relop.Equals,"0068414024").select().AtMostOneRow.getLatestPeriod()
+PCLoggerCategory.APPLICATION.info("publicID:"+policyPeriod.PublicID)
+policyPeriod=policyPeriod.getSlice(policyPeriod.EditEffectiveDate)
+print(policyPeriod+", EditEffectiveDate - "+policyPeriod.EditEffectiveDate)
+var plugin = Plugins.get(IBillingSystemPlugin)
+var transactionId = "PC:64694-ChangePeriod-66" 
+plugin.cancelPolicyPeriod(policyPeriod,transactionId)
+PCLoggerCategory.APPLICATION.info("Changed period - " + policyPeriod.Job.JobNumber)
+
+for Reinstatement
+uses gw.api.system.PCLoggerCategory
+uses gw.plugin.Plugins
+uses gw.plugin.billing.IBillingSystemPlugin
+uses gw.api.database.Relop
+uses gw.api.database.Query
+var policyPeriod =Query.make(Job).compare(Job#JobNumber,Relop.Equals,"0068593754").select().AtMostOneRow.getLatestPeriod()
+PCLoggerCategory.APPLICATION.info("publicID:"+policyPeriod.PublicID)
+policyPeriod=policyPeriod.getSlice(policyPeriod.EditEffectiveDate)
+print(policyPeriod+", EditEffectiveDate - "+policyPeriod.EditEffectiveDate)
+var plugin = Plugins.get(IBillingSystemPlugin)
+var transactionId = "PC:64695-ChangePeriod-66" 
+plugin.issueReinstatement(policyPeriod,transactionId)
+PCLoggerCategory.APPLICATION.info("Changed period - " + policyPeriod.Job.JobNumber)
+
+ 
+---------------------query------------------------------
+Working query
+select j.publicid as JobPublicID,pp.publicid as PolicyPublicID, pp.policynumber as PolicyNumber,pp.TransactionCostRPT as PolicyTxnAmount,pp.TransactionPremiumRPT as PolicyPremiumOnly,j.JobNumber as JobOrTxnNumber
+from pc_policyperiod pp
+join pc_job j on j.ID=pp.JobID
+where pp.policynumber = 'H700001381' ---- policyperiodid and id is 64686,publicid-pc:64686,consider only policy publicperiod id 
+
+select ac.AccountNumber,ac.ID,ac.PublicID from pc_account ac where ac.accountnumber = 'E70016071' --'E70016065'..18122
+select * from pc_message msg where msg.accountid = '18126'  -- policyid = '22166' ----policyperiodid,accountid,policyid.....PolicyPeriodID - 64565
+ 
+Prod PC 
+use electric_prod_pc;
+---select ac.AccountNumber,ac.ID,ac.PublicID from pc_account ac where ac.accountnumber = 'E10023841' --'E70016065'..18122
+--select * from pc_message msg where msg.accountid = '32113'  -- policyid = '22166' ----policyperiodid,accountid,policyid.....PolicyPeriodID - 64565 
+--select pp.id,pp.publicid,pp.policynumber,jb.jobnumber from pc_policyPeriod pp, pc_job jb 
+select * from pc_policyperiod pp
+join pc_job j on j.ID=pp.JobID
+where pp.policynumber = 'A6526024A1'
+
+--select * from pc_message msg where msg.policyperiodid = '492057'
+---select *from  pc_message
+---------------------Sript for prod working------------------------------------------------------ 
+select pp.transactionCostRPT,pp.policynumber,j.jobnumber,pp.PublicID as transactionId,pp.createtime as DateOfTransaction,j.closedate from pc_policyperiod pp
+join pc_job j on j.ID=pp.JobID
+where pp.policynumber = 'H6242754H1'
+
+
+
+-----------REN PC
+
+use electric_ren_pc
+--select * from pc_job jb where jb.JobNumberDenorm ='0055525027' ---policyid - 22166,subtype - 5
+--select  * from pc_policyperiod pp where pp.policyID = '22166' ---jobid-64556,64555
+---select ac.AccountNumber,ac.ID,ac.PublicID from pc_account ac where ac.accountnumber = 'E70016070' --'E70016065'..18122
+select * from pc_message msg where msg.accountid = '18125'  -- policyid = '22166' ----policyperiodid,accountid,policyid.....PolicyPeriodID - 64565
+select * from pc_policyperiod pp
+join pc_job j on j.ID=pp.JobID
+where pp.policynumber = 'A700001750'
+
+
+20211109A58 - MASRAMVReporting stuck msg 
+java.lang.NullPointerException
+at eic.integration.masrmv.common.transformer.RMVReportRequestTransformer.process(RMVReportRequestTransformer.gs:33)
+at eic.integration.masrmv.messaging.MasRmvReportTransport.send(MasRmvReportTransport.gs:46)
+at sun.reflec
+
+ 
+
+------------------------GEINC12248846
+Errored Guidewire Message Queue Payloads in CC - "InsurPay"
+
+Claim #: 20220926A51
+Event name  : CheckStatusChanged
+Destination : InsurPay
+status - error 
+
+MessagePayload : AttachDocuments
+
+checknumber - null 
+
+In HF, 20210722A09 --- MISSING INVOICE ,DOCUMENT name  ,,, check number -	20017569  
+
+
+
+csf test for MRI  ---> 
+ 
+
+
+
+
+
+
+
+
