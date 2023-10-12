@@ -1,0 +1,31 @@
+uses gw.api.database.Relop
+uses gw.api.database.Query
+uses com.nfum.util.Logger
+
+var _logger = Logger.finder.APPLICATION
+_logger.info("***Start of Script***")
+print("***Start of Script***")
+
+var activityPattern= gw.api.database.Query.make(ActivityPattern).compare(ActivityPattern#Code,Relop.Equals,"tp_capture_final_chase_nfum").select().first() 
+try
+{
+  if(activityPattern!=null)
+  {
+    gw.transaction.Transaction.runWithNewBundle(\bundle->
+        {
+          activityPattern= bundle.add(activityPattern)
+          activityPattern.Subject="TP Capture – Third Chase" 
+          activityPattern.Description="Third attempt to capture TP claim"
+        },"su")
+    _logger.info("tp catpure final chase is successfully updated to tp capture third chase")
+  }
+  else
+  {
+    _logger.info("tp catpure final chase activity pattern does not exist")
+  }
+}
+catch( exp : Exception)
+{
+  _logger.error("unable to update tp catpure final chase activity")
+   exp.printStackTrace()
+}
